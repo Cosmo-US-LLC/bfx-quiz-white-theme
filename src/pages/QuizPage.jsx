@@ -42,7 +42,7 @@ const QuizPage = () => {
       <QuizSteps currentStep={1} totalSteps={28} />
       <div className="w-full max-w-2xl mt-8 mb-8 text-center">
         <div className="space-y-[10px]">
-          <h1 className="text-[40px] font-[700] leading-[120%] text-[#000] tracking-[-2px] ">
+          <h1 className="text-[40px] uppercase font-[700] leading-[120%] text-[#000] tracking-[-2px] ">
             What’s Your Crypto <br /> Potential in 2025?
           </h1>
           <p className="text-[14px] font-[400] leading-[150%] text-[#000]">
