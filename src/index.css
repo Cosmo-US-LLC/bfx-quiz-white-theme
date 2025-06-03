@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Manrope";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  color: #000;
+}
+
+.quiz-container {
+  background-color: #fff;
+}
+
+.option-card {
+  transition: all 0.3s ease;
+}
+
+.option-card:hover {
+  border-color: #2189FF;
+  box-shadow: 0 0 10px #2189ff57;
+}
+
+.option-card.selected {
+  border-color: #2189FF;
+  box-shadow: 0 0 15px rgba(247, 185, 85, 0.5);
+}
+
+.gold-text {
+  color: #2189FF;
+}
+
+.gold-button {
+  background-color: #2189FF;
+  color: #121212;
+  transition: all 0.3s ease;
+}
+
+.gold-button:hover {
+  background-color: #e6a93d;
+}
+
+.gold-button:disabled {
+  background-color: #5a5a5a;
+  cursor: not-allowed;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  height: 24px; /* Increase height for better touch target */
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* Thumb styling */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background-color: var(--thumb-color);
+  border: var(--thumb-border);
+  border-radius: 50%;
+  margin-top: -8px; /* Offset to center thumb on track */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background-color: var(--thumb-color);
+  border: var(--thumb-border);
+  border-radius: 50%;
+}
+
+/* Hide the default track */
+/* input[type="range"]::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 3px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: transparent;
+  height: 3px;
+} */
+
