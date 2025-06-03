@@ -4,7 +4,7 @@ import QuizHeader from "../components/QuizHeader";
 import QuizSteps from "../components/QuizSteps";
 
 import Loading from "../components/Loading";
-import Step_7 from "../assets/step_7/step_7.png";
+import Step_7 from "../assets/step_7/step_7.webp";
 
 const QuizStep7 = () => {
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ const QuizStep7 = () => {
 
  
   return (
-    <div className="quiz-container min-h-screen overflow-hidden flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={""} totalSteps={28} />
       <QuizSteps currentStep={7} totalSteps={28} />
 
@@ -51,7 +51,7 @@ const QuizStep7 = () => {
             Continue
           </button>
         </div>
-          <div className="bg-[#252525] max-w-[520px] h-[400px] w-[100%] flex justify-center items-center rounded-[8px]">
+          <div className="bg-[#D9D9D980] max-w-[520px] h-[400px] w-[100%] flex justify-center items-center rounded-[8px]">
             <img
               src={Step_7}
               className="max-h-[580px]"
