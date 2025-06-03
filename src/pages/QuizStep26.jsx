@@ -4,10 +4,10 @@ import QuizHeader from "../components/QuizHeader";
 import QuizSteps from "../components/QuizSteps";
 
 import Loading from "../components/Loading";
-import step_26_1 from "../assets/step_26/step_26 (3).webp";
-import step_26_2 from "../assets/step_26/step_26 (2).webp";
-import step_26_3 from "../assets/step_26/step_26 (1).webp";
-import step_26_4 from "../assets/step_26/step_26 (4).webp";
+import step_26_1 from "../assets/step_26/g1.webp";
+import step_26_2 from "../assets/step_26/g2.webp";
+import step_26_3 from "../assets/step_26/g3.webp";
+import step_26_4 from "../assets/step_26/g4.webp";
 import CircularProgress from "../components/circular-progress";
 import { setI18n } from "react-i18next";
 
@@ -33,7 +33,7 @@ const QuizStep26 = () => {
   }, [navigate]);
 
   return (
-    <div className="quiz-container min-h-screen overflow-hidden flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={""} totalSteps={28} />
       <QuizSteps currentStep={26} totalSteps={28} />
 
@@ -43,8 +43,8 @@ const QuizStep26 = () => {
             percentage={100}
             size={162}
             strokeWidth={16}
-            backgroundColor="#353535"
-            progressColor="#D99A26"
+            backgroundColor="#D9D9D980"
+            progressColor="#2189FF"
             textColor="#000"
             label="Your crypto profile is loading "
           />
@@ -59,18 +59,37 @@ const QuizStep26 = () => {
             insider access, early entry <br /> into private communities, and
             insights from a full-time expert research team.
           </p>
-          <div className="flex justify-between space-x-4 itens-center">
-            <div>
-              <img className="object-cover" src={step_26_1} alt="" />
+          <p className="text-[16px] text-left font-[700] text-[#000] mt-2 mb-3">
+            Some of our part results
+          </p>
+          <div className="flex items-center justify-between space-x-4">
+            <div className="shadow-lg rounded-[12px] overflow-hidden">
+              <img
+                className="object-cover rounded-[12px] overflow-hidden"
+                src={step_26_1}
+                alt=""
+              />
             </div>
-            <div>
-              <img className="object-cover" src={step_26_2} alt="" />
+            <div className="shadow-lg rounded-[12px] overflow-hidden">
+              <img
+                className="object-cover rounded-[12px] overflow-hidden"
+                src={step_26_2}
+                alt=""
+              />
             </div>
-            <div>
-              <img className="object-cover" src={step_26_3} alt="" />
+            <div className="shadow-lg rounded-[12px] overflow-hidden">
+              <img
+                className="object-cover rounded-[12px] overflow-hidden"
+                src={step_26_3}
+                alt=""
+              />
             </div>
-            <div>
-              <img className="object-cover" src={step_26_4} alt="" />
+            <div className="shadow-lg rounded-[12px] overflow-hidden">
+              <img
+                className="object-cover rounded-[12px] overflow-hidden"
+                src={step_26_4}
+                alt=""
+              />
             </div>
           </div>
         </div>

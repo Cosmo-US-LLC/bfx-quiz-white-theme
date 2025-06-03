@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import QuizHeader from "../components/QuizHeader";
 import QuizSteps from "../components/QuizSteps";
 import Loading from "../components/Loading";
-import Step_22 from "../assets/step_22/step_22.png";
+import Step_22 from "../assets/step_22/step_221.webp";
 
 const QuizStep22 = () => {
   const navigate = useNavigate();
@@ -75,7 +75,7 @@ const formatNumber = (value) => {
 
 
   return (
-    <div className="quiz-container min-h-screen flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
       <QuizHeader currentStep={""} totalSteps={""} />
       <QuizSteps currentStep={24} totalSteps={28} />
 

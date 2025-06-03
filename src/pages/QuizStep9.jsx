@@ -29,7 +29,7 @@ const QuizStep9 = () => {
 
   return (
    <div>
-     <div className="quiz-container  min-h-screen overflow-hidden flex flex-col items-center p-4">
+     <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={""} totalSteps={28} />
       <QuizSteps currentStep={9} totalSteps={28} />
 
@@ -52,7 +52,7 @@ const QuizStep9 = () => {
             Continue
           </button>
         </div>
-          <div className="bg-[#252525] max-w-[550px] h-[390px] w-[100%] flex justify-center items-center rounded-[8px]">
+          <div className="bg-[#D9D9D980] max-w-[550px] h-[390px] w-[100%] flex justify-center items-center rounded-[8px]">
             <img
               src={Step_9}
               className="max-h-[680px]"
