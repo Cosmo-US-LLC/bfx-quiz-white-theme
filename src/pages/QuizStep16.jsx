@@ -34,7 +34,7 @@ const QuizStep16 = () => {
             It has never been easier to earn <br /> real passive income with
             crypto
           </h1>
-          <p className="text-[16px] font-[700] leading-[170%] text-[#000] mb-6 ">
+          <p className="text-[16px] font-[400] leading-[170%] text-[black] mb-6 ">
             For example, people who buy the new $BFX token during the presale
             earn rewards every time someone trades on BlockchainFX. As $BFX
             holders, they receive a share of the trading fees without having to
