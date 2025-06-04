@@ -2,15 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import QuizHeader from "../components/QuizHeader";
 import QuizSteps from "../components/QuizSteps";
-
-import Loading from "../components/Loading";
 import result from "../assets/result/result.png";
-import result_icon_1 from "../assets/result/result_icons (1).png";
-import result_icon_2 from "../assets/result/result_icons (2).png";
-import result_icon_3 from "../assets/result/result_icons (3).png";
-import result_icon_4 from "../assets/result/result_icons (4).png";
-import result_icon_5 from "../assets/result/result_icon.png";
-import copy_icon from "../assets/result/copy.png";
+import result_icon_3 from "../assets/result/result_blue_icons.webp";
 
 const Results = () => {
   const navigate = useNavigate();
@@ -74,16 +67,19 @@ const Results = () => {
   return (
     <div>
       <div
-        className="flex flex-col items-center min-h-screen overflow-hidden quiz-container "
+        className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container"
         style={{
           backgroundColor: "#fff",
         }}
       >
-        <div className="px-4 w-[100%]">
-          <QuizHeader currentStep={""} totalSteps={28} />
-          <QuizSteps currentStep={28} totalSteps={28} />
-        </div>
+        <QuizHeader currentStep={""} totalSteps={28} />
+        <QuizSteps currentStep={28} totalSteps={28} />
         <div className="mb-4 !mt-[-22px] bg-[#D99A2633] w-[100%] flex justify-center items-center rounded-[8px]">
+          {/* <img
+            src={result_icon_4}
+            alt="results"
+            className=" px-[10px] text-[#000]"
+          /> */}
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,37 +94,40 @@ const Results = () => {
               />
             </svg>
           </div>
-          <h3 className=" pl-2 font-[500] text-[16px] py-[5px] ">
-            Special 35% Bonus expires in
+          <h3 className=" text-black font-[500] text-[16px] py-[5px] ml-2">
+            35% Bonus expires in
             <span className="font-[700] text-[#D99A26] text-Manrope ">
               {" "}
               {formatTime(timeLeft)} min
             </span>
           </h3>
         </div>
-        <div className="mt-[2rem] w-[100%]">
+        <div className="mt-[2rem] w-[100%] max-w-[1240px] mx-auto">
           <div className="max-w-[1020px] mx-auto  w-full ">
-            <h1 className="text-[40px] text-center text-[#000] font-bold mb-4 ">
-              Reach Your Full Crypto Potential in 2025
+            <h1 className="text-[40px] text-center text-[black] font-bold mb-4 ">
+              Congratulations! 🎉 <br />
+              You’ve sucessfully passed the Quiz
             </h1>
-            <p className="text-[20px]  text-center font-[700] text-[#000] mb-5 ">
+            <p className="text-[20px]  text-center font-[700] text-[black] mb-[53px] ">
+              You’ve completed the challenge and unlocked this special offer.
+              <br />
               Here’s your limited one-time bonus code to buy $BFX*
             </p>
-            <p className="text-[20px]  text-center font-[700] text-[#000] mb-[53px] ">
-              You’ve successfully completed the challenge and unlocked <br /> a
-              one-time bonus. Buy now to get 35% more BFX.
-            </p>
-          </div>
-          <div className="bg-[#EDEDED] py-[40px]">
-            <div className="max-w-[618px] pt-6 pb-[1px] mx-auto ">
-              <div className="flex justify-evenly pl-6 pt-3 border bg-[#fff] border-[#000] rounded-[10px] items-center max-w-[550px] mx-auto w-[100%]  mb-4">
+            <div className="max-w-[618px] pt-6 pb-[1px] mx-auto bg-[#F0F0F0]">
+              <div className="flex items-center max-w-[506px] mx-auto mb-[25px]">
+                <p className="w-[50%] text-[16px] flex justify-start  font-[400] text-[black] ">
+                  Your readiness:{" "}
+                  <span className="font-[700] text-[#037FF9] "> 84%</span>
+                </p>
+              </div>
+              <div className="flex justify-evenly pl-2 pt-3 items-center max-w-[506px] mx-auto w-[100%] bg-[#fff] mb-4">
                 <div className="relative z-[9]">
                   <h2 className="text-black font-[500] text-[24px] mb-4">
                     Claim your personal <br />
-                    <span className="font-[700] text-[#D99A26] ">35%</span> BFX
+                    <span className="font-[700] text-[#037FF9] ">35%</span> BFX
                     Bonus Code
                   </h2>
-                  <div className="flex relative z-[99] justify-around items-center border border-[#000] rounded-[8px] px-2">
+                  <div className="flex relative justify-around items-center border border-[#000] rounded-[8px] px-2">
                     <button
                       ref={textRef}
                       className="h-[40px] px-2 text-black"
@@ -163,7 +162,7 @@ const Results = () => {
                     </button>
                     {showPopup && (
                       <div className="fixed bottom-[8%] z-[99] shadow left-1/2 transform -translate-x-1/2 animate-in fade-in-0 zoom-in-95 duration-200">
-                        <div className="bg-[#fff] border text-white px-4 py-4 rounded-lg shadow-lg flex items-center gap-2 whitespace-nowrap">
+                        <div className="bg-[#353535] text-white px-4 py-4 rounded-lg shadow-lg flex items-center gap-2 whitespace-nowrap">
                           <div className="flex items-center justify-center w-5 h-5 rounded-full">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -176,11 +175,11 @@ const Results = () => {
                                 fill-rule="evenodd"
                                 clip-rule="evenodd"
                                 d="M12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12C3 14.3869 3.94821 16.6761 5.63604 18.364C7.32387 20.0518 9.61305 21 12 21ZM11.768 15.64L16.768 9.64L15.232 8.36L10.932 13.519L8.707 11.293L7.293 12.707L10.293 15.707L11.067 16.481L11.768 15.64Z"
-                                fill="#2189FF"
+                                fill="#F9CC3E"
                               />
                             </svg>
                           </div>
-                          <span className="text-sm text-[#000] font-medium">
+                          <span className="text-sm font-medium">
                             Copied Successfully
                           </span>
                         </div>
@@ -188,36 +187,35 @@ const Results = () => {
                     )}
                   </div>
                 </div>
-                <div className="w-[30%] ">
+                <div className="w-[30%] relative min-h-[225px]">
                   <img
-                    src={result_icon_3}
-                    className="min-w-[132px] relative z-[9] min-h-[132px] "
+                    src={result}
+                    className="min-w-[290px] min-h-[225px] absolute top-[0%] right-[-50%] z-[1]"
                     alt=""
                   />
                 </div>
               </div>
               <div className="max-w-[506px] mx-auto">
-                <p className="text-[16px] text-[#000] font-[700] leading-[250%] text-center">
-                  *At 3insiders, our goal is to match you with the right
-                  project for your goals and secure exclusive deals you won’t
-                  find anywhere else through our industry connections. A win for
-                  everyone.
+                <p className="text-[16px] text-[black] font-[500] leading-[250%] text-center mb-4">
+                  *At 3insiders, our goal is to match you with the right project
+                  for your goals and secure exclusive deals you won’t find
+                  anywhere else through our industry connections. A win for
+                  everyone.{" "}
                 </p>
+                <div className="flex items-center justify-center mb-6">
+                  <img src={result_icon_3} className="h-[132px]" alt="" />
+                </div>
               </div>
             </div>
           </div>
-          <div className="max-w-[550px] mx-auto my-6">
-            <p className="text-[16px] text-[#000] font-[700] tracking-[-0.1px] mb-4 leading-[250%] text-center">
-              For more information and to claim your bonus, click on the button
-              below
-            </p>
+          <div className="max-w-[578.2px] mx-auto my-6">
             <button
               onClick={handleRoute}
               style={{
                 borderRadius: "10px",
-                background: "#2189FF",
+                background: "#037FF9",
               }}
-              className={`py-[13px] w-[100%] text-[#fff] font-[700]`}
+              className={`py-[13px] w-[100%] text-[#FFF] text-[25px] leading-[96%] tracking-[-0.5px] font-[700]`}
             >
               Visit Now: BlockchainFX.com
             </button>
@@ -229,54 +227,3 @@ const Results = () => {
 };
 
 export default Results;
-
-function GradientRangeSlider({ value, onChange, gradientColors, label }) {
-  // Handle the range input change
-  const handleChange = (e) => {
-    onChange(Number.parseInt(e.target.value));
-  };
-
-  return (
-    <div className="mb-2">
-      <div className="relative">
-        {/* Custom range track with gradient */}
-        <div
-          className={`absolute top-1/2 left-0 -translate-y-1/2 h-3 w-full rounded-full bg-gradient-to-r ${gradientColors}`}
-        ></div>
-
-        {/* Actual range input (invisible but functional) */}
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value={value}
-          onChange={handleChange}
-          className="absolute top-0 left-0 z-10 w-full h-full bg-transparent appearance-none cursor-pointer"
-          style={{
-            // Hide the default appearance but keep functionality
-            WebkitAppearance: "none",
-            // Custom thumb styling
-            "--thumb-size": "20px",
-            "--thumb-color": "#f59e0b00",
-            "--thumb-border": "2px solid f59e0b00",
-          }}
-        />
-
-        {/* Custom thumb/handle */}
-        <div
-          className="absolute w-5 h-5 -translate-y-1/2 bg-yellow-500 border-2 border-white rounded-full shadow-md pointer-events-none top-1/2"
-          style={{
-            left: `calc(${value}% - 10px)`,
-          }}
-        ></div>
-      </div>
-
-      {/* Label */}
-      <div className="p-2">
-        <span className="text-gray-400 text-sm bg-gray-800/80 px-2 py-0.5 rounded">
-          {label}
-        </span>
-      </div>
-    </div>
-  );
-}
