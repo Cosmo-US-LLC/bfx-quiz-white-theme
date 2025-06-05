@@ -63,7 +63,7 @@ const MobileQuizStep17 = () => {
               onClick={handleNext}
             >
               <img src={option.img} className="h-[40px]" alt="" />
-              <p className="w-[88%] text-[16px] text-black text-start font-medium">
+              <p className="w-[88%] text-[16px] text-[#000] text-start font-[700] leading-[24px]">
                 {option.title}
               </p>
             </div>

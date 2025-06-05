@@ -30,14 +30,14 @@ const QuizStep1 = () => {
       <QuizSteps currentStep={2} totalSteps={28} />
       <div className="quiz-container max-w-[1240px] mx-auto min-h-screen overflow-hidden flex flex-col items-center p-4">
         <div className="flex items-center justify-between w-[100%]">
-          <div className="max-w-[650px] w-full  mt-[6rem]  ">
-            <h1 className="text-[25px] text-[#000]   font-[700] mb leading-[130%] tracking-[-0.56px] mb-3 capitalize">
+          <div className="max-w-[650px] w-full  mt-[6rem] flex flex-col items-center justify-center">
+            <h1 className="text-[25px] text-[#000] text-center   font-[700] mb leading-[130%] tracking-[-0.56px] mb-5 capitalize">
               
-              The 2025 Crypto Bull Market Has Just Started{" "}
+              The 2025 Crypto Bull <br /> Market Has Just Started{" "}
             </h1>
-            <p className="text-[16px] font-[400] text-[#000] mb-6 ">
+            <p className="text-[16px] max-w-[350px] font-[400] text-center text-[#000] mb-6 ">
               In May 2025, Bitcoin reached a new all-time high of $112,000,
-              marking the start of a new bull market cycle. With global
+              marking the start of a new bull market cycle. <br /> <br /> With global
               financial markets stabilizing, crypto is once again leading the
               way, outpacing traditional assets and capturing the attention of
               millions.
