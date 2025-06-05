@@ -21,7 +21,6 @@ const QuizPage = () => {
     { range: "45+", image: card_img4 },
   ];
 
-  // Simulate loading
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
