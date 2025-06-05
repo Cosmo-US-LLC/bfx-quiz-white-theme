@@ -53,7 +53,7 @@ const MobileQuizStep18_28 = () => {
 
 const handleNext = (option) => {
   localStorage.setItem("specialWish", option.title);
-  navigate("/quiz/fact-check-no=7_2");
+  navigate("/quiz/fact-check-no=7_1");
 };
 
 

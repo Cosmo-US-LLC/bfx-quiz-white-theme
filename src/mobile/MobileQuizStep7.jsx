@@ -29,7 +29,7 @@ const MobileQuizStep7 = () => {
  
   return (
     <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
-      <QuizHeader currentStep={""} totalSteps={28} />
+      <QuizHeader currentStep={"Facts"} totalSteps={28} />
       <QuizSteps currentStep={7} totalSteps={28} />
 
       <div className="f mt-4 w-[100%]">

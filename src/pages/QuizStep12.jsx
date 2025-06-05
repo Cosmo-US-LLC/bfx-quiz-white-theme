@@ -29,7 +29,7 @@ const QuizStep9 = () => {
  
   return (
     <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
-      <QuizHeader currentStep={""} totalSteps={""} />
+      <QuizHeader currentStep={"Facts"} totalSteps={18} />
       <QuizSteps currentStep={12} totalSteps={28} />
 
       <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[4rem] w-[100%]">
