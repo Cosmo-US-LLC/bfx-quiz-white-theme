@@ -76,7 +76,7 @@ const formatNumber = (value) => {
 
   return (
     <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
-      <QuizHeader currentStep={""} totalSteps={""} />
+      <QuizHeader currentStep={"Earn"} totalSteps={""} />
       <QuizSteps currentStep={24} totalSteps={28} />
 
       <div className="flex justify-between max-w-[1160px] w-[100%] mx-auto items-center mt-12">
