@@ -79,7 +79,7 @@ const MobileResults = () => {
         //   backgroundColor: "#000000",
         // }}
       >
-        <QuizHeader currentStep={""} totalSteps={28} />
+        <QuizHeader currentStep={"Special Bonus"} totalSteps={28} />
         <QuizSteps currentStep={28} totalSteps={28} />
         <div className="mb-4 !mt-[-22px] bg-[#037FF9] w-[100%] flex justify-center items-center rounded-[8px]">
           <img
