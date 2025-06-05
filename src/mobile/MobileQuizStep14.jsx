@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import QuizHeader from "../components/QuizHeader"
@@ -57,20 +56,20 @@ const goalIncome = localStorage.getItem("goalIncome") || "$10,000";
       <QuizHeader currentStep={11} totalSteps={18} />
       <QuizSteps currentStep={14} totalSteps={28} />
 
-      <div className="max-w-[1000px] w-full text-center mt-6">
- <h1 className="text-[28px] font-[700] leading-[120%] mb-1  text-center">If you could earn {goalIncome} per month in <br /> additional income, what would you do first?</h1>
+      <div className="max-w-[1000px] w-full text-center mt-4">
+ <h1 className="text-[28px] font-[700] leading-[120%] mb-1  text-center">If you could earn {goalIncome} per month in  additional income, what would you do first?</h1>
         <div className="grid grid-cols-1 max-w-[560px] mx-auto md:grid-cols-1 gap-4 mt-8">
             {options.map((option) => (
             <div
               key={option}
               style={{
-                background:"rgba(245, 245, 245, 0.15)"
+                background:"#EDEDED"
               }}
-              className={`option-card py-4 px-6 space-x-2 flex items-center justify-between rounded-[8px] cursor-pointer ${selectedOption === option ? "selected" : ""}`}
+              className={`option-card py-4 space-x-2 px-6 flex items-center justify-between rounded-[8px] cursor-pointer ${selectedOption === option ? "selected" : ""}`}
               onClick={handleNext}
             >
               <img src={option.img} className="h-[40px]" alt="" />
-              <p className="w-[88%] text-white text-[16px] text-start font-medium">{option.title}</p>
+              <p className="w-[88%] text-[16px] text-black text-start font-[700]">{option.title}</p>
             </div>
           ))}
         </div>
@@ -80,3 +79,4 @@ const goalIncome = localStorage.getItem("goalIncome") || "$10,000";
 }
 
 export default MobileQuizStep14
+

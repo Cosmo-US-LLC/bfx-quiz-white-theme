@@ -28,34 +28,34 @@ const MobileQuizStep12 = () => {
 
  
   return (
-    <div className="quiz-container min-h-screen overflow-hidden flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={""} totalSteps={""} />
       <QuizSteps currentStep={12} totalSteps={28} />
 
-      <div className=" max-w-[1240px] mx-auto mt-6 w-[100%]">
-        <div className=" w-full text-center ">
-          <h1 className="text-[28px] text-center text-[#fff] font-bold mb-4 ">
+      <div className="mt-4 w-[100%]">
+        <div className="w-full text-center ">
+          <h1 className="text-[28px] text-[#000] font-bold mb-4 ">
        How millionaires build <br /> generational wealth
           </h1>
-          <p className="text-[16px] max-w-[380px] text-center mx-auto font-[400] text-[#fff] mb-6 ">
+          <p className="text-[16px] max-w-[380px] mx-auto font-[400] text-[#000] mb-[4rem] ">
          Most millionaires and billionaires don’t rely on just one source of income. On average, they have 7 different income streams, including business earnings, investments, crypto, real estate, dividends, and more.
           </p>
         </div>
-          <div className="bg-[#252525] mx-auto relative max-w-[300px] !mt-[40px] h-[300px] w-[100%] flex justify-center items-center rounded-[8px]">
+          <div className="bg-[#252525] relative mx-auto max-w-[260px] h-[280px] w-[100%] flex justify-center items-center rounded-[8px]">
             <img
               src={Step_12}
-              className="max-h-[320px] mt-[-20px]"
+              className="max-h-[300px] mt-[-24px]"
               alt=""
             />
         </div>
-        <div className="flex justify-center mt-12">
-             <button
+        <div className="mt-[4rem]">
+           <button
             onClick={handleNext}
             style={{
               borderRadius: "10px",
-              background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
+              background: "#2189FF",
             }}
-            className={`py-[13px]  w-[100%] text-[#000] font-[500]`}
+            className={`py-[13px] text-[#fff] w-[100%] text-[#000] font-[500]`}
           >
             Continue
           </button>
@@ -66,3 +66,4 @@ const MobileQuizStep12 = () => {
 };
 
 export default MobileQuizStep12;
+

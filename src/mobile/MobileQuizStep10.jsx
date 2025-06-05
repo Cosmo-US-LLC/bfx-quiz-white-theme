@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import QuizHeader from "../components/QuizHeader"
@@ -58,20 +57,20 @@ const MobileQuizStep10 = () => {
       <QuizHeader currentStep={8} totalSteps={18} />
       <QuizSteps currentStep={10} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-6">
+      <div className="max-w-[750px] w-full text-center mt-4">
  <h1 className="text-[28px] font-[700] leading-[120%] mb-1  text-center">What’s holding you back <br /> from living the life you want?</h1>
         <div className="grid grid-cols-1 max-w-[560px] mx-auto md:grid-cols-1 gap-4 mt-8">
             {options.map((option) => (
             <div
               key={option}
               style={{
-                background:"rgba(245, 245, 245, 0.15)"
+                background:"#EDEDED"
               }}
-              className={`option-card py-4 px-6 space-x-2 flex items-center justify-between rounded-[8px] cursor-pointer ${selectedOption === option ? "selected" : ""}`}
+              className={`option-card py-4 space-x-2 px-6 flex items-center justify-between rounded-[8px] cursor-pointer ${selectedOption === option ? "selected" : ""}`}
               onClick={handleNext}
             >
               <img src={option.img} className="h-[40px]" alt="" />
-              <p className="w-[88%] text-white text-start text-[16px] font-medium">{option.title}</p>
+              <p className="w-[88%] text-[16px] text-[#000] text-start font-[700]">{option.title}</p>
             </div>
           ))}
         </div>

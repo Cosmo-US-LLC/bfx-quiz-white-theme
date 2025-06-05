@@ -62,19 +62,19 @@ const handleOptionClick = (option) => {
       <QuizHeader currentStep={10} totalSteps={18} />
       <QuizSteps currentStep={13} totalSteps={28} />
 
-      <div className="max-w-[1000px] w-full text-center mt-6">
+      <div className="max-w-[1000px] w-full text-center mt-4">
  <h1 className="text-[28px] font-[700] leading-[120%] mb-1  text-center">What monthly income do you want to achieve?</h1>
         <div className="grid grid-cols-2 md:grid-cols-2 gap-5 mt-8">
             {options.map((option) => (
             <div
               key={option}
-              style={{
-                background:"rgba(245, 245, 245, 0.15)"
+             style={{
+                background:"#EDEDED"
               }}
               className={`option-card py-6 flex items-center justify-center rounded-[8px] cursor-pointer ${selectedOption === option ? "selected" : ""}`}
               onClick={() => handleOptionClick(option)}
             >
-              <p className="w-[144px] mx-auto text-[16px] text-center text-white  font-medium">{option.title}</p>
+              <p className="w-[144px] mx-auto text-[16px] font-[700]  text-center text-[#000] ">{option.title}</p>
             </div>
           ))}
         </div>
