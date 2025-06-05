@@ -44,7 +44,7 @@ const MobileQuizPage = () => {
     <div className="quiz-container bg-[red] min-h-screen  flex flex-col items-center p-4">
       <QuizHeader currentStep={"Quiz"} totalSteps={18} />
             <QuizSteps currentStep={1} totalSteps={28} />
-      <div className="max-w-2xl w-full text-center mb-4 mt-4">
+      <div className="w-full max-w-2xl mt-4 mb-4 text-center">
         <div className="space-y-[15px]">
           <h1 className="text-[30px] uppercase font-[700] leading-[120%000ext-[#fff] tracking-[-2px] ">
             What’s Your Crypto <br /> Potential in 2025?
@@ -70,13 +70,7 @@ const MobileQuizPage = () => {
           ))}
         </div>
 
-        {/* <button
-          onClick={handleNext}
-          disabled={!selectedOption}
-          className={`gold-button py-3 px-8 rounded-full font-medium ${!selectedOption ? "opacity-50" : ""}`}
-        >
-          Continue
-        </button> */}
+        
         <div className="space-y-[70px]">
           <p className="text-[#B1B1B1] text-[12px] font-[400] leading-[133.333%]">
              By clicking on an age group, you agree with <a className="underline" href="https://blockchainfx.io/terms-of-service" target="_blank">Terms
