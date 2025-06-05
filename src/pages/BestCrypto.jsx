@@ -184,7 +184,7 @@ const BestCrypto = () => {
         }}
       >
         <div className="px-4 w-[100%]">
-          <QuizHeader currentStep={"Best Crypto Project"} totalSteps={28} />
+          <QuizHeader currentStep={"Best Crypto Project of 2025"} totalSteps={28} />
           <QuizSteps currentStep={28} totalSteps={28} />
         </div>
         <div className="max-w-[1020px] mx-auto  w-full ">
@@ -197,32 +197,8 @@ const BestCrypto = () => {
           </p>
         </div>
 
-        <div
-          className="max-w-[1076px] overflow-hidden mb-[5rem] pb-[3rem] pt-[1rem] w-[100%] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
-          style={{}}
-        >
-          <div className="">
-            <div className="absolute bottom-[16%] -left-6 h-[200px]">
-              {/* <img src={imgby} className="h-[319px]" alt="" /> */}
-              {image && (
-                <img src={image} alt="Selected" className="flex w-[350px] h-auto " />
-              )}
-            </div>
-            <div className="grid grid-cols-1 pl-[7rem] md:grid-cols-2 gap-x-[5rem] gap-y-[2rem] max-w-[700px] mx-auto">
-              {progressData.map((item, index) => (
-                <ProgressBar
-                  key={index}
-                  title={item.title}
-                  progress={item.progress}
-                  level={item.level}
-                  description={item.description}
-                  color={item.color}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="max-w-[1076px] relative bg-[#F1F1F1] rounded-[10px] px-[32px] pt-[61px] pb-[40px] mb-4 mx-auto  w-full">
+      
+        <div className="max-w-[1076px] relative bg-[#F1F1F1] rounded-[10px] mt-4 px-[32px] pt-[61px] pb-[40px] mb-4 mx-auto  w-full">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <div className="w-[90px]">
@@ -312,6 +288,31 @@ const BestCrypto = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+          <div
+          className="max-w-[1076px] overflow-hidden mb-[2rem] mt-6 pb-[3rem] pt-[1rem] w-[100%] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
+          style={{}}
+        >
+          <div className="">
+            <div className="absolute -bottom-[1%] -left-1  ">
+              {/* <img src={imgby} className="h-[319px]" alt="" /> */}
+              {image && (
+                <img src={image} alt="Selected" className="flex w-[260px] h-auto " />
+              )}
+            </div>
+            <div className="grid grid-cols-1 pl-[7rem] md:grid-cols-2 gap-x-[5rem] gap-y-[2rem] max-w-[700px] mx-auto">
+              {progressData.map((item, index) => (
+                <ProgressBar
+                  key={index}
+                  title={item.title}
+                  progress={item.progress}
+                  level={item.level}
+                  description={item.description}
+                  color={item.color}
+                />
+              ))}
             </div>
           </div>
         </div>

@@ -225,12 +225,12 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div className="relative">
                     {image && (
                       <img
                         src={image}
                         alt="Selected"
-                        className="flex mb-[-10px] max-w-[220px] justify-center items-center"
+                        className="flex mb-[-50px] max-w-[250px] justify-center items-center"
                       />
                     )}
                   </div>
