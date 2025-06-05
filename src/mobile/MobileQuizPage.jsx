@@ -42,7 +42,7 @@ const MobileQuizPage = () => {
 
   return (
     <div className="quiz-container bg-[red] min-h-screen  flex flex-col items-center p-4">
-      <QuizHeader currentStep={""} totalSteps={18} />
+      <QuizHeader currentStep={"Quiz"} totalSteps={18} />
             <QuizSteps currentStep={1} totalSteps={28} />
       <div className="max-w-2xl w-full text-center mb-4 mt-4">
         <div className="space-y-[15px]">

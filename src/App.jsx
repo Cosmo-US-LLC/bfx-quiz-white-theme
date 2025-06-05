@@ -119,8 +119,8 @@ const isMobile = useIsMobile()
         <Route path="/quiz/fact-check-no=5" element={!isMobile ? <QuizStep24 /> : <MobileQuizStep24 />} />
         <Route path="/quiz/best-crypto-project"  element={!isMobile ? <BestCrypto /> : ""} />
         {/* <Route path="/quiz/fact-check-no=6" element={<QuizStep25 />} /> */}
-        {/* <Route path="/quiz/fact-check-no=7_1"  element={!isMobile ? <QuizStep26 /> : ""} /> */}
-        <Route path="/quiz/fact-check-no=7_2" element={!isMobile ? <QuizStep27 /> :  <MobileQuizStep27  />} />
+        <Route path="/quiz/fact-check-no=7_1"  element={!isMobile ? <QuizStep26 /> : <MobileQuizStep27  />} />
+        {/* <Route path="/quiz/fact-check-no=7_2" element={!isMobile ? <QuizStep27 /> :  <MobileQuizStep27  />} /> */}
         <Route path="/quiz/results" element={!isMobile ? <Results /> : <MobileResults />} />
         <Route path="/loading" element={<Loading />} />
       </Routes>

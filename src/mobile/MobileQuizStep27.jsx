@@ -31,7 +31,7 @@ const MobileQuizStep27 = () => {
 
   return (
     <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
-      <QuizHeader currentStep={""} totalSteps={""} />
+      <QuizHeader currentStep={"Loading"} totalSteps={""} />
       <QuizSteps currentStep={22} totalSteps={28} />
 
       <div className="mt-6 w-[100%] max-w-[1240px] mx-auto ">

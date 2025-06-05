@@ -18,7 +18,9 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
 
   const isResults = location.pathname === "/quiz/results";
   const isHome = location.pathname === "/";
+  const isStep1 = location.pathname === "/quiz/step=1";
   const bestCrypto = location.pathname === "/quiz/best-crypto-project";
+  const isFactno7_1 = location.pathname === "/quiz/fact-check-no=7_1";
 
   const getPrevStepUrl = () => {
     navigate(-1);
@@ -73,7 +75,9 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
             !isFactno9 &&
             !isFactno10 &&
             !isHome &&
+            !isStep1 &&
             !bestCrypto &&
+            !isFactno7_1 &&
             `/${totalSteps}`}
         </div>
       </div>

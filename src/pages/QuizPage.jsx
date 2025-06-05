@@ -38,7 +38,7 @@ const QuizPage = () => {
 
   return (
     <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
-      <QuizHeader currentStep={""} totalSteps={18} />
+      <QuizHeader currentStep={"Quiz"} totalSteps={18} />
       <QuizSteps currentStep={1} totalSteps={28} />
       <div className="w-full max-w-2xl mt-8 mb-8 text-center">
         <div className="space-y-[10px]">

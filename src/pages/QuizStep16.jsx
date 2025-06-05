@@ -25,7 +25,7 @@ const QuizStep16 = () => {
 
   return (
     <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
-      <QuizHeader currentStep={""} totalSteps={28} />
+      <QuizHeader currentStep={"Facts"} totalSteps={28} />
       <QuizSteps currentStep={16} totalSteps={28} />
 
       <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[2rem] w-[100%]">
