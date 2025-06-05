@@ -36,6 +36,18 @@ import QuizStep19_28 from "./pages/QuizStep19_28"
 import QuizStep27 from "./pages/QuizStep27"
 import BestCrypto from "./pages/BestCrypto"
 import MobileQuizPage from "./mobile/MobileQuizPage"
+import MobileQuizStep16 from "./mobile/MobileQuizStep16"
+import MobileQuizStep17 from "./mobile/MobileQuizStep17"
+import MobileQuizStep18_28 from "./mobile/MobileQuizStep18_28"
+import MobileQuizStep18 from "./mobile/MobileQuizStep18"
+import MobileQuizStep19 from "./mobile/MobileQuizStep19"
+import MobileQuizStep20 from "./mobile/MobileQuizStep20"
+import MobileQuizStep21 from "./mobile/MobileQuizStep21"
+import MobileQuizStep22 from "./mobile/MobileQuizStep22"
+import MobileQuizStep19_28 from "./mobile/MobileQuizStep19_28"
+import MobileQuizStep24 from "./mobile/MobileQuizStep24"
+import MobileResults from "./mobile/MobileResults"
+import MobileQuizStep27 from "./mobile/MobileQuizStep27"
 
 
 function useIsMobile(breakpoint = 768) {
@@ -76,22 +88,22 @@ const isMobile = useIsMobile()
         <Route path="/quiz/step=10"  element={!isMobile ? <QuizStep13 /> : ""} />
         <Route path="/quiz/step=11"  element={!isMobile ? <QuizStep14 /> : ""}  />
         <Route path="/quiz/step=12"  element={!isMobile ? <QuizStep15 /> : ""} />
-        <Route path="/quiz/fact-check-no=4" element={!isMobile ? <QuizStep16 /> : ""}  />
-        <Route path="/quiz/step=13" element={!isMobile ? <QuizStep17 /> : ""}  />
-        <Route path="/quiz/step=14" element={!isMobile ? <QuizStep18 /> : ""} />
-        <Route path="/quiz/step=15" element={!isMobile ? <QuizStep19 /> : ""} />
-        <Route path="/quiz/step=16" element={!isMobile ? <QuizStep20 /> : ""} />
-        <Route path="/quiz/step=17" element={!isMobile ? <QuizStep21 /> : ""} />
-        <Route path="/quiz/step=18" element={!isMobile ? <QuizStep22 /> : ""} />
-        <Route path="/quiz/step=18_28" element={!isMobile ? <QuizStep18_28 /> : ""} />
-        <Route path="/quiz/step=19_28" element={!isMobile ? <QuizStep19_28 /> : ""} />
+        <Route path="/quiz/fact-check-no=4" element={!isMobile ? <QuizStep16 /> : <MobileQuizStep16 />}  />
+        <Route path="/quiz/step=13" element={!isMobile ? <QuizStep17 /> : <MobileQuizStep17 />}  />
+        <Route path="/quiz/step=14" element={!isMobile ? <QuizStep18 /> : <MobileQuizStep18 />} />
+        <Route path="/quiz/step=15" element={!isMobile ? <QuizStep19 /> : <MobileQuizStep19 />} />
+        <Route path="/quiz/step=16" element={!isMobile ? <QuizStep20 /> : <MobileQuizStep20 /> } />
+        <Route path="/quiz/step=17" element={!isMobile ? <QuizStep21 /> : <MobileQuizStep21 />} />
+        <Route path="/quiz/step=18" element={!isMobile ? <QuizStep22 /> : <MobileQuizStep22 />} />
+        <Route path="/quiz/step=18_28" element={!isMobile ? <QuizStep18_28 /> : <MobileQuizStep18_28 />} />
+        <Route path="/quiz/step=19_28" element={!isMobile ? <QuizStep19_28 /> : <MobileQuizStep19_28 />} />
         {/* <Route path="/quiz/step=19" element={<QuizStep23 />} /> */}
-        <Route path="/quiz/fact-check-no=5" element={!isMobile ? <QuizStep24 /> : ""} />
+        <Route path="/quiz/fact-check-no=5" element={!isMobile ? <QuizStep24 /> : <MobileQuizStep24 />} />
         <Route path="/quiz/best-crypto-project"  element={!isMobile ? <BestCrypto /> : ""} />
         {/* <Route path="/quiz/fact-check-no=6" element={<QuizStep25 />} /> */}
-        <Route path="/quiz/fact-check-no=7_1"  element={!isMobile ? <QuizStep26 /> : ""} />
-        {/* <Route path="/quiz/fact-check-no=7_2" element={<QuizStep27 />} /> */}
-        <Route path="/quiz/results" element={!isMobile ? <Results /> : ""} />
+        {/* <Route path="/quiz/fact-check-no=7_1"  element={!isMobile ? <QuizStep26 /> : ""} /> */}
+        <Route path="/quiz/fact-check-no=7_2" element={!isMobile ? <QuizStep27 /> :  <MobileQuizStep27  />} />
+        <Route path="/quiz/results" element={!isMobile ? <Results /> : <MobileResults />} />
         <Route path="/loading" element={<Loading />} />
       </Routes>
     </Router>

@@ -48,7 +48,7 @@ const MobileQuizStep21 = () => {
 
 
   return (
-    <div className="quiz-container min-h-screen flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
       <QuizHeader currentStep={17} totalSteps={18} />
       <QuizSteps currentStep={21} totalSteps={28} />
 
@@ -61,7 +61,7 @@ const MobileQuizStep21 = () => {
             <div
               key={option}
               style={{
-                background: "rgba(245, 245, 245, 0.15)",
+                background: "#D9D9D980",
               }}
               className={`option-card space-x-2 py-4 px-6 flex items-center justify-between rounded-[8px] cursor-pointer ${
                 selectedOption === option ? "selected" : ""
@@ -69,7 +69,7 @@ const MobileQuizStep21 = () => {
               onClick={handleNext}
             >
               <img src={option.img} className="h-[40px]" alt="" />
-              <p className="w-[88%] text-[16px] text-white text-start font-medium">
+              <p className="w-[88%] text-[16px] text-black text-start font-medium">
                 {option.title}
               </p>
             </div>

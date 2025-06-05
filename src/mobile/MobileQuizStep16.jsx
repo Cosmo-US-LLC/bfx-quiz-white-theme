@@ -28,23 +28,23 @@ const MobileQuizStep16 = () => {
 
 
   return (
-    <div className="quiz-container  min-h-screen overflow-hidden flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={""} totalSteps={28} />
       <QuizSteps currentStep={16} totalSteps={28} />
 
       <div className=" max-w-[1240px] mx-auto  mt-6 w-[100%]">
         <div className=" space-y-[15px] w-full ">
-          <h1 className="text-[28px] text-center text-[#fff] font-bold mb-4 ">
+          <h1 className="text-[28px] text-center text-[black] font-bold mb-4 ">
        It has never been easier to earn real passive income with crypto
           </h1>
-          <p className="text-[16px] font-[400] text-center  text-[#fff] mb-6 ">For example, people who buy the new $BFX token during the presale earn rewards every time someone trades on BlockchainFX. As $BFX holders, they receive a share of the trading fees without having to trade themselves. <br /><br />
+          <p className="text-[16px] font-[400] text-center  text-[black] mb-6 ">For example, people who buy the new $BFX token during the presale earn rewards every time someone trades on BlockchainFX. As $BFX holders, they receive a share of the trading fees without having to trade themselves. <br /><br />
           BlockchainFX is a fast-growing crypto exchange and the first to bridge crypto with traditional financial markets like stocks, forex, ETFs, and more, offering access to over 500 different assets. 
           </p>
         </div>
           <div className="bg-[#252525] mt-8  w-[100%] flex justify-center items-center rounded-[8px]">
             <img
               src={Step_16}
-              className=" object-cover "
+              className="object-cover "
               alt=""
             />
         </div>
@@ -53,9 +53,10 @@ const MobileQuizStep16 = () => {
             onClick={handleNext}
             style={{
               borderRadius: "10px",
-              background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
+              // background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
+              backgroundColor: "#037FF9",
             }}
-            className={`py-[13px]  w-[100%] text-[#000] font-[500]`}
+            className={`py-[13px]  w-[100%] text-[#FFF] font-[500]`}
           >
             Continue
           </button>
