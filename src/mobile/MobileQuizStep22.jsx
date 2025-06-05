@@ -75,7 +75,7 @@ const formatNumber = (value) => {
 
 
   return (
-    <div className="quiz-container min-h-screen flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
       <QuizHeader currentStep={""} totalSteps={""} />
       <QuizSteps currentStep={24} totalSteps={28} />
 
@@ -88,7 +88,7 @@ const formatNumber = (value) => {
             className="py-[10px]"
            
           >
-            <p className="text-[18px] text-center font-[700] text-[#fff] leading-[150%] text-[#000]">
+            <p className="text-[18px] text-center font-[700] leading-[150%] text-[#000]">
               Based on your Goal income: {goalIncome}
             </p>
           </div>
@@ -96,7 +96,7 @@ const formatNumber = (value) => {
             <div className="">
               <label
                 htmlFor=""
-                className=" text-[18px] block font-[700] leading-[222%] text-[#fff]"
+                className=" text-[18px] block font-[700] leading-[222%] text-[#000]"
               >
                 How much do you want to invest in BFX
               </label>
@@ -110,7 +110,7 @@ const formatNumber = (value) => {
                 style={{
                   border: input1Error
                     ? "1px solid #7b0000"
-                    : "1px solid #737373",
+                    : "1px solid #000",
                   borderRadius: "6px",
                   background: "#73737300",
                 }}
@@ -120,15 +120,15 @@ const formatNumber = (value) => {
             <div>
               <label
                 htmlFor=""
-                className=" text-[18px] block font-[700] leading-[222%] text-[#fff]"
+                className=" text-[18px] block font-[700] leading-[222%] text-[#000]"
               >
                 How much will  BFX be worth at launch?
               </label>
              
               <p
-               className={` w-[100%] text-[#FED34C] overflow-hidden text-nowrap font-[700] flex items-center px-2 outline-none h-[50px]`}
+               className={` w-[100%] text-[#037FF9] overflow-hidden text-nowrap font-[700] flex items-center px-2 outline-none h-[50px]`}
                 style={{
-                  border: "1px solid #737373",
+                  border: "1px solid #000",
                   borderRadius: "6px",
                   background: "#73737300",
                 }}
@@ -142,17 +142,17 @@ const formatNumber = (value) => {
             </div>
           </div>
           <div>
-            <p className="text-[18px] font-[700] leading-[222%] text-[#fff]">
+            <p className="text-[18px] font-[700] leading-[222%] text-[#000]">
               Expected Monthly Revenue 
             </p>
             <div
               style={{
-                border: "1px solid #737373",
+                border: "1px solid #000",
                 borderRadius: "6px",
               }}
               className=" w-[100%] h-[73px] px-[17px] py-[20px]"
             >
-              <p className="text-[#E6AF03] overflow-hidden text-nowrap text-[28px] font-[700] leading-[112%]">
+              <p className="text-[#037FF9] overflow-hidden text-nowrap text-[28px] font-[700] leading-[112%]">
                  ${monthlyRevenueLow.toFixed(0)} - ${monthlyRevenueHigh.toFixed(0)}
               </p>
             </div>
@@ -167,9 +167,9 @@ const formatNumber = (value) => {
             onClick={handleNext}
             style={{
               borderRadius: "10px",
-              background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
+              background: "#037FF9",
             }}
-            className={`py-[13px] w-[100%] text-[#000] font-[700]`}
+            className={`py-[13px] w-[100%] text-[#fff] font-[700]`}
           >
           Continue
           </button>

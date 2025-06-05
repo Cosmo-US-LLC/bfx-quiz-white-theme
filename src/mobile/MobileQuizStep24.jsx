@@ -28,16 +28,16 @@ const MobileQuizStep24 = () => {
 
  
   return (
-    <div className="quiz-container min-h-screen overflow-hidden flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={""} totalSteps={28} />
       <QuizSteps currentStep={25} totalSteps={28} />
 
       <div className=" max-w-[1240px] mt-6 w-[100%]">
         <div className="space-y-[15px ] w-full ">
-          <h1 className="text-[28px] text-center text-[#fff] font-bold mb-4 ">
+          <h1 className="text-[28px] text-center text-[#000] font-bold mb-4 ">
       Get In Before <br /> the 300% Surge
           </h1>
-          <p className="text-[16px] max-w-[400px] w-full mx-auto text-center font-[700] text-[#fff] mb-6 "><span className="font-[400]">
+          <p className="text-[16px] max-w-[400px] w-full mx-auto text-center font-[700] text-[#000] mb-6 "><span className="font-[400]">
             BlockchainFX’s $BFX token is still available in its presale phase for under $0.015. That’s far below its upcoming launch price of $0.05 on major exchanges, offering early buyers a guaranteed gain of more than 300% before it goes live.
           </span>
           </p>
@@ -54,7 +54,8 @@ const MobileQuizStep24 = () => {
             onClick={handleNext}
             style={{
               borderRadius: "10px",
-              background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
+              // background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
+              backgroundColor: "#037FF9",
             }}
             className={`py-[13px] w-[100%] text-[#000] font-[700]`}
           >

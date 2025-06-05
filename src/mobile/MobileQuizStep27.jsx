@@ -30,7 +30,7 @@ const MobileQuizStep27 = () => {
   }, [navigate]);
 
   return (
-    <div className="quiz-container min-h-screen overflow-hidden flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={""} totalSteps={""} />
       <QuizSteps currentStep={22} totalSteps={28} />
 
@@ -41,30 +41,36 @@ const MobileQuizStep27 = () => {
             size={162}
             strokeWidth={16}
             backgroundColor="#353535"
-            progressColor="#D99A26"
+            progressColor="#037FF9"
             textColor="#FFFFFF"
             label="Your results are loading"
           />
         </div>
         <div className="max-w-[1020px] mx-auto  w-full ">
-          <h1 className="text-[28px] text-center text-[#fff] font-bold mb-4 ">
-            $2.2 Million Raised <br /> In 4 Weeks
+          <p className="text-[16px] text-center font-[400] text-[#000]">
+            Your crypto profile is loading 
+          </p>
+          <h1 className="text-[28px] text-center text-[#000] font-bold mb-4 ">
+            Analysing your results 
           </h1>
-          <p className="text-[16px]  text-center font-[400] text-[#fff] mb-6 ">
-           BlockchainFX has attracted over $2.2 million and welcomed more than 1,500 users <br/>to become a part of its next generation crypto exchange, all within the past 4 weeks.
+          <p className="text-[16px]  text-center font-[400] text-[#000] mb-6 ">
+            BlockchainFX has attracted over $2.2 million and welcomed more than
+            1,500 users <br />
+            to become a part of its next generation crypto exchange, all within
+            the past 4 weeks.
           </p>
           <div>
-            <div className="bg-[#4B4B4B] space-y-[5px] mx-auto rounded-[4px] p-8 mt-8 max-w-[458px] w-[100%]">
+            <div className="bg-[#D9D9D980] space-y-[5px] mx-auto rounded-[4px] p-8 mt-8 max-w-[458px] w-[100%]">
               <div>
                 <img src={step_26} alt="" />
               </div>
               <div className="flex justify-between">
-                <p className="text-[#fff] font-[400] leading-[160%]">
+                <p className="text-[#000] font-[400] leading-[160%]">
                   Like Binance at day one
                 </p>
                 <p
                   style={{
-                    color: "rgba(255, 255, 255, 0.50)",
+                    color: "#4BB4B4B",
                   }}
                   className="text-[16px] font-[400] leading-[160%]"
                 >
@@ -72,8 +78,9 @@ const MobileQuizStep27 = () => {
                 </p>
               </div>
               <div>
-                <p className="text-[#fff] font-[400] leading-[160%]">
-                  Imagine getting into Coinbase, or Binance at day one, that`s exactly what BFX is offering right now in its presale.
+                <p className="text-[#000] font-[400] leading-[160%]">
+                  Imagine getting into Coinbase, or Binance at day one, that`s
+                  exactly what BFX is offering right now in its presale.
                 </p>
               </div>
             </div>
