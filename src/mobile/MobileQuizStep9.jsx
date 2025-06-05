@@ -29,34 +29,34 @@ const MobileQuizStep9 = () => {
 
   return (
    <div>
-     <div className="quiz-container  min-h-screen overflow-hidden flex flex-col items-center p-4">
+     <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={""} totalSteps={28} />
       <QuizSteps currentStep={9} totalSteps={28} />
 
-      <div className=" max-w-[1240px] mx-auto mt-6 w-[100%]">
+      <div className="max-w-[1240px] mt-4 w-[100%]">
         <div className="w-full text-center ">
-          <h1 className="text-[28px] text-center text-[#fff] font-bold !mb-4 ">
-       Inflation reduces <br /> your real wealth
+          <h1 className="text-[28px] text-[#000] font-bold !mb-4 ">
+       Inflation Reduces <br /> Your Real Wealth
           </h1>
-          <p className="text-[16px] text-center font-[400] text-[#fff] mb-6 ">
+          <p className="text-[16px] font-[400] text-[#000] mb-[2rem] ">
            The average global inflation rate  ranges between 6–8% per year. <br /><br/> That means if you keep $1,000 in cash, it could lose up to 50% its value in just 9–10 years. In the U.S. alone, $100 in 2013 now has the same buying power as about $65 in 2025.
           </p>
         </div>
-          <div className="bg-[#252525] max-w-[300px] mx-auto mt-6 h-[300px] w-[100%] flex justify-center items-center rounded-[8px]">
+          <div className="bg-[#252525] mx-auto max-w-[260px] h-[240px] w-[100%] flex justify-center items-center rounded-[8px]">
             <img
               src={Step_9}
-              className="max-h-[460px]"
+              className="max-h-[320px]"
               alt=""
             />
         </div>
-        <div className="flex justify-center mt-12">
-             <button
+        <div className="mt-[2rem]">
+            <button
             onClick={handleNext}
             style={{
               borderRadius: "10px",
-              background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
+              background: "#2189FF",
             }}
-            className={`py-[13px] w-[100%] text-[#000] font-[500]`}
+            className={`py-[13px] text-[#fff] w-[100%] text-[#000] font-[500]`}
           >
             Continue
           </button>
@@ -68,3 +68,4 @@ const MobileQuizStep9 = () => {
 };
 
 export default MobileQuizStep9;
+

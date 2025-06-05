@@ -60,15 +60,30 @@ const MobileQuizStep6 = () => {
 
 
   const renderCard = (option) => (
-    <div
+    // <div
+    //   key={option.title}
+    //   onClick={() => handleSelect(option.title)}
+    //   className={`option-card p-3 flex w-[86%] mx-auto items-center justify-center gap-1 rounded-[33px] cursor-pointer transition-colors duration-200 ${
+    //     isSelected(option.title) ? "!bg-[#EAC05E]" : "bg-[#252525]"
+    //   }`}
+    // >
+    //   <img src={option.img} className="h-[20px]" alt={option.title} />
+    //   <p className="text-white text-start font-medium">{option.title}</p>
+    // </div>
+     <div
       key={option.title}
       onClick={() => handleSelect(option.title)}
-      className={`option-card p-3 flex w-[86%] mx-auto items-center justify-center gap-1 rounded-[33px] cursor-pointer transition-colors duration-200 ${
-        isSelected(option.title) ? "!bg-[#EAC05E]" : "bg-[#252525]"
+      className={`option-card p-3 flex items-center justify-center gap-1 border rounded-[33px] cursor-pointer transition-colors duration-200 bg-[#EDEDED] ${
+        isSelected(option.title) ? "!bg-[#037FF9] border-[#2189FF]" : "bg-[#EDEDED] border-[#EDEDED]"
       }`}
     >
-      <img src={option.img} className="h-[20px]" alt={option.title} />
-      <p className="text-white text-start font-medium">{option.title}</p>
+      <img src={option.img} 
+      className={`h-[20px]`} alt={option.title} />
+      <p 
+      className={`text-start font-[700] ${
+        isSelected(option.title) ? "text-[#fff]" : "text-[#000]"
+      }`}
+      >{option.title}</p>
     </div>
   );
 
@@ -77,36 +92,29 @@ const MobileQuizStep6 = () => {
       <QuizHeader currentStep={6} totalSteps={18} />
       <QuizSteps currentStep={6} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-6">
-        <h1 className="text-[28px] font-[700] leading-[120%] mb-1 text-center">
+      <div className="max-w-[750px] w-full text-center mt-4">
+        <h1 className="text-[28px] text-[#000] font-[700] leading-[120%] mb-4 text-center">
           Did you miss any of these projects?
         </h1>
-        <p className="text-[16px] text-white font-[700]">
+        <p className="text-[16px] text-[#000] font-[700]">
           Choose all that apply
         </p>
 
-        <div className="mt-8 space-y-4">
-          <div className="grid grid-cols-2 max-w-[300px] mx-auto gap-y-4">
+        <div className="mt-6 space-y-4">
+          <div className="grid grid-cols-2 space-x-2 max-w-[300px] mx-auto gap-y-4">
             {options.map(renderCard)}
           </div>
-          {/* <div className="grid grid-cols-4 max-w-[500px] mx-auto gap-4">
-            {row2.map(renderCard)}
-          </div>
-          <div className="grid grid-cols-2 max-w-[300px] mx-auto gap-4">
-            {row3.map(renderCard)}
-          </div> */}
-
           <div className="text-center !mt-8">
               <button
-            onClick={handleNext}
-            style={{
-              borderRadius: "10px",
-              background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
-            }}
-            className={`py-[13px] w-[100%] text-[#000] font-[500]`}
-          >
-            Continue
-          </button>
+              onClick={handleNext}
+              style={{
+                borderRadius: "10px",
+                background: "#2189FF",
+              }}
+              className={`py-[13px] w-[100%] text-[#fff] font-[500]`}
+            >
+              Continue
+            </button>
           </div>
         </div>
       </div>

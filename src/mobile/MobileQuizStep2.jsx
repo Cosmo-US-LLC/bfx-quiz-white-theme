@@ -70,7 +70,7 @@ const handleOptionClick = (option) => {
      <QuizHeader currentStep={2} totalSteps={18} />
       <QuizSteps currentStep={2} totalSteps={28} />
 
-      <div className="w-[100%] max-w-[1000px max-w-[1240px] mx-auto mt-6">
+      <div className="w-[100%] max-w-[1000px max-w-[1240px] mx-auto mt-4">
         <h1 className="text-[28px] font-[700] leading-[120%] mb-1 text-center">What is your main goal?</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
@@ -79,13 +79,13 @@ const handleOptionClick = (option) => {
               key={option}
               value={option}
               style={{
-                background:"rgba(245, 245, 245, 0.15)"
+                background:"#EDEDED"
               }}
               className={`option-card pr-4 flex space-x-2 items-center justify-between rounded-[8px] cursor-pointer ${selectedOption === option ? "selected" : ""}`}
               onClick={() => handleOptionClick(option)}
             >
               <img src={option.img} className="h-[100px]" alt="" />
-              <p className="w-[60%] text-[16px] text-white font-medium">{option.title}</p>
+              <p className="w-[60%] text-[16px] text-black font-[700]">{option.title}</p>
             </div>
           ))}
         </div>
@@ -96,3 +96,5 @@ const handleOptionClick = (option) => {
 }
 
 export default MobileQuizStep2
+
+
