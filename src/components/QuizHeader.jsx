@@ -58,7 +58,7 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
           <img src={Logo} className="h-[100%] w-[100%] bg-cover" alt="" />
         </div>
 
-        <div className="text-black">
+        <div className="text-black leading-[26px] font-[400] tracking-[0.04em] text-[16px]">
           {currentStep}
           {!isFact &&
             !isFactStep7 &&

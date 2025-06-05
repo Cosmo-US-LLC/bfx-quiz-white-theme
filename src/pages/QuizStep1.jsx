@@ -31,7 +31,7 @@ const QuizStep1 = () => {
       <div className="quiz-container max-w-[1240px] mx-auto min-h-screen overflow-hidden flex flex-col items-center p-4">
         <div className="flex items-center justify-between w-[100%]">
           <div className="max-w-[650px] w-full  mt-[6rem]  ">
-            <h1 className="text-[25px] text-[#000]   font-[700] mb leading-[130%] tracking-[-0.56px] mb-3 uppercase">
+            <h1 className="text-[25px] text-[#000]   font-[700] mb leading-[130%] tracking-[-0.56px] mb-3 capitalize">
               
               The 2025 Crypto Bull Market Has Just Started{" "}
             </h1>

@@ -47,7 +47,7 @@ const QuizPage = () => {
           </h1>
           <p className="text-[14px] font-[400] leading-[150%] text-[#000]">
             TAKE <span className="font-[700]">THE 1-MINUTE QUIZ</span> AND FIND
-            NOW
+             OUT NOW
           </p>
 
           <h2 className="text-[16px] font-[400] leading-[150%] text-[#000]">
@@ -95,7 +95,7 @@ const QuizPage = () => {
             .
           </p>
           <p className="text-[#B1B1B1] text-[12px] font-[400] leading-[133.333%]">
-            BlockchainFX 2025 ©All Rights Reserved.
+            3insiders 2025 ©All Rights Reserved.
           </p>
         </div>
       </div>
