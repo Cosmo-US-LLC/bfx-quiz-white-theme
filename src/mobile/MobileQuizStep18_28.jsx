@@ -68,7 +68,7 @@ const handleNext = (option) => {
       <QuizHeader currentStep={18} totalSteps={18} />
       <QuizSteps currentStep={21} totalSteps={28} />
 
-      <div className="max-w-[1050px] w-full text-center mt-6">
+      <div className="max-w-[1050px] w-full text-center">
         <h1 className="text-[28px] font-[700] leading-[120%] mb-1  text-center">
           Is there something special you wish to achive?  
         </h1>

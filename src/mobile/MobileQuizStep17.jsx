@@ -45,7 +45,7 @@ const MobileQuizStep17 = () => {
       <QuizHeader currentStep={13} totalSteps={18} />
       <QuizSteps currentStep={17} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-6">
+      <div className="max-w-[750px] w-full text-center">
         <h1 className="text-[28px] font-[700] leading-[120%] mb-1  text-center">
           How confident are you about your financial future?
         </h1>

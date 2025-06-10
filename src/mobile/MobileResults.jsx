@@ -81,7 +81,7 @@ const MobileResults = () => {
       >
         <QuizHeader currentStep={"Special Bonus"} totalSteps={28} />
         <QuizSteps currentStep={28} totalSteps={28} />
-        <div className="mb-4 !mt-[-22px] bg-[#037FF9] w-[100%] flex justify-center items-center rounded-[8px]">
+        <div className=" !mt-[-22px] bg-[#037FF9] w-[100%] flex justify-center items-center rounded-[8px]">
           <img
             src={result_icon_4}
             alt="results"
@@ -103,7 +103,7 @@ const MobileResults = () => {
             <p className="text-[16px] px-2  text-center font-[700] text-[#000] mb-[53px] ">
               You’ve completed the challenge and unlocked this special offer.
               <br /> <br />
-              Here’s your limited one-time bonus code to buy $BFX
+              Here’s your limited one-time bonus <br /> code to buy $BFX
             </p>
             <div className="max-w-[618px] pt-5 px-4 pb-[1px] mx-auto bg-[#D9D9D980]">
               {/* <div className="flex items-center max-w-[506px] mx-auto mb-[25px]">

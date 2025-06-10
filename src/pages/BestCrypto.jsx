@@ -16,7 +16,7 @@ import bfx_sv_7 from "../assets/BestCrypto/bfx_q (7).svg";
 import bfx_sv_8 from "../assets/BestCrypto/bfx_q (8).svg";
 import bfx_sv_9 from "../assets/BestCrypto/bfx_q (9).svg";
 
-const ProgressBar = ({
+export const ProgressBar = ({
   title,
   progress,
   level,
@@ -26,68 +26,87 @@ const ProgressBar = ({
 }) => {
   const [animatedProgress, setAnimatedProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-
+  const progressRef = useRef(null);
 
   useEffect(() => {
-    const progressTimer = setTimeout(() => {
-      setAnimatedProgress(progress);
-    }, delay + 0);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (progressRef.current) {
+      observer.observe(progressRef.current);
+    }
 
     return () => {
-      clearTimeout(progressTimer);
+      if (progressRef.current) {
+        observer.disconnect();
+      }
     };
-  }, [progress, delay]);
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      const progressTimer = setTimeout(() => {
+        setAnimatedProgress(progress);
+      }, delay + 300);
+
+      return () => {
+        clearTimeout(progressTimer);
+      };
+    }
+  }, [progress, delay, isVisible]);
 
   return (
     <div
-      className="rounded-lg "
+      ref={progressRef}
+      className="transition-all duration-1000 rounded-lg"
       style={{
+        opacity: isVisible ? 1 : 0,
         transform: isVisible ? "translateY(0)" : "translateY(30px)",
         transition: "opacity 1s ease-out, transform 1s ease-out",
       }}
     >
       <h3 className="text-[16px] font-[700] text-[#000] mb-4">{title}</h3>
 
-      <div className="relative mb-3">
+      <div className="relative mb-8">
         <div className="relative w-full h-4 overflow-hidden bg-gray-200 rounded-full">
           <div
-            className={`h-5 rounded-full ${color} relative`}
+            className={`h-4 rounded-full ${color} relative`}
             style={{
               width: `${animatedProgress}%`,
               transition: "width 3s ease-out",
             }}
           >
-            <div className="absolute -right-1 -top-0 w-4 h-4 !bg-[#D99A26]  rounded-full shadow-md"></div>
+            <div className="absolute -right-1 -top-0 w-4 h-4 !bg-[#D99A26] rounded-full shadow-md"></div>
           </div>
         </div>
-        <div className="absolute left-0 -bottom-6">
-          <span
-            className="px-2 py-1 text-xs text-white transition-all duration-500 bg-gray-600 rounded hover:bg-gray-700"
-            style={{
-              transition: "opacity 1.2s ease-out",
-            }}
-          >
+
+        <div
+          className="absolute transition-all transform -translate-x-1/2 -bottom-8 duration-3000"
+          style={{
+            left: `${animatedProgress}%`,
+            opacity: isVisible && animatedProgress > 0 ? 1 : 0,
+            transition: "left 3s ease-out, opacity 1.2s ease-out",
+          }}
+        >
+          <span className="px-2 py-1 text-xs text-white bg-gray-600 rounded hover:bg-gray-700 whitespace-nowrap">
             {level}
           </span>
+
+          <div className="absolute w-0 h-0 transform -translate-x-1/2 border-b-4 border-l-4 border-r-4 border-transparent left-1/2 -top-1 border-b-gray-600"></div>
         </div>
-        {/* {level === "High" && (
-          <div className="absolute right-0 -bottom-6">
-            <span
-              className="px-2 py-1 text-xs text-white transition-all duration-500 bg-gray-600 rounded hover:bg-gray-700"
-              style={{
-                opacity: isVisible ? 1 : 0,
-                transition: "opacity 1.2s ease-out",
-              }}
-            >
-              High
-            </span>
-          </div>
-        )} */}
       </div>
 
       <p
-        className="text-[#9190A3] text-[12px] font-[400] mt-8 leading-relaxed"
+        className="text-[#9190A3] text-[12px] font-[400] mt-2 leading-relaxed"
         style={{
+          opacity: isVisible ? 1 : 0,
           transition: "opacity 1.5s ease-out",
         }}
       >
@@ -100,7 +119,7 @@ const ProgressBar = ({
 const BestCrypto = () => {
   const [dashboardVisible, setDashboardVisible] = useState(false);
   const navigate = useNavigate();
-    const [image, setImage] = useState(null);
+  const [image, setImage] = useState(null);
 
   useEffect(() => {
     const savedImage = localStorage.getItem("selectedImage");
@@ -184,7 +203,10 @@ const BestCrypto = () => {
         }}
       >
         <div className="px-4 w-[100%]">
-          <QuizHeader currentStep={"Best Crypto Project of 2025"} totalSteps={28} />
+          <QuizHeader
+            currentStep={"Best Crypto Project of 2025"}
+            totalSteps={28}
+          />
           <QuizSteps currentStep={28} totalSteps={28} />
         </div>
         <div className="max-w-[1020px] mx-auto  w-full ">
@@ -197,7 +219,6 @@ const BestCrypto = () => {
           </p>
         </div>
 
-      
         <div className="max-w-[1076px] relative bg-[#F1F1F1] rounded-[10px] mt-4 px-[32px] pt-[61px] pb-[40px] mb-4 mx-auto  w-full">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
@@ -291,7 +312,7 @@ const BestCrypto = () => {
             </div>
           </div>
         </div>
-          <div
+        <div
           className="max-w-[1076px] overflow-hidden mb-[2rem] mt-6 pb-[3rem] pt-[1rem] w-[100%] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
           style={{}}
         >
@@ -299,7 +320,11 @@ const BestCrypto = () => {
             <div className="absolute -bottom-[1%] -left-1  ">
               {/* <img src={imgby} className="h-[319px]" alt="" /> */}
               {image && (
-                <img src={image} alt="Selected" className="flex w-[260px] h-auto " />
+                <img
+                  src={image}
+                  alt="Selected"
+                  className="flex w-[260px] h-auto "
+                />
               )}
             </div>
             <div className="grid grid-cols-1 pl-[7rem] md:grid-cols-2 gap-x-[5rem] gap-y-[2rem] max-w-[700px] mx-auto">

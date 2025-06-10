@@ -11,8 +11,6 @@ const MobileQuizStep7 = () => {
   const [loading, setLoading] = useState(true);
   const [selectedOption, setSelectedOption] = useState();
 
- 
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
@@ -22,44 +20,42 @@ const MobileQuizStep7 = () => {
   }, []);
 
   const handleNext = () => {
-   
     navigate("/quiz/step=7");
   };
 
- 
   return (
     <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={"Facts"} totalSteps={28} />
       <QuizSteps currentStep={7} totalSteps={28} />
 
-      <div className="f mt-4 w-[100%]">
-        <div className=" w-full text-center ">
+      <div className=" w-[100%]">
+        <div className="w-full text-center ">
           <h1 className="text-[28px] text-[#000] font-bold mb-4  leading-[130%]">
-          We’ve all missed some major opportunities in crypto
+            We’ve all missed some major opportunities in crypto
           </h1>
-          <p className="text-[16px] font-[400] text-[#000] mb-[4rem] ">
-           The earlier you get in, the cheaper the price. That means less risk and more growth potential. Bitcoin was once worth less than $1. <br /><br /> Many of today’s most successful crypto projects like Ethereum, Solana, and BNB started with a presale. That’s where early supporters saw the biggest gains.
+          <p className="text-[16px] font-[400] text-[#000] mb-[2rem] ">
+            The earlier you get in, the cheaper the price. That means less risk
+            and more growth potential. Bitcoin was once worth less than $1.{" "}
+            <br />
+            <br /> Many of today’s most successful crypto projects like
+            Ethereum, Solana, and BNB started with a presale. That’s where early
+            supporters saw the biggest gains.
           </p>
-       
         </div>
-          <div className="bg-[#252525] h-[230px] max-w-[260px] mx-auto w-[100%] flex justify-center items-center rounded-[8px]">
-            <img
-              src={Step_7}
-              className="max-h-[340px]"
-              alt=""
-            />
-        </div>
-        <div className=" mt-[4rem]">
-             <button
+        <div className="mb-[4rem]">
+          <button
             onClick={handleNext}
             style={{
               borderRadius: "10px",
               background: "#2189FF",
             }}
-            className={`py-[13px] text-[#fff] w-[100%] text-[#000] font-[500]`}
+            className={`py-[13px] text-[#fff] w-[100%] font-[500]`}
           >
             Continue
           </button>
+        </div>
+        <div className="bg-[#D9D9D9] mb-[3rem] mt-[2rem] h-[230px] max-w-[260px] mx-auto w-[100%] flex justify-center items-center rounded-[8px]">
+          <img src={Step_7} className="max-h-[340px]" alt="" />
         </div>
       </div>
     </div>

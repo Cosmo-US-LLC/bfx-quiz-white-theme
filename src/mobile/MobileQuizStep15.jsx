@@ -44,11 +44,11 @@ const MobileQuizStep15 = () => {
   
 
   return (
-    <div className="quiz-container min-h-screen flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
       <QuizHeader currentStep={12} totalSteps={18} />
       <QuizSteps currentStep={15} totalSteps={28} />
 
-      <div className="w-full text-center mt-4">
+      <div className="w-full text-center">
  <h1 className="text-[28px] font-[700] leading-[120%] mb-1  text-center">Do you currently earn any passive income?</h1>
         <div className="grid grid-cols-1 max-w-[560px] mx-auto md:grid-cols-1 gap-4 mt-8">
             {options.map((option) => (

@@ -76,7 +76,7 @@ const MobileQuizStep20 = () => {
       <QuizHeader currentStep={16} totalSteps={18} />
       <QuizSteps currentStep={20} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-6">
+      <div className="max-w-[750px] w-full text-center">
         <h1 className="text-[28px] font-[700] leading-[120%] mb-1 text-center text-black">
           When you look at a new crypto projects, what matters most to you?
         </h1>

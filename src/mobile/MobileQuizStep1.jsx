@@ -28,10 +28,10 @@ const MobileQuizStep1 = () => {
     <div className="px-4 pt-4">
       <QuizHeader currentStep={"Facts"} totalSteps={28} />
       <QuizSteps currentStep={2} totalSteps={28} />
-      <div className="quiz-container max-w-[1240px] mx-auto min-h-screen overflow-hidden flex flex-col items-center px-4 pt-4">
+      <div className="quiz-container max-w-[1240px] mx-auto min-h-screen overflow-hidden flex flex-col items-center px-4 ">
         <div className="w-[100%]">
-          <div className=" w-full ">
-            <h1 className="text-[30px] text-[#000] text-center  font-[700] mb leading-[130%] tracking-[-0.56px] mb-3 uppercase">
+          <div className="w-full ">
+            <h1 className="text-[30px] text-[#000] text-center  font-[700] leading-[130%] tracking-[-0.56px] mb-3">
               
               The 2025 Crypto Bull Market Has Just Started{" "}
             </h1>

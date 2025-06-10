@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import QuizHeader from "../components/QuizHeader";
@@ -29,11 +28,10 @@ const MobileQuizStep16 = () => {
       <QuizHeader currentStep={"Facts"} totalSteps={28} />
       <QuizSteps currentStep={16} totalSteps={28} />
 
-      <div className="mt-4 w-[100%]">
-        <div className=" space-y-[15px] text-center mx-auto w-full ">
+      <div className=" w-[100%]">
+        <div className=" space-y-[15px] text-center mx-auto w-full mb-[2rem]">
           <h1 className="text-[28px] font-[800] leading-[140%] text-[#000] mb-4 ">
-            It has never been easier to earn real passive income with
-            crypto
+            It has never been easier to earn real passive income with crypto
           </h1>
           <p className="text-[16px] font-[400] leading-[170%] text-[black]  ">
             For example, people who buy the new $BFX token during the presale
@@ -46,29 +44,28 @@ const MobileQuizStep16 = () => {
             ETFs, and more, offering access to over 500 different assets.
           </p>
         </div>
-        <div className="bg-[#252525] mx-auto mt-[2rem] max-w-[320px] h-[280px] w-[100%] flex justify-center items-center rounded-[8px]">
+        <div className="flex justify-center mb-[3rem] ">
+          <button
+            onClick={handleNext}
+            style={{
+              borderRadius: "10px",
+              background: "#2189FF",
+            }}
+            className={`py-[13px] text-[#fff]  w-[100%] font-[500]`}
+          >
+            Continue
+          </button>
+        </div>
+        <div className="bg-[#D9D9D9] mx-auto mb-[3rem] max-w-[320px] h-[280px] w-[100%] flex justify-center items-center rounded-[8px]">
           <img
             src={Step_16}
             className="max-h-[300px] w-[98%] object-cover "
             alt=""
           />
         </div>
-            <div className="flex justify-center pt-[2rem]">
-            <button
-              onClick={handleNext}
-              style={{
-                borderRadius: "10px",
-                background: "#2189FF",
-              }}
-              className={`py-[13px] text-[#fff]  w-[100%] text-[#000] font-[500]`}
-            >
-              Continue
-            </button>
-          </div>
       </div>
     </div>
   );
 };
 
 export default MobileQuizStep16;
-

@@ -34,7 +34,7 @@ const MobileQuizStep27 = () => {
       <QuizHeader currentStep={"Loading"} totalSteps={""} />
       <QuizSteps currentStep={22} totalSteps={28} />
 
-      <div className="mt-6 w-[100%] max-w-[1240px] mx-auto ">
+      <div className="w-[100%] max-w-[1240px] mx-auto ">
         <div className="flex-col items-center justify-center bg-[#12121200] p-4">
           <CircularProgress
             percentage={100}
@@ -48,16 +48,15 @@ const MobileQuizStep27 = () => {
         </div>
         <div className="max-w-[1020px] mx-auto  w-full ">
           <p className="text-[16px] text-center font-[400] text-[#000]">
-            Your crypto profile is loading 
+            Your crypto profile is loading
           </p>
           <h1 className="text-[28px] text-center text-[#000] font-bold mb-4 ">
-            Analysing your results 
+            Analysing your results
           </h1>
           <p className="text-[16px]  text-center font-[400] text-[#000] mb-6 ">
-            BlockchainFX has attracted over $2.2 million and welcomed more than
-            1,500 users <br />
-            to become a part of its next generation crypto exchange, all within
-            the past 4 weeks.
+            BlockchainFX has attracted over $2.2 million and
+            welcomed more than 1,500 users <br /> to become a part of its next
+            generation crypto exchange, all within the past 4 weeks.
           </p>
           <div>
             <div className="bg-[#D9D9D980] space-y-[5px] mx-auto rounded-[4px] p-8 mt-8 max-w-[458px] w-[100%]">
@@ -65,7 +64,7 @@ const MobileQuizStep27 = () => {
                 <img src={step_26} alt="" />
               </div>
               <div className="flex justify-between">
-                <p className="text-[#000] font-[400] leading-[160%]">
+                <p className="text-[#000] text-[16px] font-[700] leading-[160%]">
                   Like Binance at day one
                 </p>
                 <p
@@ -78,8 +77,8 @@ const MobileQuizStep27 = () => {
                 </p>
               </div>
               <div>
-                <p className="text-[#000] font-[400] leading-[160%]">
-                  Imagine getting into Coinbase, or Binance at day one, that`s
+                <p className="text-[#000] text-[15px] font-[400] leading-[160%]">
+                  Imagine getting into Coinbase, or Binance at day one, that’s
                   exactly what BFX is offering right now in its presale.
                 </p>
               </div>

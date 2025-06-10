@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import QuizHeader from "../components/QuizHeader";
 import QuizSteps from "../components/QuizSteps";
 import Loading from "../components/Loading";
-import Step_22 from "../assets/step_22/step_22.png";
+import Step_22 from "../assets/step_22/step_221.webp";
 
 const MobileQuizStep22 = () => {
   const navigate = useNavigate();
@@ -79,17 +79,17 @@ const formatNumber = (value) => {
       <QuizHeader currentStep={"Earn"} totalSteps={""} />
       <QuizSteps currentStep={24} totalSteps={28} />
 
-      <div className="w-[100%] mx-auto space-y-[40px] mt-6">
+      <div className="w-[100%] mx-auto space-y-[40px] ">
         <div className=" space-y-[15px] w-full ">
           <h1 className="text-[28px] text-center font-[700] leading-[120%] mb-1 ">
             Ready to see how much <br/>you could earn with BFX
           </h1>
           <div
-            className="py-[10px]"
+            className="py-[6px]"
            
           >
             <p className="text-[18px] text-center font-[700] leading-[150%] text-[#000]">
-              Based on your Goal income: {goalIncome}
+              Based on your Goal income: <br/> {goalIncome}
             </p>
           </div>
           <div className="space-y-[15px]">

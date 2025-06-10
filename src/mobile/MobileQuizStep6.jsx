@@ -68,7 +68,7 @@ const MobileQuizStep6 = () => {
     //   }`}
     // >
     //   <img src={option.img} className="h-[20px]" alt={option.title} />
-    //   <p className="text-white text-start font-medium">{option.title}</p>
+    //   <p className="font-medium text-white text-start">{option.title}</p>
     // </div>
      <div
       key={option.title}
@@ -88,13 +88,13 @@ const MobileQuizStep6 = () => {
   );
 
   return (
-    <div className="quiz-container min-h-screen  flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
       <QuizHeader currentStep={6} totalSteps={18} />
       <QuizSteps currentStep={6} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-4">
+      <div className="max-w-[750px] w-full text-center">
         <h1 className="text-[28px] text-[#000] font-[700] leading-[120%] mb-4 text-center">
-          Did you miss any of these projects?
+          Did you miss any <br/>of these projects?
         </h1>
         <p className="text-[16px] text-[#000] font-[700]">
           Choose all that apply
