@@ -39,14 +39,14 @@ const QuizPage = () => {
     <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
       <QuizHeader currentStep={"Quiz"} totalSteps={18} />
       <QuizSteps currentStep={1} totalSteps={28} />
-      <div className="w-full max-w-2xl mt-8 mb-8 text-center">
+      <div className="w-full max-w-2xl mt-8 mb-4 text-center">
         <div className="space-y-[10px]">
           <h1 className="text-[40px] uppercase font-[700] leading-[120%] text-[#000] tracking-[-2px] ">
             What’s Your Crypto <br /> Potential in 2025?
           </h1>
           <p className="text-[14px] font-[400] leading-[150%] text-[#000]">
             TAKE <span className="font-[700]">THE 1-MINUTE QUIZ</span> AND FIND
-             OUT NOW
+            OUT NOW
           </p>
 
           <h2 className="text-[16px] font-[400] leading-[150%] text-[#000]">
@@ -74,14 +74,13 @@ const QuizPage = () => {
         </button> */}
         <div className="space-y-[15px]">
           <p className="text-[#B1B1B1] text-[12px] font-[400] leading-[133.333%]">
-            By clicking on an age group, you agree with{" "}
+            By clicking on an age group, you agree with{" "}<br />
             <a
               className="underline"
               href="https://blockchainfx.io/terms-of-service"
               target="_blank"
             >
-              Terms
-              <br /> and Conditions
+              Terms and Conditions
             </a>
             ,{" "}
             <a

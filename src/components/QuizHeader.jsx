@@ -27,12 +27,13 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
   };
 
   return (
-    <div className="w-full ">
-      <div
+    <div className="flex w-full h-[60px] items-center justify-between">
+      {/* <div
         className={`flex  items-center mb-4 pt-2 ${
           isHome ? "justify-center" : "justify-between"
         } `}
-      >
+      > */}
+      <div className="w-[34px]">
         {!isHome && (
           <button onClick={getPrevStepUrl} className="">
             <svg
@@ -56,31 +57,32 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
             </svg>
           </button>
         )}
-        <div className="flex items-center mt-2">
-          <img src={Logo} className="h-[100%] w-[100%] bg-cover" alt="" />
-        </div>
-
-        <div className="text-black leading-[26px] font-[400] tracking-[0.04em] text-[16px]">
-          {currentStep}
-          {!isFact &&
-            !isFactStep7 &&
-            !isResults &&
-            !isFactcheck3 &&
-            !isFactno3 &&
-            !isFactno4 &&
-            !isFactno5 &&
-            !isFactno6 &&
-            !isFactno7 &&
-            !isFactno8 &&
-            !isFactno9 &&
-            !isFactno10 &&
-            !isHome &&
-            !isStep1 &&
-            !bestCrypto &&
-            !isFactno7_1 &&
-            `/${totalSteps}`}
-        </div>
       </div>
+      <div className="flex items-center mt-2">
+        <img src={Logo} className="h-[100%] w-[100%] bg-cover" alt="" />
+      </div>
+
+      <div className="text-black leading-[26px] font-[400] tracking-[0.04em] text-[16px]">
+        {currentStep}
+        {!isFact &&
+          !isFactStep7 &&
+          !isResults &&
+          !isFactcheck3 &&
+          !isFactno3 &&
+          !isFactno4 &&
+          !isFactno5 &&
+          !isFactno6 &&
+          !isFactno7 &&
+          !isFactno8 &&
+          !isFactno9 &&
+          !isFactno10 &&
+          !isHome &&
+          !isStep1 &&
+          !bestCrypto &&
+          !isFactno7_1 &&
+          `/${totalSteps}`}
+      </div>
+      {/* </div> */}
     </div>
   );
 };

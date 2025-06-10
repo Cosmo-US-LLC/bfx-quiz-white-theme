@@ -58,13 +58,13 @@ const handleOptionClick = (option) => {
   
 
   return (
-    <div className="quiz-container min-h-screen flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
       <QuizHeader currentStep={10} totalSteps={18} />
       <QuizSteps currentStep={13} totalSteps={28} />
 
-      <div className="max-w-[1000px] w-full text-center mt-4">
- <h1 className="text-[28px] font-[700] leading-[120%] mb-1  text-center">What monthly income do you want to achieve?</h1>
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-5 mt-8">
+      <div className="max-w-[1000px] w-full text-center">
+ <h1 className="text-[28px] font-[700] leading-[120%] mb-1  text-center">What monthly income <br />do you want to achieve?</h1>
+        <div className="grid grid-cols-2 gap-5 mt-8 md:grid-cols-2">
             {options.map((option) => (
             <div
               key={option}

@@ -48,7 +48,7 @@ const MobileQuizStep18 = () => {
       <QuizHeader currentStep={14} totalSteps={18} />
       <QuizSteps currentStep={18} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-6">
+      <div className="max-w-[750px] w-full text-center">
  <h1 className="text-[28px] font-[700] leading-[120%] mb-1  text-center">Do you want to retire wealthy?</h1>
         <div className="grid grid-cols-1 max-w-[560px] mx-auto md:grid-cols-1 gap-4 mt-8">
             {options.map((option) => (

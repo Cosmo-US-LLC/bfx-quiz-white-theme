@@ -32,7 +32,7 @@ const MobileQuizStep24 = () => {
       <QuizHeader currentStep={"About BFX"} totalSteps={28} />
       <QuizSteps currentStep={25} totalSteps={28} />
 
-      <div className=" max-w-[1240px] mt-6 w-[100%]">
+      <div className=" max-w-[1240px] w-[100%]">
         <div className="space-y-[15px ] w-full ">
           <h1 className="text-[28px] text-center text-[#000] font-bold mb-4 ">
       Get In Before <br /> the 300% Surge

@@ -39,64 +39,58 @@ const QuizStep22 = () => {
       navigate("/quiz/fact-check-no=5");
     }
   };
-const formatNumber = (value) => {
-  const number = parseFloat(value.replace(/,/g, ""));
-  if (isNaN(number)) return "";
-  return number.toLocaleString();
-}
+  const formatNumber = (value) => {
+    const number = parseFloat(value.replace(/,/g, ""));
+    if (isNaN(number)) return "";
+    return number.toLocaleString();
+  };
   const handleInput1Change = (e) => {
     setInput1Error(false);
-   const raw = e.target.value.replace(/[^0-9]/g, "");
-  const formatted = raw ? `$${formatNumber(raw)}` : "";
-  setInput1(formatted);
+    const raw = e.target.value.replace(/[^0-9]/g, "");
+    const formatted = raw ? `$${formatNumber(raw)}` : "";
+    setInput1(formatted);
   };
 
- useEffect(() => {
-  const investment = parseFloat(input1.replace(/[$,]/g, ""));
-  if (!isNaN(investment) && investment > 0) {
-    setInput1Error(false);
-    const bfx = investment / 0.0145;
-    const bfxUsd = bfx * 0.05;
-    const revenueLow = (investment * 1.57) / 12;
-    const revenueHigh = (investment * 2.97) / 12;
+  useEffect(() => {
+    const investment = parseFloat(input1.replace(/[$,]/g, ""));
+    if (!isNaN(investment) && investment > 0) {
+      setInput1Error(false);
+      const bfx = investment / 0.0145;
+      const bfxUsd = bfx * 0.05;
+      const revenueLow = (investment * 1.57) / 12;
+      const revenueHigh = (investment * 2.97) / 12;
 
-    setBfxAmount(bfx);
-    setBfxValue(bfxUsd);
-    setMonthlyRevenueLow(revenueLow);
-    setMonthlyRevenueHigh(revenueHigh);
-  } else {
-    setInput1Error(true);
-    setBfxAmount(0);
-    setBfxValue(0);
-    setMonthlyRevenueLow(0);
-    setMonthlyRevenueHigh(0);
-  }
-}, [input1]);
-
+      setBfxAmount(bfx);
+      setBfxValue(bfxUsd);
+      setMonthlyRevenueLow(revenueLow);
+      setMonthlyRevenueHigh(revenueHigh);
+    } else {
+      setInput1Error(true);
+      setBfxAmount(0);
+      setBfxValue(0);
+      setMonthlyRevenueLow(0);
+      setMonthlyRevenueHigh(0);
+    }
+  }, [input1]);
 
   return (
     <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
       <QuizHeader currentStep={"Earn"} totalSteps={""} />
       <QuizSteps currentStep={24} totalSteps={28} />
 
-      <div className="flex justify-between max-w-[1160px] w-[100%] mx-auto items-center mt-12">
+      <div className="flex justify-between max-w-[1160px] w-[100%] mx-auto items-center mt-6">
         <div className="max-w-[475px] space-y-[18px] w-full ">
           <h1 className="text-[30px] font-[700] leading-[120%] mb-1 ">
-            Ready to see how much <br/>you could earn with BFX
+            Ready to see how much <br />
+            you could earn with BFX
           </h1>
-          <div
-            className=" p-[13px]"
-            style={{
-              border: "1px solid #2189FF",
-              borderRadius: "6px",
-            }}
-          >
-            <p className="text-[16px] font-[700] text-[#000] leading-[150%] text-[#000]">
+          <div className="mt-2 italic">
+            <p className="text-[16px] font-[700] leading-[150%] text-[#000]">
               Based on your Goal income: {goalIncome}
             </p>
           </div>
-          <div className="space-y-[15px]">
-            <div className="">
+          <div className="space-y-[18px]">
+            <div className="pb-5">
               <label
                 htmlFor=""
                 className=" text-[18px] block font-[700] leading-[222%] text-[#000]"
@@ -104,8 +98,8 @@ const formatNumber = (value) => {
                 How much do you want to invest in BFX
               </label>
               <input
-               value={`${input1}`}
-        onChange={handleInput1Change}
+                value={`${input1}`}
+                onChange={handleInput1Change}
                 type="text"
                 className={` w-[100%] px-2 outline-none h-[50px] ${
                   input1Error ? "border-red-900" : ""
@@ -120,33 +114,39 @@ const formatNumber = (value) => {
                 placeholder="$10,000"
               />
             </div>
+            <div className="h-[1px] w-[100%] bg-[#737373]"></div>
             <div>
               <label
                 htmlFor=""
                 className=" text-[18px] block font-[700] leading-[222%] text-[#000]"
               >
-                How much will  BFX be worth at launch?
+                How much will BFX be worth at launch?
               </label>
-             
+
               <p
-               className={` w-[100%] text-[#000] overflow-hidden text-nowrap font-[700] flex items-center px-2 outline-none h-[50px]`}
+                className={` w-[100%] text-[#000] overflow-hidden text-nowrap font-[700] flex items-center px-2 outline-none h-[50px]`}
                 style={{
                   border: "1px solid #737373",
                   borderRadius: "6px",
                   background: "#73737300",
                 }}
-              > {bfxAmount.toLocaleString(undefined, {
-            maximumFractionDigits: 0,
-          })}{" "}
-          BFX (${bfxValue.toLocaleString(undefined, {
-            minimumFractionDigits: 0,
-            maximumFractionDigits: 0,
-          })})</p>
+              >
+                {" "}
+                {bfxAmount.toLocaleString(undefined, {
+                  maximumFractionDigits: 0,
+                })}{" "}
+                BFX ($
+                {bfxValue.toLocaleString(undefined, {
+                  minimumFractionDigits: 0,
+                  maximumFractionDigits: 0,
+                })}
+                )
+              </p>
             </div>
           </div>
           <div>
             <p className="text-[18px] font-[700] leading-[222%] text-[#000]">
-              Expected Monthly Revenue 
+              Expected Monthly Revenue
             </p>
             <div
               style={{
@@ -156,31 +156,28 @@ const formatNumber = (value) => {
               className=" w-[100%] h-[93px] px-[17px] py-[23px]"
             >
               <p className="text-[#2189FF] overflow-hidden text-nowrap text-[40px] font-[700] leading-[112%]">
-                 ${monthlyRevenueLow.toFixed(0)} - ${monthlyRevenueHigh.toFixed(0)}
+                ${monthlyRevenueLow.toFixed(0)} - $
+                {monthlyRevenueHigh.toFixed(0)}
               </p>
             </div>
           </div>
-           <div className="!mt-6 w-[]">
-        
-
-        <button
-            onClick={handleNext}
-            style={{
-              borderRadius: "10px",
-              background: "#2189FF",
-            }}
-            className={`py-[13px] w-[100%] text-[#fff] font-[700]`}
-          >
-          Continue
-          </button>
-       </div>
+          <div className="!mt-6 w-[]">
+            <button
+              onClick={handleNext}
+              style={{
+                borderRadius: "10px",
+                background: "#2189FF",
+              }}
+              className={`py-[13px] w-[100%] text-[#fff] font-[700]`}
+            >
+              Continue
+            </button>
+          </div>
         </div>
         <div className="max-w-[650.434px] w-[100%] ">
           <img src={Step_22} alt="" />
         </div>
       </div>
-
-     
     </div>
   );
 };
