@@ -28,12 +28,7 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
 
   return (
     <div className="flex w-full h-[60px] items-center justify-between">
-      {/* <div
-        className={`flex  items-center mb-4 pt-2 ${
-          isHome ? "justify-center" : "justify-between"
-        } `}
-      > */}
-      <div className="w-[34px]">
+      <div className=" w-[10%] max-sm:w-[33%]  ">
         {!isHome && (
           <button onClick={getPrevStepUrl} className="">
             <svg
@@ -58,11 +53,12 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
           </button>
         )}
       </div>
-      <div className="flex items-center mt-2">
-        <img src={Logo} className="h-[100%] w-[100%] bg-cover" alt="" />
+
+      <div className="flex items-center justify-center w-[80%] max-sm:w-[34%]">
+        <img src={Logo} className="w-[100px] h-auto bg-cover" alt="" />
       </div>
 
-      <div className="text-black leading-[26px] font-[400] tracking-[0.04em] text-[16px]">
+      <div className="w-[10%] max-sm:w-[33%] mb-1 text-black text-end leading-[26px] font-[400] tracking-[0.04em] text-[16px]">
         {currentStep}
         {!isFact &&
           !isFactStep7 &&
@@ -82,7 +78,6 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
           !isFactno7_1 &&
           `/${totalSteps}`}
       </div>
-      {/* </div> */}
     </div>
   );
 };
