@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import QuizHeader from "../components/QuizHeader";
 import QuizSteps from "../components/QuizSteps";
 import Loading from "../components/Loading";
-import Step_22 from "../assets/step_22/step_221.webp";
+import Step_22 from "../assets/step_22/step-cal.webp";
 
 const MobileQuizStep22 = () => {
   const navigate = useNavigate();
@@ -159,8 +159,11 @@ const MobileQuizStep22 = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[650.434px] w-[100%] ">
-          <img src={Step_22} alt="" />
+        <div className="max-w-[650.434px] w-[100%] animate-fade-in-up relative">
+           <div className="px-2 py-1 absolute top-[10%] left-[1%] bg-[#00000010] rounded-[4px] z-10 text-[13px] font-[600] leading-[24px] tracking-[-0.32px]">
+            Income & Profit Calculator
+          </div>
+          <img src={Step_22} alt="" className="relative z-20"/>
         </div>
         <div className="!mt-6 w-[100%] flex justify-center">
           <button
@@ -169,9 +172,9 @@ const MobileQuizStep22 = () => {
               borderRadius: "10px",
               background: "#037FF9",
             }}
-            className={`py-[13px] w-[100%] text-[#fff] font-[700]`}
+            className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
           >
-            Continue
+            CLAIM YOUR PERSONAL BONUS CODE
           </button>
         </div>
       </div>

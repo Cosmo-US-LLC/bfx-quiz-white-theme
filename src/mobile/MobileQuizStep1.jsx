@@ -31,7 +31,7 @@ const MobileQuizStep1 = () => {
       <div className="quiz-container max-w-[1240px]  mx-auto min-h-screen overflow-hidden flex flex-col items-center">
         <div className="w-[100%]">
           <div className="w-full ">
-            <h1 className="text-[30px] text-[#000] text-center  font-[700] leading-[130%] tracking-[-0.56px] mb-3">
+            <h1 className="text-[28px] text-[#000] text-center  font-[700] leading-[120%] mb-3">
               
               The 2025 Crypto Bull Market Has Just Started{" "}
             </h1>
@@ -48,7 +48,7 @@ const MobileQuizStep1 = () => {
                 borderRadius: "10px",
                 background: "#2189FF",
               }}
-              className={`py-[13px] w-[100%] text-[#fff] font-[500]`}
+              className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
             >
               Continue
             </button>

@@ -41,15 +41,15 @@ const QuizPage = () => {
       <QuizSteps currentStep={1} totalSteps={28} />
       <div className="w-full max-w-2xl mt-8 mb-4 text-center">
         <div className="space-y-[10px]">
-          <h1 className="text-[40px] uppercase font-[700] leading-[120%] text-[#000] tracking-[-2px] ">
+          <h1 className="text-[40px] uppercase font-[700] leading-[120%] text-[#000] tracking-[-2px]">
             What’s Your Crypto <br /> Potential in 2025?
           </h1>
-          <p className="text-[14px] font-[400] leading-[150%] text-[#000]">
+          <p className="text-[14px] font-[400] leading-[16px] uppercase text-[#000]">
             TAKE <span className="font-[700]">THE 1-MINUTE QUIZ</span> AND FIND
             OUT NOW
           </p>
 
-          <h2 className="text-[16px] font-[400] leading-[150%] text-[#000]">
+          <h2 className="text-[16px] font-[400] leading-[24px] text-[#000]">
             SELECT YOUR <span className="font-[700]">AGE</span>
           </h2>
         </div>

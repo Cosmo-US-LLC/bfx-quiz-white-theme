@@ -88,7 +88,7 @@ const MobileResults = () => {
             className=" px-[10px] text-black"
           />
           <h3 className=" text-white font-[500] text-[16px] py-[5px] ">
-            35% Bonus expires in
+            35% Special Bonus expires in
             <span className="font-[700] text-[#fff] text-Manrope ">
               {" "}
               {formatTime(timeLeft)} min
@@ -189,10 +189,9 @@ const MobileResults = () => {
               onClick={handleRoute}
               style={{
                 borderRadius: "10px",
-                // background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
                 backgroundColor: "#037FF9",
               }}
-              className={`py-[13px] w-[100%] text-[#fff] font-[700]`}
+              className={`py-[13px] w-[100%] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
             >
               Visit Now: BlockchainFX.com
             </button>

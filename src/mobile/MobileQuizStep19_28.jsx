@@ -310,9 +310,9 @@ const MobileQuizStep19_28 = ({ targetPercentage = 80 }) => {
                   // background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
                   backgroundColor: "#037FF9",
                 }}
-                className={`py-[13px] w-[100%] text-[16px] text-[#fff] font-[700]`}
+                className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
               >
-                Discover How Much you Could Earn with BFX
+                Discover How Much you Could <br /> Earn with BFX
               </button>
             </div>
           </div>

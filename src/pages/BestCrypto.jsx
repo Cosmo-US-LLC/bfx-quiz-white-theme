@@ -204,18 +204,19 @@ const BestCrypto = () => {
       >
         <div className="px-4 w-[100%]">
           <QuizHeader
-            currentStep={"Best Crypto Project of 2025"}
+            currentStep={"Top Pick"}
             totalSteps={28}
           />
           <QuizSteps currentStep={28} totalSteps={28} />
         </div>
         <div className="max-w-[1020px] mx-auto  w-full ">
           <h1 className="text-[40px] text-center text-[#000] font-bold mb-4 ">
-            You’ve successfully passed the challenge!
+            Your Top Crypto Match is Here!
           </h1>
-          <p className="text-[20px]  text-center font-[700] text-[#000] mb-5 ">
-            This is the best crypto project on the market that fits specifically
-            your criteria
+          <p className="text-[20px]  text-center font-[600] text-[#000] mb-5 ">
+            This project aligns the most with your investment profile and
+            strategic goals.<br />It’s backed by real utility, strong tokenomics, and
+            expert validation.
           </p>
         </div>
 
@@ -317,13 +318,13 @@ const BestCrypto = () => {
           style={{}}
         >
           <div className="">
-            <div className="absolute -bottom-[1%] -left-1  ">
+            <div className="absolute -bottom-[1%] -left-4  ">
               {/* <img src={imgby} className="h-[319px]" alt="" /> */}
               {image && (
                 <img
                   src={image}
                   alt="Selected"
-                  className="flex w-[260px] h-auto "
+                  className="flex w-[320px] h-auto "
                 />
               )}
             </div>
@@ -344,7 +345,7 @@ const BestCrypto = () => {
         <div className="mb-6 w-[100%] max-w-[1076px] mx-auto mt-2">
           <button
             onClick={handleNext}
-            className="text-[25px] text-[#fff] font-[700] bg-[#2189FF] rounded-[10px] py-[13px] w-[100%] "
+            className="text-[25px] text-[#fff] font-[700] leading-[24px] uppercase bg-[#2189FF] rounded-[10px] py-[13px] w-[100%] "
           >
             Calculate How Much You Could Earn With $BFX
           </button>
