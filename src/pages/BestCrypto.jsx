@@ -204,7 +204,7 @@ const BestCrypto = () => {
       >
         <div className="px-4 w-[100%]">
           <QuizHeader
-            currentStep={"Best Crypto Project of 2025"}
+            currentStep={"Top Pick"}
             totalSteps={28}
           />
           <QuizSteps currentStep={28} totalSteps={28} />
