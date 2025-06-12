@@ -34,7 +34,7 @@ const QuizStep7 = () => {
 
       <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[4rem] w-[100%]">
         <div className="max-w-[500px] w-full text-center ">
-          <h1 className="text-[30px] text-[#000] font-bold mb-4  leading-[130%]">
+          <h1 className="text-[30px] text-[#000] font-[800] mb-4  leading-[140%]">
           We’ve all missed some major <br /> opportunities in crypto
           </h1>
           <p className="text-[16px] font-[400] text-[#000] mb-6 ">
@@ -46,12 +46,12 @@ const QuizStep7 = () => {
               borderRadius: "10px",
               background: "#2189FF",
             }}
-            className={`py-[13px] text-[#fff] max-w-[307px] w-[100%] text-[#000] font-[500]`}
+            className={`py-[13px] w-[100%] max-w-[307px] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
           >
             Continue
           </button>
         </div>
-          <div className="bg-[#D9D9D980] max-w-[520px] h-[400px] w-[100%] flex justify-center items-center rounded-[8px]">
+          <div className="bg-[#D9D9D980] max-w-[520px] h-[400px] w-[100%] flex justify-center items-center rounded-[8px] animate-fade-in-up">
             <img
               src={Step_7}
               className="max-h-[580px]"

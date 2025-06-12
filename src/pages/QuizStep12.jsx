@@ -34,7 +34,7 @@ const QuizStep9 = () => {
 
       <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[4rem] w-[100%]">
         <div className="max-w-[500px] w-full text-center ">
-          <h1 className="text-[30px] text-[#000] font-bold mb-4 ">
+          <h1 className="text-[30px] text-[#000] font-[700] leading-[116%] mb-4 ">
        How millionaires build <br /> generational wealth
           </h1>
           <p className="text-[16px] max-w-[380px] mx-auto font-[400] text-[#000] mb-6 ">
@@ -46,12 +46,12 @@ const QuizStep9 = () => {
               borderRadius: "10px",
               background: "#2189FF",
             }}
-            className={`py-[13px] max-w-[307px] text-[#fff] w-[100%] text-[#000] font-[500]`}
+            className={`py-[13px] max-w-[307px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
           >
             Continue
           </button>
         </div>
-          <div className="bg-[#D9D9D980] relative max-w-[550px] h-[390px] w-[100%] flex justify-center items-center rounded-[8px]">
+          <div className="bg-[#D9D9D980] relative max-w-[550px] h-[390px] w-[100%] flex justify-center items-center rounded-[8px] animate-fade-in-up">
             <img
               src={Step_12}
               className="max-h-[580px] absolute top-[-10%]"

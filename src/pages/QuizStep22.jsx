@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import QuizHeader from "../components/QuizHeader";
 import QuizSteps from "../components/QuizSteps";
 import Loading from "../components/Loading";
-import Step_22 from "../assets/step_22/step_221.webp";
+import Step_22 from "../assets/step_22/step-cal.webp";
 
 const QuizStep22 = () => {
   const navigate = useNavigate();
@@ -80,7 +80,7 @@ const QuizStep22 = () => {
 
       <div className="flex justify-between max-w-[1160px] w-[100%] mx-auto items-center mt-6">
         <div className="max-w-[475px] space-y-[18px] w-full ">
-          <h1 className="text-[30px] font-[700] leading-[120%] mb-1 ">
+          <h1 className="text-[30px] font-[700] leading-[116%] mb-1 ">
             Ready to see how much <br />
             you could earn with BFX
           </h1>
@@ -168,14 +168,17 @@ const QuizStep22 = () => {
                 borderRadius: "10px",
                 background: "#2189FF",
               }}
-              className={`py-[13px] w-[100%] text-[#fff] font-[700]`}
+              className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
             >
-              Continue
+              CLAIM YOUR PERSONAL BONUS CODE
             </button>
           </div>
         </div>
-        <div className="max-w-[650.434px] w-[100%] ">
-          <img src={Step_22} alt="" />
+        <div className="max-w-[650.434px] w-[100%] animate-fade-in-up relative">
+          <div className="px-5 py-3 absolute top-[10%] left-[15%] bg-[#00000010] rounded-[4px] z-10 text-[16px] font-[700] leading-[24px] tracking-[-0.32px]">
+            Income & Profit Calculator
+          </div>
+          <img src={Step_22} alt="" className="relative z-20"/>
         </div>
       </div>
     </div>

@@ -51,13 +51,13 @@ const QuizStep16 = () => {
                 borderRadius: "10px",
                 background: "#2189FF",
               }}
-              className={`py-[13px] text-[#fff] max-w-[307px] w-[100%] text-[#000] font-[500]`}
+              className={`py-[13px] max-w-[307px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
             >
               Continue
             </button>
           </div>
         </div>
-        <div className="bg-[#EDEDED]  max-w-[550px] h-[390px] w-[100%] flex justify-center items-center rounded-[8px]">
+        <div className="bg-[#EDEDED]  max-w-[550px] h-[390px] w-[100%] flex justify-center items-center rounded-[8px] animate-fade-in-up">
           <img
             src={Step_16}
             className="max-h-[580px] w-[98%] object-cover "

@@ -42,7 +42,7 @@ const MobileQuizStep24 = () => {
             </span>
           </p>
         </div>
-        <div className=" w-[100%] flex justify-center items-center rounded-[8px]">
+        <div className=" w-[100%] flex justify-center items-center rounded-[8px] animate-fade-in-up">
           <img
             src={Step_24}
             className="max-h-[580px] w-[98%] object-cover "
@@ -54,10 +54,9 @@ const MobileQuizStep24 = () => {
             onClick={handleNext}
             style={{
               borderRadius: "10px",
-              // background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
               backgroundColor: "#037FF9",
             }}
-            className={`py-[13px] w-[100%] text-[#FFF] font-[700]`}
+            className={`py-[13px] w-[100%] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
           >
             Unlock Special Bonus
           </button>

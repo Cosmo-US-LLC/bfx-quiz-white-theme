@@ -1,5 +1,5 @@
 import { useNavigate, useLocation, Link } from "react-router-dom";
-import Logo from "../assets/header/logo.png";
+import Logo from "../assets/header/Logo.webp";
 
 const QuizHeader = ({ currentStep, totalSteps }) => {
   const navigate = useNavigate();

@@ -84,7 +84,7 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
         <QuizHeader currentStep={"Results"} totalSteps={28} />
         <QuizSteps currentStep={23} totalSteps={28} />
         <div className="mt-[2rem] w-[100%] max-w-[1240px] mx-auto">
-          <h1 className="text-[40px] text-center text-[#444366] font-bold mb-8 ">
+          <h1 className="text-[40px] leading-[116%] text-center text-[#444366] font-bold mb-8 ">
             Here's your crypto profile
           </h1>
           <div>
@@ -311,9 +311,9 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                   borderRadius: "10px",
                   background: "#2189FF",
                 }}
-                className={`py-[13px] w-[100%] text-[#fff] font-[700]`}
+                className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
               >
-                Discover Your Top Crypto Pick in 2025
+                Discover your Top Crypto Pick in 2025 
               </button>
             </div>
           </div>

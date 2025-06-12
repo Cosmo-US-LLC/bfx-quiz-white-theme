@@ -111,7 +111,7 @@ const MobileQuizStep6 = () => {
                 borderRadius: "10px",
                 background: "#2189FF",
               }}
-              className={`py-[13px] w-[100%] text-[#fff] font-[500]`}
+              className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
             >
               Continue
             </button>

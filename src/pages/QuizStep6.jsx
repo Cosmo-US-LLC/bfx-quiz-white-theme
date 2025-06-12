@@ -78,12 +78,12 @@ const QuizStep6 = () => {
   );
 
   return (
-    <div className="quiz-container min-h-screen  flex flex-col items-center p-4">
+    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
       <QuizHeader currentStep={6} totalSteps={18} />
       <QuizSteps currentStep={6} totalSteps={28} />
 
       <div className="max-w-[750px] w-full text-center mt-12">
-        <h1 className="text-[30px] font-[700] leading-[120%] mb-1 text-center">
+        <h1 className="text-[30px] font-[700] leading-[116%] mb-1 text-center">
           Did you miss any of these projects?
         </h1>
         <p className="text-[16px] text-gray-600 font-[700]">
@@ -108,7 +108,7 @@ const QuizStep6 = () => {
               borderRadius: "10px",
               background: "#2189FF",
             }}
-            className={`py-[13px] max-w-[307px] w-[100%] text-[#fff] font-[500]`}
+            className={`py-[13px] max-w-[307px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
           >
             Continue
           </button>

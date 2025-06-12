@@ -51,12 +51,12 @@ const MobileQuizStep16 = () => {
               borderRadius: "10px",
               background: "#2189FF",
             }}
-            className={`py-[13px] text-[#fff]  w-[100%] font-[500]`}
+            className={`py-[13px]  w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
           >
             Continue
           </button>
         </div>
-        <div className="bg-[#D9D9D9] mx-auto mb-[3rem] max-w-[320px] h-[280px] w-[100%] flex justify-center items-center rounded-[8px]">
+        <div className="bg-[#D9D9D9] mx-auto mb-[3rem] max-w-[320px] h-[280px] w-[100%] flex justify-center items-center rounded-[8px] animate-fade-in-up">
           <img
             src={Step_16}
             className="max-h-[300px] w-[98%] object-cover "

@@ -50,7 +50,7 @@ const QuizStep26 = () => {
           />
         </div>
         <div className="max-w-[1240px] mx-auto  w-full ">
-          <h1 className="text-[40px] text-center text-[#000] font-bold mb-4 ">
+          <h1 className="text-[40px] font-[700] leading-[26px] text-center text-[#000] mb-4 ">
             Analysing your results
           </h1>
           <p className="text-[16px]  text-center font-[700] text-[#000] mb-6 ">
