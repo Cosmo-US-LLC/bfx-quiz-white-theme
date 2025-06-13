@@ -1,17 +1,17 @@
-import herobnr1 from "../../assets/oneApp/featured/link1.svg";
-import herobnr2 from "../../assets/oneApp/featured/link2.svg";
-import herobnr3 from "../../assets/oneApp/featured/blockonomi.svg";
-import herobnr4 from "../../assets/oneApp/featured/bnrhero (3).svg";
-// import { ReactComponent as MyIcon } from '../../assets/oneApp/featured/bnrhero (4).svg'
+import herobnr1 from "../../../assets/oneApp/featured/link1.svg";
+import herobnr2 from "../../../assets/oneApp/featured/link2.svg";
+import herobnr3 from "../../../assets/oneApp/featured/blockonomi.svg";
+import herobnr4 from "../../../assets/oneApp/featured/bnrhero (3).svg";
 
-function FeaturedSec() {
+function MobileFeatureSec() {
   return (
     <div className="pt-[25px] ">
-      <div className="w-[100%] mx-auto ">
-        <div className="bg-[#fff] flex relative justify-center items-center h-[73.47] space-x-[20px] border border-[#00000020] rounded-[6.357px] py-[25px] max-w-[1200px] w-[100%] mx-auto">
-          <h3 className="text-[16.697px] font-[600] pr-3 text-[#000] tracking-[-0.267px]">
+      <div className="w-[100%]   ">
+        <div className="bg-[#fff] py-4 gap-1 flex flex-col relative justify-center items-center border border-[#00000020] rounded-[6.357px] w-[100%]">
+          <h3 className="text-[16.697px] font-[600] text-[#000] tracking-[-0.267px]">
             Featured In:
           </h3>
+          <div className="flex items-center justify-center gap-2 px-2">
           <div className="flex flex-col items-center space-y-2 cursor-pointer">
             {/* <a href="https://coinmarketcap.com/community/articles/67d43c30c4a5810cf71d7406/" target="_blank" rel="noopener noreferrer"> */}
             <img
@@ -38,9 +38,8 @@ function FeaturedSec() {
               loading="lazy"
               src={herobnr3}
               className="w-[145px] h-[24px] "
-              // alt="Featured"
+              alt="Featured"
             />
-            {/* <MyIcon className="fill-[#D8D8D8]" /> */}
             {/* </a> */}
           </div>
           <div className="flex flex-col items-center space-y-2 cursor-pointer">
@@ -53,10 +52,11 @@ function FeaturedSec() {
             />
             {/* </a> */}
           </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default FeaturedSec;
+export default MobileFeatureSec;

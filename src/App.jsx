@@ -63,6 +63,7 @@ import MobileQuizStep12 from "./mobile/MobileQuizStep12"
 import MobileQuizStep13 from "./mobile/MobileQuizStep13"
 import MobileQuizStep14 from "./mobile/MobileQuizStep14"
 import MobileQuizStep15 from "./mobile/MobileQuizStep15"
+import MobileBestCrypto from "./mobile/MobileBestCrypto"
 
 
 function useIsMobile(breakpoint = 768) {
@@ -117,7 +118,7 @@ const isMobile = useIsMobile()
 
         {/* <Route path="/quiz/step=19" element={<QuizStep23 />} /> */}
         <Route path="/quiz/fact-check-no=5" element={!isMobile ? <QuizStep24 /> : <MobileQuizStep24 />} />
-        <Route path="/quiz/best-crypto-project"  element={!isMobile ? <BestCrypto /> : ""} />
+        <Route path="/quiz/best-crypto-project"  element={!isMobile ? <BestCrypto /> : <MobileBestCrypto />} />
         {/* <Route path="/quiz/fact-check-no=6" element={<QuizStep25 />} /> */}
         <Route path="/quiz/fact-check-no=7_1"  element={!isMobile ? <QuizStep26 /> : <MobileQuizStep27  />} />
         {/* <Route path="/quiz/fact-check-no=7_2" element={!isMobile ? <QuizStep27 /> :  <MobileQuizStep27  />} /> */}

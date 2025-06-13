@@ -53,7 +53,7 @@ const QuizStep26 = () => {
           <h1 className="text-[40px] font-[700] leading-[26px] text-center text-[#000] mb-4 ">
             Analysing your results
           </h1>
-          <p className="text-[16px]  text-center font-[700] text-[#000] mb-6 ">
+          <p className="text-[16px]  text-center font-[400] text-[#000] mb-6 ">
             {" "}
             3insiders is your unfair advantage in crypto, giving you direct
             insider access, early entry <br /> into private communities, and

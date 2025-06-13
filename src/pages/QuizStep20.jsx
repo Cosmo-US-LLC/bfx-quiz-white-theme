@@ -72,7 +72,7 @@ const QuizStep20 = () => {
   // }
 
   return (
-    <div className="quiz-container min-h-screen flex flex-col items-center p-4 bg-black">
+    <div className="flex flex-col items-center min-h-screen p-4 bg-black quiz-container">
       <QuizHeader currentStep={16} totalSteps={18} />
       <QuizSteps currentStep={20} totalSteps={28} />
 
@@ -87,7 +87,10 @@ const QuizStep20 = () => {
             <div
               key={index}
               style={{
-                background: "#EDEDED",
+                backgroundColor: selectedOptions.includes(index)
+                  ? ""
+                  : "#EDEDED",
+                // background: "#EDEDED",
                 border: selectedOptions.includes(index)
                   ? "2px solid #2189FF"
                   : "2px solid transparent",
@@ -103,10 +106,12 @@ const QuizStep20 = () => {
                   className="h-[40px]"
                   alt=""
                 />
-                <p 
-                 className={`text-start font-medium ${
-        selectedOptions.includes(index) ? "text-[#2189FF]" : "text-[#000]"
-      }`}
+                <p
+                  className={`text-start font-medium ${
+                    selectedOptions.includes(index)
+                      ? "text-[#2189FF]"
+                      : "text-[#000]"
+                  }`}
                 >
                   {option.title}
                 </p>
@@ -140,7 +145,7 @@ const QuizStep20 = () => {
               borderRadius: "10px",
               background: "#2189FF",
             }}
-            className={`py-[13px] max-w-[307px] text-white w-[100%] text-[#000] font-[500] ${
+            className={`py-[13px] w-[100%] max-w-[307px] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase ${
               selectedOptions.length === 0
                 ? "opacity-50 cursor-not-allowed"
                 : ""
