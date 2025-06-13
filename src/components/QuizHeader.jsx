@@ -1,7 +1,9 @@
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import Logo from "../assets/header/Logo.webp";
+import { BiArrowBack } from "react-icons/bi";
 
 const QuizHeader = ({ currentStep, totalSteps }) => {
+  console.log(currentStep, totalSteps);
   const navigate = useNavigate();
   const location = useLocation();
   const isFact = location.pathname === "/quiz/fact-check";
@@ -30,26 +32,11 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
     <div className="flex w-full h-[60px] items-center justify-between">
       <div className=" w-[10%] max-sm:w-[33%]  ">
         {!isHome && (
-          <button onClick={getPrevStepUrl} className="">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="34"
-              height="34"
-              viewBox="0 0 34 34"
-              fill="none"
-            >
-              <rect
-                width="34"
-                height="34"
-                rx="5"
-                fill="#D9D9D9"
-                fill-opacity="0.5"
-              />
-              <path
-                d="M20.0666 24.0705C19.6762 24.461 19.0431 24.4608 18.6526 24.0705L12.2883 17.7063C11.8978 17.3158 11.8978 16.6827 12.2883 16.2922L18.6526 9.92796C19.0431 9.53773 19.6762 9.53753 20.0666 9.92796C20.4571 10.3184 20.4569 10.9515 20.0666 11.342L14.4094 16.9992L20.0666 22.6565C20.4569 23.047 20.4571 23.6801 20.0666 24.0705Z"
-                fill="black"
-              />
-            </svg>
+          <button
+            onClick={getPrevStepUrl}
+            className="text-[#000] hover:text-[#2189FF] transition duration-150 ease-in-out active:scale-95"
+          >
+            <BiArrowBack size={24} />
           </button>
         )}
       </div>
@@ -58,8 +45,12 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
         <img src={Logo} className="w-[100px] h-auto bg-cover" alt="" />
       </div>
 
-      <div className="w-[10%] max-sm:w-[33%] mb-1 text-black text-end leading-[26px] font-[400] tracking-[0.04em] text-[16px]">
-        {currentStep}
+      <div className="w-[10%] max-sm:w-[33%] mb-1 text-[#000] text-end leading-[26px] font-[400] tracking-[0.04em] text-[16px]">
+        {typeof currentStep === "number" ? (
+          <span className="text-[#2189FF] pr-[2px]">{currentStep}</span>
+        ) : (
+          <span className="text-black pr-[2px]">{currentStep}</span>
+        )}
         {!isFact &&
           !isFactStep7 &&
           !isResults &&

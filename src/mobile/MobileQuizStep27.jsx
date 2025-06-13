@@ -8,6 +8,11 @@ import step_26 from "../assets/step_26/step_26.png";
 import CircularProgress from "../components/circular-progress";
 import { setI18n } from "react-i18next";
 
+import step_26_1 from "../assets/step_26/g1.webp";
+import step_26_2 from "../assets/step_26/g2.webp";
+import step_26_3 from "../assets/step_26/g3.webp";
+import step_26_4 from "../assets/step_26/g4.webp";
+
 const MobileQuizStep27 = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
@@ -54,11 +59,14 @@ const MobileQuizStep27 = () => {
             Analysing your results
           </h1>
           <p className="text-[16px]  text-center font-[400] text-[#000] mb-6 ">
-            BlockchainFX has attracted over $2.2 million and
-            welcomed more than 1,500 users <br /> to become a part of its next
-            generation crypto exchange, all within the past 4 weeks.
+            BlockchainFX has attracted over $2.2 million and welcomed more than
+            1,500 users <br /> to become a part of its next generation crypto
+            exchange, all within the past 4 weeks.
           </p>
-          <div>
+          <p className="text-[16px]  text-center font-[400] text-[#000] mb-6 ">
+            Some of our part results
+          </p>
+          {/* <div>
             <div className="bg-[#D9D9D980] space-y-[5px] mx-auto rounded-[4px] p-8 mt-8 max-w-[458px] w-[100%]">
               <div>
                 <img src={step_26} alt="" />
@@ -81,6 +89,40 @@ const MobileQuizStep27 = () => {
                   Imagine getting into Coinbase, or Binance at day one, that’s
                   exactly what BFX is offering right now in its presale.
                 </p>
+              </div>
+            </div>
+          </div> */}
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex gap-2">
+              <div className="shadow-lg rounded-[12px] overflow-hidden">
+                <img
+                  className="object-cover rounded-[12px] overflow-hidden"
+                  src={step_26_1}
+                  alt=""
+                />
+              </div>
+              <div className="shadow-lg rounded-[12px] overflow-hidden">
+                <img
+                  className="object-cover rounded-[12px] overflow-hidden"
+                  src={step_26_2}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <div className="shadow-lg rounded-[12px] overflow-hidden">
+                <img
+                  className="object-cover rounded-[12px] overflow-hidden"
+                  src={step_26_3}
+                  alt=""
+                />
+              </div>
+              <div className="shadow-lg rounded-[12px] overflow-hidden">
+                <img
+                  className="object-cover rounded-[12px] overflow-hidden"
+                  src={step_26_4}
+                  alt=""
+                />
               </div>
             </div>
           </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import icn1 from "../../assets/oneApp/KYCVerified/coinsult.svg";
-import icn2 from "../../assets/oneApp/KYCVerified/certik.svg";
-import icn3 from "../../assets/oneApp/KYCVerified/certik.svg";
+import icn1 from "../../../assets/oneApp/KYCVerified/coinsult.svg";
+import icn2 from "../../../assets/oneApp/KYCVerified/certik.svg";
+import icn3 from "../../../assets/oneApp/KYCVerified/certik.svg";
 
-function KYCVerified() {
+function MobileKYCVerified() {
   const { t } = useTranslation();
 
   const cardItems = [
@@ -34,7 +34,7 @@ function KYCVerified() {
       title: "Team KYC Verified by Solidproof",
       description: (
         <p>
-          The BlockchainFX team has been successfully verified by Solidproof, a
+          CThe BlockchainFX team has been successfully verified by Solidproof, a
           reputable auditing company from Germany.
         </p>
       ),
@@ -43,12 +43,12 @@ function KYCVerified() {
 
   return (
     <div className="bg-[#fff]">
-      <div className="max-w-[1200px] pt-[35px] w-[100%] mx-auto relative">
-        <h3 className="text-[40px] text-[#000] font-[600] leading-[155.556%] text-center">
+      <div className=" pt-[35px] w-[100%] mx-auto relative">
+        <h3 className="text-[30px] text-[#000] font-[600] leading-[155.556%] text-center">
           Security Verified by Industry Experts
         </h3>
         <div className="pt-[25px] w-[100%] mx-auto">
-          <div className="grid grid-cols-3 gap-x-[12px] gap-y-[19px]">
+          <div className="flex flex-col gap-y-[19px]">
             {cardItems.map((item, index) => (
               <div
                 key={index}
@@ -69,7 +69,7 @@ function KYCVerified() {
                     }}
                     className="py-[3px] rounded-[5px] px-[8px] text-[#01BA48] text-[14px] font-[500]"
                   >
-                    Completed
+                    completed
                   </p>
                 </div>
                 <div>
@@ -91,4 +91,4 @@ function KYCVerified() {
   );
 }
 
-export default KYCVerified;
+export default MobileKYCVerified;

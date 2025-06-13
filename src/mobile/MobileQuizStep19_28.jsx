@@ -70,10 +70,15 @@ const MobileQuizStep19_28 = ({ targetPercentage = 80 }) => {
     return "High";
   };
 
-  const handleNext = () => {
+  // const handleNext = () => {
+  //   const currentPath = location.pathname;
+  //   // navigate(`${currentPath}/quiz/step=18`);
+  //   navigate(`/quiz/step=18`);
+  // };
+    const handleNext = () => {
     const currentPath = location.pathname;
     // navigate(`${currentPath}/quiz/step=18`);
-    navigate(`/quiz/step=18`);
+    navigate(`/quiz/best-crypto-project`);
   };
 
   return (

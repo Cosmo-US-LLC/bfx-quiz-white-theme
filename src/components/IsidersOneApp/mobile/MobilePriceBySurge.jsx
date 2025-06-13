@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Loading from "../../components/Loading";
-import Step_24 from "../../assets/step_24/surge.webp";
+import Loading from "../../../components/Loading";
+import Step_24 from "../../../assets/step_24/surge.webp";
 
-const PriceBySurge = () => {
+const MobilePriceBySurge = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [selectedOption, setSelectedOption] = useState();
@@ -22,8 +22,8 @@ const PriceBySurge = () => {
   };
 
   return (
-    <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[6rem] mb-6 w-[100%]">
-      <div className="max-w-[600px] space-y-[15px] w-[50%]">
+    <div className="flex flex-col items-center justify-between mt-[6rem] mb-6 w-[100%]">
+      <div className="space-y-[15px] text-center w-[100%]">
         <h1 className="text-[30px] max-w-[350px] w-full text-[#000] font-bold mb-4 ">
           The BFX Price is about to Surge by 300%
         </h1>
@@ -35,20 +35,20 @@ const PriceBySurge = () => {
             more than 300% before it goes live.
           </span>
         </p>
-        <div className="flex pt-[20px]">
+        <div className="flex justify-center pt-[20px]">
           <button
             onClick={handleNext}
             style={{
               borderRadius: "10px",
               background: "#2189FF",
             }}
-            className={`py-[13px] max-w-[350px] w-[100%] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
+            className={`py-[13px] max-w-[330px] w-[100%] text-[15px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
           >
-           Claim Exclusive PERSONAL Bonus Code
+            Claim Exclusive PERSONAL Bonus Code
           </button>
         </div>
       </div>
-      <div className="w-[50%] flex justify-center items-center rounded-[8px] animate-fade-in-up">
+      <div className="mt-6 max-w-[550px] w-[100%] flex justify-center items-center rounded-[8px] animate-fade-in-up">
         <img
           src={Step_24}
           className="max-h-[580px] w-[98%] object-cover "
@@ -59,4 +59,4 @@ const PriceBySurge = () => {
   );
 };
 
-export default PriceBySurge;
+export default MobilePriceBySurge;

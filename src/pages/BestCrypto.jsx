@@ -345,7 +345,7 @@ const BestCrypto = () => {
         <div className="mb-6 w-[100%] max-w-[1076px] mx-auto mt-2">
           <button
             onClick={handleNext}
-            className="text-[25px] text-[#fff] font-[700] leading-[24px] uppercase bg-[#2189FF] rounded-[10px] py-[13px] w-[100%] "
+            className="text-[18px] text-[#fff] font-[700] leading-[24px] uppercase bg-[#2189FF] rounded-[10px] py-[13px] w-[100%] "
           >
             Calculate How Much You Could Earn With $BFX
           </button>

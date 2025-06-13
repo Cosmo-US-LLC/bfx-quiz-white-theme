@@ -84,7 +84,7 @@ const MobileQuizStep22 = () => {
             Ready to see how much <br />
             you could earn with BFX
           </h1>
-          <div className="py-[6px]">
+          <div className="py-[6px] italic">
             <p className="text-[18px] text-center font-[700] leading-[150%] text-[#000]">
               Based on your Goal income: <br /> {goalIncome}
             </p>

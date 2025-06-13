@@ -84,7 +84,7 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
         <QuizHeader currentStep={"Results"} totalSteps={28} />
         <QuizSteps currentStep={23} totalSteps={28} />
         <div className="mt-[2rem] w-[100%] max-w-[1240px] mx-auto">
-          <h1 className="text-[40px] leading-[116%] text-center text-[#444366] font-bold mb-8 ">
+          <h1 className="text-[40px] leading-[116%] text-center text-[#000] font-bold mb-8 ">
             Here's your crypto profile
           </h1>
           <div>
@@ -97,13 +97,13 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
               {/* Header */}
               <div className="relative px-12 py-4">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-[#5C5B7A] font-[500] text-[19.6px] ">
+                  <h2 className="text-[#000] font-[500] text-[19.6px] ">
                     Readiness Score
                   </h2>
                   <span
                     style={{
                       background: "rgba(255, 255, 255, 0.31)",
-                      border: "1px solid rgba(230, 232, 236, 0.31)",
+                      border: "1px solid #00000020",
                     }}
                     className="text-[14.1px] text-[#9FA4AD] px-2 py-1 rounded absolute right-[9%] top-[-6%]"
                   >
@@ -230,7 +230,7 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                       <img
                         src={image}
                         alt="Selected"
-                        className="flex mb-[-50px] max-w-[250px] justify-center items-center"
+                        className="flex mb-[-10px] max-w-[300px] justify-center items-center"
                       />
                     )}
                   </div>
