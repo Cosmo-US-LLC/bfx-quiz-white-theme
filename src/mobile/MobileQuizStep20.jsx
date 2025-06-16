@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import QuizHeader from "../components/QuizHeader";
 import QuizSteps from "../components/QuizSteps";
 import Loading from "../components/Loading";
+import { FaCheckCircle } from "react-icons/fa";
 import Step_20_1 from "../assets/step_20/step_20 (5).png";
 import Step_20_2 from "../assets/step_20/step_20 (4).png";
 import Step_20_3 from "../assets/step_20/step_20 (2).png";
@@ -108,8 +109,8 @@ const MobileQuizStep20 = () => {
               </div>
 
               {selectedOptions.includes(index) && (
-                <div className="bg-[#037FF9] rounded-full p-1.5 flex items-center justify-center">
-                  <CheckIcon className="w-3 h-3 text-[#000]" />
+                <div className="relative w-[20px]">
+                  <FaCheckCircle className="absolute right-0 top-1/2 h-5 w-5 -translate-y-1/2 text-[#2189FF] text-lg" />
                 </div>
               )}
             </div>

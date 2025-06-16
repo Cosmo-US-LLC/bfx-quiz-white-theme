@@ -186,7 +186,6 @@ const MobileBestCrypto = () => {
         </h1>
         <p className="text-[16px] text-center font-[600] text-[#000] mt-2">
           This project aligns the most with your investment profile and goals.
-          <br />
           Backed by real utility, strong tokenomics, and expert validation.
         </p>
 
@@ -219,7 +218,7 @@ const MobileBestCrypto = () => {
             </p>
           </div>
 
-          <div className="mt-4 text-center border-b border-[#D9D9D9] pb-4">
+          <div className="mt-4 text-center border-b border-t border-[#D9D9D9] py-4">
             <div className="text-sm text-[#24234C]/60 font-bold">Launched</div>
             <div className="text-lg font-semibold text-[#444366]">
               April 2025
@@ -233,7 +232,7 @@ const MobileBestCrypto = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-3 mt-4  p-2 w-full max-w-[300px]">
+          <div className="flex flex-wrap justify-center gap-3 mt-4  p-2 w-full mx-auto max-w-[300px]">
             {iconData.map((icon, i) => (
               <img
                 key={i}
@@ -249,15 +248,7 @@ const MobileBestCrypto = () => {
           className="overflow-hidden py-6 mt-6 w-[100%] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
           style={{}}
         >
-          <div className="flex items-center justify-center mb-8">
-            {image && (
-              <img
-                src={image}
-                alt="Selected"
-                className="flex w-[220px] h-auto "
-              />
-            )}
-          </div>
+       
           <div className="grid grid-cols-2 gap-x-[2rem] gap-y-[2rem] px-2 mx-auto">
             {progressData.map((item, index) => (
               <ProgressBar
@@ -271,10 +262,19 @@ const MobileBestCrypto = () => {
             ))}
           </div>
         </div>
+           <div className="flex items-center w-[100%] mt-6 bg-[#F1F1F1] justify-center mb-8 border border-[#C9C9C9] rounded-[6px]">
+            {image && (
+              <img
+                src={image}
+                alt="Selected"
+                className="flex w-[220px] h-auto "
+              />
+            )}
+          </div>
 
         <button
           onClick={handleNext}
-          className="mt-8 text-[18px] text-white font-bold bg-[#2189FF] rounded-[8px] py-3 px-6 w-full max-w-[480px]"
+          className="mt-6 text-[18px] text-white font-bold bg-[#2189FF] rounded-[8px] py-3 px-6 w-full max-w-[480px]"
         >
           Calculate How Much You Could Earn With $BFX
         </button>

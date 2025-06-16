@@ -63,7 +63,7 @@ const MobileQuizStep10 = () => {
               {selectedOption === option.title && (
                 <FaCheckCircle className="absolute top-1/2 right-4 -translate-y-1/2 text-[#2189FF] text-lg size-6" />
               )}
-              <img src={option.img} className="h-[40px]" alt={option.title} />
+              <img src={option.img} className="h-[40px] object-cover" alt={option.title} />
               <p className="w-[88%] text-[16px] text-[#000] text-start font-[700]">
                 {option.title}
               </p>

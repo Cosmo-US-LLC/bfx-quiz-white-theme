@@ -50,9 +50,9 @@ const getPrevStepUrl = () => {
 
       <div className="w-[10%] max-sm:w-[33%] text-[#000] text-end leading-[26px] font-[400] tracking-[0.04em] text-[16px]">
         {typeof currentStep === "number" ? (
-          <span className="text-[#2189FF] pr-[2px]">{currentStep}</span>
+          <span className="text-[#2189FF] text-[16px] pr-[2px]">{currentStep}</span>
         ) : (
-          <span className="text-black pr-[2px]">{currentStep}</span>
+          <span className="text-black text-[16px] pr-[2px]">{currentStep}</span>
         )}
         {!isFact &&
           !isFactStep7 &&

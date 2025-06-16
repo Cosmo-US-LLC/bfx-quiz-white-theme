@@ -29,7 +29,7 @@ const MobileQuizStep24 = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
+    <div className="flex flex-col relative items-center min-h-screen p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={"About BFX"} totalSteps={28} />
       <QuizSteps currentStep={25} totalSteps={28} />
 
@@ -46,7 +46,7 @@ const MobileQuizStep24 = () => {
             global finance and unlocking access to over 500+ assets.
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center w-[100%] p-5 border border-[#d9d9d9] rounded-[12px]">
           <script src="https://fast.wistia.com/player.js" async></script>
           <script
             src="https://fast.wistia.com/embed/w8ynmofaw4.js"
@@ -63,7 +63,7 @@ const MobileQuizStep24 = () => {
               }
             `}
           </style>
-          <div className="w-full max-w-[730px] mx-auto mt-4 mb-4 ">
+          <div className="w-full max-w-[730px]  mx-auto mt-4 mb-4 ">
             <wistia-player
               media-id="w8ynmofaw4"
               aspect="1.7777777777777777"
@@ -80,16 +80,7 @@ const MobileQuizStep24 = () => {
           <MobileFeatureSec/>
         </div>
         <div className="w-[100%] mt-4">
-          <button
-            onClick={handleNext}
-            style={{
-              borderRadius: "10px",
-              background: "#2189FF",
-            }}
-            className={`py-[13px] w-[100%] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
-          >
-            Claim Exclusive PERSONAL Bonus Code
-          </button>
+         
         </div>
         <div>
           <MobileKYCVerified/>
@@ -104,6 +95,16 @@ const MobileQuizStep24 = () => {
           <MobileFaqSec />
         </div>
       </div>
+       <button
+            onClick={handleNext}
+            style={{
+              borderRadius: "10px",
+              background: "#2189FF",
+            }}
+            className={`py-[13px] w-[94%] mx-auto fixed bottom-[18px] z-[99] text-[16px] font-[700] leading-[24px] tracking-[-0.01px] text-[#fff] uppercase`}
+          >
+            Claim Exclusive PERSONAL Bonus Code
+          </button>
 
       {/* <div className=" max-w-[1240px] w-[100%]">
         <div className="space-y-[15px ] w-full ">
