@@ -276,7 +276,7 @@ const MobileBestCrypto = () => {
           onClick={handleNext}
           className="mt-6 text-[18px] text-white font-bold bg-[#2189FF] rounded-[8px] py-3 px-6 w-full max-w-[480px]"
         >
-          Calculate How Much You Could Earn With $BFX
+          Calculate How Much <br /> You Could Earn With $BFX
         </button>
       </div>
     </div>

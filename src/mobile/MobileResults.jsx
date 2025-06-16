@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import QuizHeader from "../components/QuizHeader";
 import QuizSteps from "../components/QuizSteps";
+import { FaCheckCircle } from "react-icons/fa";
 
 import Loading from "../components/Loading";
 import result from "../assets/result/result.png";
@@ -173,21 +174,8 @@ const MobileResults = () => {
                     {showPopup && (
                       <div className="fixed bottom-[8%] z-[99] shadow left-1/2 transform -translate-x-1/2 animate-in   zoom-in-95 duration-200">
                         <div className="bg-[#bfbfbfbf] text-black px-4 py-4 rounded-lg shadow-lg flex items-center gap-2 whitespace-nowrap">
-                          <div className="flex items-center justify-center w-5 h-5 rounded-full">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12C3 14.3869 3.94821 16.6761 5.63604 18.364C7.32387 20.0518 9.61305 21 12 21ZM11.768 15.64L16.768 9.64L15.232 8.36L10.932 13.519L8.707 11.293L7.293 12.707L10.293 15.707L11.067 16.481L11.768 15.64Z"
-                                fill="##2189FF"
-                              />
-                            </svg>
+                          <div className="relative w-[20px]">
+                            <FaCheckCircle className="absolute right-0 top-1/2 h-5 w-5 -translate-y-1/2 text-[#2189FF] text-lg" />
                           </div>
                           <span className="text-sm font-medium">
                             Copied Successfully
@@ -213,12 +201,12 @@ const MobileResults = () => {
                   everyone.{" "}
                 </p> */}
               </div>
-                <div className="flex items-center justify-center mt-6 mb-6">
-            <img src={result_icon_3} className="h-[132px]" alt="" />
-          </div>
+              <div className="flex items-center justify-center mt-6 mb-6">
+                <img src={result_icon_3} className="h-[132px]" alt="" />
+              </div>
             </div>
           </div>
-        
+
           <div className="max-w-[578.2px] mx-auto my-6">
             <button
               onClick={handleRoute}
