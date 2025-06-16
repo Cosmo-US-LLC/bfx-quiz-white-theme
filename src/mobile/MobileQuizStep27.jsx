@@ -64,7 +64,7 @@ const MobileQuizStep27 = () => {
             from a full-time expert research team.
           </p>
           <p className="text-[16px]  text-center font-[400] text-[#000] mb-6 ">
-            Some of our part results
+            Some of our past results
           </p>
           {/* <div>
             <div className="bg-[#D9D9D980] space-y-[5px] mx-auto rounded-[4px] p-8 mt-8 max-w-[458px] w-[100%]">

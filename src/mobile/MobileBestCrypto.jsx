@@ -204,7 +204,7 @@ const MobileBestCrypto = () => {
                 onClick={handleNext}
                 className="mt-4 text-[18px] text-white font-bold bg-[#2189FF] rounded-[8px] py-3 px-6 w-full max-w-[480px]"
               >
-                Amount Raised: $1,9 M
+                Amount Raised: $2.5 M
               </button>
             </div>
           </div>

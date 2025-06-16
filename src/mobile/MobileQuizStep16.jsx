@@ -34,14 +34,15 @@ const MobileQuizStep16 = () => {
             It has never been easier to earn real passive income with crypto
           </h1>
           <p className="text-[16px] font-[400] leading-[170%] text-[black]  ">
-            For example, people who buy the new $BFX token during the presale
-            earn rewards every time someone trades on BlockchainFX. As $BFX
-            holders, they receive a share of the trading fees without having to
-            trade themselves. <br />
+            A notable example is BlockchainFX. People who buy the new $BFX token
+            during the presale earn rewards every time someone trades on the
+            platform. As $BFX holders, they receive a share of all trading fees
+            in USDT without having to trade themselves. <br />
             <br />
             BlockchainFX is a fast-growing crypto exchange and the first to
-            bridge crypto with traditional financial markets like stocks, forex,
-            ETFs, and more, offering access to over 500 different assets.
+            bridge digital assets like Bitcoin and Ethereum with traditional
+            financial markets such as stocks, forex, ETFs, and more, offering
+            access to over 500 different assets.
           </p>
         </div>
         <div className="flex justify-center mb-[3rem] ">
