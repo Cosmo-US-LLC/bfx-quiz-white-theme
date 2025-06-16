@@ -87,7 +87,9 @@ const MobileQuizStep20 = () => {
             <div
               key={index}
               style={{
-                background: "#D9D9D980",
+                background: selectedOptions.includes(index)
+                  ? "#fff"
+                  : "#D9D9D980",
                 border: selectedOptions.includes(index)
                   ? "2px solid #037FF9"
                   : "2px solid transparent",
@@ -126,7 +128,7 @@ const MobileQuizStep20 = () => {
               // background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
               backgroundColor: "#037FF9",
             }}
-            className={`py-[13px] max-w-[307px] w-[100%] text-[#FFF] font-[500] ${
+            className={`py-[13px] max-w-[307px] uppercase w-[100%] text-[#FFF] font-[500] ${
               selectedOptions.length === 0
                 ? "opacity-50 cursor-not-allowed"
                 : ""
