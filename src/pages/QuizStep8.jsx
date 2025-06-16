@@ -24,15 +24,15 @@ const QuizStep8 = () => {
     localStorage.setItem("inflationConcern", option.title);
     setTimeout(() => {
       navigate("/quiz/fact-check-3");
-    }, 1000);
+    }, 200);
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 quiz-container">
       <QuizHeader currentStep={7} totalSteps={18} />
       <QuizSteps currentStep={8} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-12">
+      <div className="max-w-[750px] w-full text-center mt-6">
         <h1 className="text-[30px] font-bold leading-[116%] mb-1 text-center">
           How much does inflation <br /> worry you today?
         </h1>

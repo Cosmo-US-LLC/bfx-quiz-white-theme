@@ -29,15 +29,15 @@ const QuizStep15 = () => {
     setSelectedOption(option.title);
     setTimeout(() => {
       navigate("/quiz/fact-check-no=4");
-    }, 1000);
+    }, 200);
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 quiz-container">
       <QuizHeader currentStep={12} totalSteps={18} />
       <QuizSteps currentStep={15} totalSteps={28} />
 
-      <div className="max-w-[1000px] w-full text-center mt-12">
+      <div className="max-w-[1000px] w-full text-center mt-6">
         <h1 className="text-[30px] font-[700] leading-[116%] mb-1 text-center">
           Do you currently earn any passive income?
         </h1>

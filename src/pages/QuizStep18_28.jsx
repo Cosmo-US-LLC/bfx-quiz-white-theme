@@ -37,19 +37,19 @@ const QuizStep18_28 = () => {
     localStorage.setItem("specialWish", option.title);
     setTimeout(() => {
       navigate("/quiz/fact-check-no=7_1");
-    }, 500);
+    }, 200);
   };
 
   return (
     <div
-      className="flex flex-col items-center min-h-screen p-4 quiz-container"
+      className="flex flex-col items-center min-h-screen px-4 quiz-container"
       style={{ backgroundColor: "#ffff" }}
     >
       <QuizHeader currentStep={18} totalSteps={18} />
       <QuizSteps currentStep={21} totalSteps={28} />
 
-      <div className="max-w-[1050px] w-full text-center mt-12">
-        <h1 className="text-[30px] font-[700] leading-[116%] mb-1 text-center">
+      <div className="max-w-[1050px] w-full text-center mt-6">
+        <h1 className="text-[30px] font-[700] leading-[116%] text-center">
           Is there something special <br /> you wish to achieve?
         </h1>
         <div className="grid grid-cols-1 max-w-[560px] mx-auto gap-4 my-8">

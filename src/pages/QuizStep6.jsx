@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import QuizHeader from "../components/QuizHeader";
 import QuizSteps from "../components/QuizSteps";
 import Loading from "../components/Loading";
+import { BiRightArrowAlt } from "react-icons/bi";
 import Step_6_1 from "../assets/step_6/step_6 (10).png";
 import Step_6_2 from "../assets/step_6/step_6 (9).png";
 import Step_6_3 from "../assets/step_6/step_6 (8).png";
@@ -58,31 +59,33 @@ const QuizStep6 = () => {
     navigate("/quiz/fact-check-2");
   };
 
-
   const renderCard = (option) => (
     <div
       key={option.title}
       onClick={() => handleSelect(option.title)}
       className={`option-card p-3 flex items-center justify-center gap-1 border rounded-[33px] cursor-pointer transition-colors duration-200 bg-[#EDEDED] ${
-        isSelected(option.title) ? "!bg-[#fff] border-[#2189FF]" : "bg-[#EDEDED] border-[#EDEDED]"
+        isSelected(option.title)
+          ? "!bg-[#fff] border-[#2189FF]"
+          : "bg-[#EDEDED] border-[#EDEDED]"
       }`}
     >
-      <img src={option.img} 
-      className={`h-[20px]`} alt={option.title} />
-      <p 
-      className={`text-start font-medium ${
-        isSelected(option.title) ? "text-[#2189FF]" : "text-[#000]"
-      }`}
-      >{option.title}</p>
+      <img src={option.img} className={`h-[20px]`} alt={option.title} />
+      <p
+        className={`text-start font-medium ${
+          isSelected(option.title) ? "text-[#2189FF]" : "text-[#000]"
+        }`}
+      >
+        {option.title}
+      </p>
     </div>
   );
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 quiz-container">
       <QuizHeader currentStep={6} totalSteps={18} />
       <QuizSteps currentStep={6} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-12">
+      <div className="max-w-[750px] w-full text-center mt-6">
         <h1 className="text-[30px] font-[700] leading-[116%] mb-1 text-center">
           Did you miss any of these projects?
         </h1>
@@ -101,17 +104,14 @@ const QuizStep6 = () => {
             {row3.map(renderCard)}
           </div>
 
-          <div className="text-center !mt-8">
-              <button
-            onClick={handleNext}
-            style={{
-              borderRadius: "10px",
-              background: "#2189FF",
-            }}
-            className={`py-[13px] max-w-[307px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
-          >
-            Continue
-          </button>
+          <div className="!mt-8">
+            <button
+              onClick={handleNext}
+              className="py-[13px] max-w-[307px] w-full bg-[#2189FF] rounded-[10px] text-white text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase flex items-center justify-center mx-auto gap-2 transition transform active:scale-95 hover:bg-[#1f76db]"
+            >
+              Continue
+              <BiRightArrowAlt size={22} />
+            </button>
           </div>
         </div>
       </div>

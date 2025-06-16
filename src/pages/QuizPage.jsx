@@ -36,10 +36,11 @@ const QuizPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
+    <div className="min-h-screen px-4">
       <QuizHeader currentStep={""} totalSteps={18} />
       <QuizSteps currentStep={1} totalSteps={28} />
-      <div className="w-full max-w-2xl mt-8 mb-4 text-center">
+ 
+      <div className="flex flex-col items-center justify-center w-full px-4 pt-6 text-center">
         <div className="space-y-[10px]">
           <h1 className="text-[40px] uppercase font-[700] leading-[120%] text-[#000] tracking-[-2px]">
             What’s Your Crypto <br /> Potential in 2025?
@@ -64,17 +65,9 @@ const QuizPage = () => {
             />
           ))}
         </div>
-
-        {/* <button
-          onClick={handleNext}
-          disabled={!selectedOption}
-          className={`gold-button py-3 px-8 rounded-full font-medium ${!selectedOption ? "opacity-50" : ""}`}
-        >
-          Continue
-        </button> */}
         <div className="space-y-[15px]">
           <p className="text-[#B1B1B1] text-[12px] font-[400] leading-[133.333%]">
-            By clicking on an age group, you agree with{" "}<br />
+            By clicking on an age group, you agree with <br />
             <a
               className="underline"
               href="https://blockchainfx.io/terms-of-service"

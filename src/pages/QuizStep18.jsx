@@ -29,15 +29,15 @@ const QuizStep18 = () => {
     setSelectedOption(option.title);
     setTimeout(() => {
       navigate("/quiz/step=15");
-    }, 1000);
+    }, 200);
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 quiz-container">
       <QuizHeader currentStep={14} totalSteps={18} />
       <QuizSteps currentStep={18} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-12">
+      <div className="max-w-[750px] w-full text-center mt-6">
         <h1 className="text-[30px] font-[700] leading-[116%] mb-1 text-center">
           Do you want to retire wealthy?
         </h1>

@@ -74,11 +74,11 @@ const QuizStep22 = () => {
   }, [input1]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 quiz-container">
       <QuizHeader currentStep={"Earn"} totalSteps={""} />
       <QuizSteps currentStep={24} totalSteps={28} />
 
-      <div className="flex justify-between max-w-[1160px] w-[100%] mx-auto items-center mt-6">
+      <div className="flex justify-between max-w-[1160px] w-[100%] mx-auto items-center mt-6 mb-6">
         <div className="max-w-[475px] space-y-[18px] w-full ">
           <h1 className="text-[30px] font-[700] leading-[116%] mb-1 ">
             Ready to see how much <br />

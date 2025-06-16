@@ -5,6 +5,7 @@ import QuizSteps from "../components/QuizSteps";
 
 import Loading from "../components/Loading";
 import Step_16 from "../assets/step_16/step_16.png";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 const QuizStep16 = () => {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ const QuizStep16 = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={"Facts"} totalSteps={28} />
       <QuizSteps currentStep={16} totalSteps={28} />
 
@@ -35,25 +36,23 @@ const QuizStep16 = () => {
             crypto
           </h1>
           <p className="text-[16px] font-[400] leading-[170%] text-[black] mb-6 ">
-            For example, people who buy the new $BFX token during the presale
-            earn rewards every time someone trades on BlockchainFX. As $BFX
-            holders, they receive a share of the trading fees without having to
-            trade themselves. <br />
+            A notable example is BlockchainFX. People who buy the new $BFX token
+            during the presale earn rewards every time someone trades on the
+            platform. As $BFX holders, they receive a share of all trading fees
+            in USDT without having to trade themselves. <br />
             <br />
             BlockchainFX is a fast-growing crypto exchange and the first to
-            bridge crypto with traditional financial markets like stocks, forex,
-            ETFs, and more, offering access to over 500 different assets.
+            bridge digital assets like Bitcoin and Ethereum with traditional
+            financial markets such as stocks, forex, ETFs, and more, offering
+            access to over 500 different assets.
           </p>
-          <div className="flex justify-center pt-[20px]">
+          <div className="flex justify-center pt-4">
             <button
               onClick={handleNext}
-              style={{
-                borderRadius: "10px",
-                background: "#2189FF",
-              }}
-              className={`py-[13px] max-w-[307px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
+              className="flex items-center justify-center gap-2 py-[13px] w-full max-w-[307px] bg-[#2189FF] text-white text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase rounded-[10px] transition transform active:scale-95 hover:bg-[#1f76db]"
             >
               Continue
+              <BiRightArrowAlt size={22} />
             </button>
           </div>
         </div>

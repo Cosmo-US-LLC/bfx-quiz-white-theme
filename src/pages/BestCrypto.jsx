@@ -210,7 +210,7 @@ const BestCrypto = () => {
           <QuizSteps currentStep={28} totalSteps={28} />
         </div>
         <div className="max-w-[1020px] mx-auto  w-full ">
-          <h1 className="text-[40px] text-center text-[#000] font-bold mb-4 ">
+          <h1 className="text-[40px] text-center text-[#000] font-bold mt-2 mb-4 ">
             Your Top Crypto Match is Here!
           </h1>
           <p className="text-[20px]  text-center font-[600] text-[#000] mb-5 ">
@@ -235,7 +235,7 @@ const BestCrypto = () => {
             </div>
             <div className="flex justify-between space-x-4">
               <button className="text-[#24234C] text-[18px] font-[700] bg-[#E6AF03] rounded-[6px] px-[23px] py-[13px]">
-                Amount Raised: $1,9 M
+                Amount Raised: $2.5 M
               </button>
               {/* <button className="text-[#ffff] text-[18px] font-[700] bg-[#2189FF] rounded-[10px] px-[23px] py-[13px]">
                 Visit Site
