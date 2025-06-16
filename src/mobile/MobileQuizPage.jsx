@@ -37,8 +37,9 @@ const MobileQuizPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
-      <QuizHeader currentStep={""} totalSteps={18} />
+    <div className="flex flex-col justify-between items-center max-h-screen min-h-screen p-4 quiz-container">
+      <div className="w-[100%]">
+        <QuizHeader currentStep={""} totalSteps={18} />
       <QuizSteps currentStep={1} totalSteps={28} />
       <div className="w-full max-w-2xl mb-4 text-center">
         <div className="space-y-[15px]">
@@ -55,7 +56,7 @@ const MobileQuizPage = () => {
             SELECT YOUR <span className="font-[700]">AGE</span>
           </h2>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-[4rem] gap-x-4 mb-8 mt-[4rem]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-[3rem] gap-x-4 mb-8 mt-[4rem]">
           {ageOptions.map((option) => (
             <AgeOption
               key={option.range}
@@ -67,7 +68,7 @@ const MobileQuizPage = () => {
           ))}
         </div>
 
-        <div className="space-y-[70px]">
+        <div className="space-y-[30px]">
           <p className="text-[#B1B1B1] text-[12px] font-[400] leading-[133.333%]">
             By clicking on an age group, you agree with{" "}<br />
             <a
@@ -87,11 +88,12 @@ const MobileQuizPage = () => {
             </a>
             .
           </p>
-          <p className="text-[#B1B1B1] text-[12px] font-[400] leading-[133.333%]">
-            BlockchainFX 2025 ©All Rights Reserved.
-          </p>
         </div>
       </div>
+      </div>
+         <p className="text-[#B1B1B1] text-[12px] font-[400] leading-[133.333%]">
+            BlockchainFX 2025 ©All Rights Reserved.
+          </p>
     </div>
   );
 };

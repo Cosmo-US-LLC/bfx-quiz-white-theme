@@ -105,7 +105,7 @@ const MobileQuizStep19_28 = ({ targetPercentage = 80 }) => {
                       background: "#fff",
                       border: "1px solid rgba(230, 232, 236, 0.31)",
                     }}
-                    className="text-[14.1px] text-[#000] px-2 py-1 rounded  "
+                    className="text-[14.1px] text-[#000] w-[100px] flex justify-center ml-auto mr-0 px-2 py-1 rounded  "
                   >
                     Your Results
                   </span>
@@ -317,7 +317,7 @@ const MobileQuizStep19_28 = ({ targetPercentage = 80 }) => {
                 }}
                 className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
               >
-                Discover How Much you Could <br /> Earn with BFX
+                Discover How Much <br /> you Could Earn with BFX
               </button>
             </div>
           </div>

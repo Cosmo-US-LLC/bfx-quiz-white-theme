@@ -51,7 +51,7 @@ const MobileQuizStep15 = () => {
 
       <div className="w-full text-center">
         <h1 className="text-[28px] font-[700] leading-[120%] mb-1 text-center">
-          Do you currently earn any passive income?
+          Do you currently earn <br /> any passive income?
         </h1>
 
         <div className="grid grid-cols-1 max-w-[560px] mx-auto md:grid-cols-1 gap-4 mt-8">

@@ -25,42 +25,39 @@ const MobileQuizStep1 = () => {
   };
 
   return (
-    <div className="px-4 pt-4">
-      <QuizHeader currentStep={"Facts"} totalSteps={28} />
-      <QuizSteps currentStep={2} totalSteps={28} />
-      <div className="quiz-container max-w-[1240px]  mx-auto min-h-screen overflow-hidden flex flex-col items-center">
-        <div className="w-[100%]">
-          <div className="w-full ">
-            <h1 className="text-[28px] text-[#000] text-center  font-[700] leading-[120%] mb-3">
-              
-              The 2025 Crypto Bull Market Has Just Started{" "}
-            </h1>
-            <p className="text-[16px] font-[400] text-center text-[#000] mb-6 ">
-              In May 2025, Bitcoin reached a new all-time high of $112,000,
-              marking the start of a new bull market cycle. With global
-              financial markets stabilizing, crypto is once again leading the
-              way, outpacing traditional assets and capturing the attention of
-              millions.
-            </p>
-            <button
-              onClick={handleNext}
-              style={{
-                borderRadius: "10px",
-                background: "#2189FF",
-              }}
-              className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
-            >
-              Continue
-            </button>
-          </div>
-          <div className=" w-[100%] ">
-            <img
-              src={peopleimg}
-              className=""
-              alt=""
-            />
+    <div className="px-4 pt-4 min-h-screen max-h-screen flex justify-between flex-col">
+      <div className="w-[100%]">
+        <QuizHeader currentStep={"Facts"} totalSteps={28} />
+        <QuizSteps currentStep={2} totalSteps={28} />
+        <div className="quiz-container max-w-[1240px] justify-between mx-auto overflow-hidden flex flex-col items-center">
+          <div className="w-[100%]">
+            <div className="w-full ">
+              <h1 className="text-[28px] text-[#000] text-center  font-[700] leading-[120%] mb-3">
+                The 2025 Crypto Bull Market Has Just Started{" "}
+              </h1>
+              <p className="text-[16px] font-[400] text-center text-[#000] mb-6 ">
+                In May 2025, Bitcoin reached a new all-time high of $112,000,
+                marking the start of a new bull market cycle. With global
+                financial markets stabilizing, crypto is once again leading the
+                way, outpacing traditional assets and capturing the attention of
+                millions.
+              </p>
+              <button
+                onClick={handleNext}
+                style={{
+                  borderRadius: "10px",
+                  background: "#2189FF",
+                }}
+                className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
+              >
+                Continue
+              </button>
+            </div>
           </div>
         </div>
+      </div>
+      <div className=" w-[100%] ">
+        <img src={peopleimg} className="" alt="" />
       </div>
     </div>
   );

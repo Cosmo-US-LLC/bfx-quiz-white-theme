@@ -48,7 +48,7 @@ const MobileQuizStep2 = () => {
       <QuizHeader currentStep={2} totalSteps={18} />
       <QuizSteps currentStep={2} totalSteps={28} />
 
-      <div className="w-full max-w-[1240px] mx-auto mt-12">
+      <div className="w-full max-w-[1240px] mx-auto">
         <h1 className="text-[28px] font-bold leading-[120%] mb-1 text-center">
           What is your main goal?
         </h1>
