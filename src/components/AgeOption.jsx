@@ -8,7 +8,7 @@ const AgeOption = ({ ageRange, imageUrl, isSelected, onClick }) => {
       }`}
       onClick={onClick}
     >
-      <div className="h-32 relative ">
+      <div className="relative h-32 w-[150px]">
         <img
           src={imageUrl || "/placeholder.svg"}
           alt={`Person age ${ageRange}`}

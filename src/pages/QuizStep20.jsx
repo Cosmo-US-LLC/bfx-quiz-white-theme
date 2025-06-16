@@ -8,6 +8,7 @@ import Step_20_2 from "../assets/step_20/step_20 (4).png";
 import Step_20_3 from "../assets/step_20/step_20 (2).png";
 import Step_20_4 from "../assets/step_20/step_20 (3).png";
 import Step_20_5 from "../assets/step_20/step_20 (1).png";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 const CheckIcon = () => (
   <svg
@@ -72,17 +73,17 @@ const QuizStep20 = () => {
   // }
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 bg-black quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 bg-black quiz-container">
       <QuizHeader currentStep={16} totalSteps={18} />
       <QuizSteps currentStep={20} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-12">
-        <h1 className="text-[30px] font-[700] leading-[120%] mb-1 text-center text-black">
+      <div className="max-w-[750px] w-full text-center mt-6">
+        <h1 className="text-[30px] font-[700] leading-[120%] text-center text-black">
           When you look at a new crypto projects, <br /> what matters most to
           you?
         </h1>
 
-        <div className="grid grid-cols-1 max-w-[560px] mx-auto gap-4 mt-8">
+        <div className="grid grid-cols-1 max-w-[560px] mx-auto gap-2 mt-4">
           {options.map((option, index) => (
             <div
               key={index}
@@ -137,7 +138,7 @@ const QuizStep20 = () => {
           ))}
         </div>
 
-        <div className="text-center !mt-8">
+        <div className="text-center mx-auto !mt-4 mb-3 flex items-center justify-center">
           <button
             onClick={handleContinue}
             disabled={selectedOptions.length === 0}
@@ -145,13 +146,14 @@ const QuizStep20 = () => {
               borderRadius: "10px",
               background: "#2189FF",
             }}
-            className={`py-[13px] w-[100%] max-w-[307px] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase ${
+            className={`flex items-center justify-center gap-2 py-[13px] w-full max-w-[307px] text-white text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase transition transform active:scale-95 ${
               selectedOptions.length === 0
                 ? "opacity-50 cursor-not-allowed"
                 : ""
             }`}
           >
             Continue
+            <BiRightArrowAlt size={22} />
           </button>
         </div>
       </div>

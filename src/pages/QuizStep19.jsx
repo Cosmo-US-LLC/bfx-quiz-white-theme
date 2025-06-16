@@ -38,15 +38,15 @@ const QuizStep19 = () => {
     setSelectedOption(option.title)
     setTimeout(() => {
       navigate("/quiz/step=16")
-    }, 1000)
+    }, 200)
   }
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 quiz-container">
       <QuizHeader currentStep={15} totalSteps={18} />
       <QuizSteps currentStep={19} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-12">
+      <div className="max-w-[750px] w-full text-center mt-6">
         <h1 className="text-[30px] font-[700] leading-[116%] mb-1 text-center">
           When it comes to high-growth projects, <br /> how early do you usually get involved?
         </h1>

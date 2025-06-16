@@ -24,13 +24,16 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
   const bestCrypto = location.pathname === "/quiz/best-crypto-project";
   const isFactno7_1 = location.pathname === "/quiz/fact-check-no=7_1";
 
-  const getPrevStepUrl = () => {
-    navigate(-1);
-  };
+const getPrevStepUrl = () => {
+  navigate(-1);
+  setTimeout(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, 100); // delay scroll until after page change
+};
 
   return (
     <div className="flex w-full h-[60px] items-center justify-between">
-      <div className=" w-[10%] max-sm:w-[33%]  ">
+      <div className=" w-[10%] max-sm:w-[33%] mt-2">
         {!isHome && (
           <button
             onClick={getPrevStepUrl}
@@ -45,7 +48,7 @@ const QuizHeader = ({ currentStep, totalSteps }) => {
         <img src={Logo} className="w-[100px] h-auto bg-cover" alt="" />
       </div>
 
-      <div className="w-[10%] max-sm:w-[33%] mb-1 text-[#000] text-end leading-[26px] font-[400] tracking-[0.04em] text-[16px]">
+      <div className="w-[10%] max-sm:w-[33%] text-[#000] text-end leading-[26px] font-[400] tracking-[0.04em] text-[16px]">
         {typeof currentStep === "number" ? (
           <span className="text-[#2189FF] pr-[2px]">{currentStep}</span>
         ) : (

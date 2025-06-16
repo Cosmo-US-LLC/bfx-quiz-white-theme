@@ -28,20 +28,20 @@ const QuizStep10 = () => {
     localStorage.setItem("lifeBarrier", option.title);
     setTimeout(() => {
       navigate("/quiz/step=9");
-    }, 1000);
+    }, 200);
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 quiz-container">
       <QuizHeader currentStep={8} totalSteps={18} />
       <QuizSteps currentStep={10} totalSteps={28} />
 
-      <div className="max-w-[750px] w-full text-center mt-12">
-        <h1 className="text-[30px] font-bold leading-[116%] mb-1 text-center">
+      <div className="max-w-[750px] w-full text-center mt-6">
+        <h1 className="text-[30px] font-bold leading-[116%]  text-center">
           What’s holding you back <br /> from living the life you want?
         </h1>
 
-        <div className="grid grid-cols-1 max-w-[560px] mx-auto gap-4 mt-8">
+        <div className="grid grid-cols-1 max-w-[560px] mx-auto gap-2 mt-6">
           {options.map((option) => (
             <div
               key={option.title}

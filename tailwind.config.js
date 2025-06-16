@@ -14,7 +14,7 @@ module.exports = {
         },
       },
       animation: {
-        "fade-in-up": "fade-in-up 0.6s ease-out",
+        "fade-in-up": "fade-in-up 0.3s ease-out",
       },
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],

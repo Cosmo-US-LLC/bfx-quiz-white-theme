@@ -80,10 +80,10 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
 
   return (
     <div>
-      <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
+      <div className="flex flex-col items-center min-h-screen px-4 overflow-hidden quiz-container">
         <QuizHeader currentStep={"Results"} totalSteps={28} />
         <QuizSteps currentStep={23} totalSteps={28} />
-        <div className="mt-[2rem] w-[100%] max-w-[1240px] mx-auto">
+        <div className="mt-6 w-[100%] max-w-[1240px] mb-6 mx-auto">
           <h1 className="text-[40px] leading-[116%] text-center text-[#000] font-bold mb-8 ">
             Here's your crypto profile
           </h1>

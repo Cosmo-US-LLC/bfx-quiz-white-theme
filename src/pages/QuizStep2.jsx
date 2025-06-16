@@ -30,15 +30,15 @@ const QuizStep2 = () => {
     localStorage.setItem("mainGoal", option.title);
     setTimeout(() => {
       navigate("/quiz/step=3");
-    }, 600);
+    }, 200);
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 quiz-container">
       <QuizHeader currentStep={2} totalSteps={18} />
       <QuizSteps currentStep={2} totalSteps={28} />
 
-      <div className="w-full max-w-[1240px] mx-auto mt-12">
+      <div className="w-full max-w-[1240px] mx-auto mt-6">
         <h1 className="text-[30px] font-bold leading-[120%] mb-1 text-center">
           What is your main goal?
         </h1>

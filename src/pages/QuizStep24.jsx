@@ -29,11 +29,11 @@ const QuizStep24 = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 overflow-hidden quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={"About BFX"} totalSteps={28} />
       <QuizSteps currentStep={25} totalSteps={28} />
 
-      <div className="flex flex-col gap-6 items-center max-w-[1240px] mx-auto justify-between w-[100%]">
+      <div className="flex flex-col gap-6 items-center max-w-[1240px] mx-auto justify-between mt-6 w-[100%]">
         <div className="flex flex-col w-full gap-2 ">
           <p className="text-[30px] w-full text-center font-[600] leading-[36px] tracking-[-1px] text-[#000]">
             Learn more about BlockchainFX
@@ -63,15 +63,15 @@ const QuizStep24 = () => {
               }
             `}
           </style>
-          <div className="flex justify-center mt-4 mb-4 w-full max-w-[730px] h-[410px] mx-auto">
+          <div className="flex justify-center mt-4 mb-4 w-full max-w-[990px] h-auto mx-auto">
             <wistia-player
               media-id="w8ynmofaw4"
               aspect="1.7777777777777777"
               style={{
                 width: "100%",
-                maxWidth: "730px",
+                maxWidth: "990px",
                 height: "auto",
-                maxHeight: "410px",
+               
               }}
             ></wistia-player>
           </div>

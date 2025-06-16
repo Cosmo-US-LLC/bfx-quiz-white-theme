@@ -32,15 +32,15 @@ const QuizStep21 = () => {
     setSelectedOption(option.title);
     setTimeout(() => {
       navigate("/quiz/step=18_28");
-    }, 300);
+    }, 200);
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 quiz-container">
+    <div className="flex flex-col items-center min-h-screen px-4 quiz-container">
       <QuizHeader currentStep={17} totalSteps={18} />
       <QuizSteps currentStep={21} totalSteps={28} />
 
-      <div className="max-w-[1050px] w-full text-center mt-12">
+      <div className="max-w-[1050px] w-full text-center mt-6">
         <h1 className="text-[30px] font-[700] leading-[116%] mb-1 text-center">
           When you get the chance to buy into early stage<br /> crypto projects, how do you usually react?
         </h1>
