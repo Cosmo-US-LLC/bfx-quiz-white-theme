@@ -60,7 +60,7 @@ const QuizStep26 = () => {
             insights from a full-time expert research team.
           </p>
           <p className="text-[16px] text-left font-[700] text-[#000] mt-2 mb-3">
-            Some of our part results
+            Some of our past results
           </p>
           <div className="flex items-center justify-between space-x-4">
             <div className="shadow-lg rounded-[12px] overflow-hidden">

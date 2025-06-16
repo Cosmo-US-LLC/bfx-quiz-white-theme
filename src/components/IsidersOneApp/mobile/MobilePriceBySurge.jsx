@@ -30,9 +30,9 @@ const MobilePriceBySurge = () => {
         <p className="text-[16px] w-full max-w-[420px]  font-[700] text-[#000] mb-6 ">
           <span className="font-[400]">
             BlockchainFX’s $BFX token is still available in its presale phase
-            for under $0.015. That’s far below its upcoming launch price of
-            $0.05 on major exchanges, offering early buyers a guaranteed gain of
-            more than 300% before it goes live.
+            for under $0.015, which is far below its upcoming launch price of
+            $0.05 on major exchanges. This gives early buyers a significant
+            opportunity for upside potential.
           </span>
         </p>
         <div className="flex justify-center pt-[20px]">

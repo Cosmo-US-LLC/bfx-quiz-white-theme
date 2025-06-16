@@ -53,7 +53,7 @@ const MobileQuizStep18_28 = () => {
             <div
               key={option.title}
               onClick={() => handleOptionClick(option)}
-              className={`relative py-4 px-6 flex items-center justify-between rounded-[8px] cursor-pointer transition-all duration-300 ${
+              className={`relative py-4 px-6 flex gap-3 items-center justify-between rounded-[8px] cursor-pointer transition-all duration-300 ${
                 selectedOption === option.title
                   ? "border-2 border-[#2189FF] bg-white"
                   : "bg-[#D9D9D980]"
