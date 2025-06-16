@@ -63,7 +63,19 @@ const QuizStep24 = () => {
               }
             `}
           </style>
-          <div className="flex justify-center mt-4 mb-4 w-full max-w-[990px] h-auto mx-auto">
+             <div className="flex justify-center mt-4 mb-4 w-full max-w-[730px] h-[410px] mx-auto">
+            <wistia-player
+              media-id="w8ynmofaw4"
+              aspect="1.7777777777777777"
+              style={{
+                width: "100%",
+                maxWidth: "730px",
+                height: "auto",
+                maxHeight: "410px",
+              }}
+            ></wistia-player>
+          </div>
+          {/* <div className="flex justify-center mt-4 mb-4 w-full max-w-[990px] h-auto mx-auto">
             <wistia-player
               media-id="w8ynmofaw4"
               aspect="1.7777777777777777"
@@ -74,7 +86,7 @@ const QuizStep24 = () => {
                
               }}
             ></wistia-player>
-          </div>
+          </div> */}
         </div>
         <div className="w-[80%]">
           <FeaturedSec />
