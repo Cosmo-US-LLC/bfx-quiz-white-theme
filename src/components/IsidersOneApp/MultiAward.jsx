@@ -8,7 +8,7 @@ export default function MultiAward() {
     <div className="pt-[60px] px-[80px] pb-[60px] bg-[#fff]">
       <div className="max-w-[1280px] w-full mx-auto">
         <div className="space-y-2 mx-auto text-center pb-[40px]">
-          <h3 className="text-[30px] text-[#000] font-[600] leading-[120%] tracking-[-2.1px]">
+          <h3 className="text-[48px] text-[#000] font-[600] leading-[120%] tracking-[-3.36px]">
           Multi-Awarded Trading Platform
           </h3>
         </div>
