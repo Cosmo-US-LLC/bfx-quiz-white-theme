@@ -1,7 +1,7 @@
 import herobnr1 from "../../assets/oneApp/featured/link1.svg";
 import herobnr2 from "../../assets/oneApp/featured/link2.svg";
 import herobnr3 from "../../assets/oneApp/featured/blockonomi.svg";
-import herobnr4 from "../../assets/oneApp/featured/bnrhero (3).svg";
+import herobnr4 from "../../assets/oneApp/featured/link3.svg";
 // import { ReactComponent as MyIcon } from '../../assets/oneApp/featured/bnrhero (4).svg'
 
 function FeaturedSec() {

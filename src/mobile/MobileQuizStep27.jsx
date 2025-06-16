@@ -59,9 +59,9 @@ const MobileQuizStep27 = () => {
             Analysing your results
           </h1>
           <p className="text-[16px]  text-center font-[400] text-[#000] mb-6 ">
-            BlockchainFX has attracted over $2.2 million and welcomed more than
-            1,500 users <br /> to become a part of its next generation crypto
-            exchange, all within the past 4 weeks.
+            3insiders is your unfair advantage in crypto, giving you direct
+            insider access, early entry into private communities, and insights
+            from a full-time expert research team.
           </p>
           <p className="text-[16px]  text-center font-[400] text-[#000] mb-6 ">
             Some of our part results

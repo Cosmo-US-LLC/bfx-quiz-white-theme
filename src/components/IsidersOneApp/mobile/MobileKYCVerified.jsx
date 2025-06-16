@@ -25,7 +25,7 @@ function MobileKYCVerified() {
       description: (
         <p>
           CertiK, the world’s leading blockchain security company, audited
-          BlockchainFX and confirmedit meets the highest security standards.
+          BlockchainFX and confirm edit meets the highest security standards.
         </p>
       ),
     },
@@ -34,7 +34,7 @@ function MobileKYCVerified() {
       title: "Team KYC Verified by Solidproof",
       description: (
         <p>
-          CThe BlockchainFX team has been successfully verified by Solidproof, a
+          CThe BlockchainFX team has been successfully verified by Solid proof, a
           reputable auditing company from Germany.
         </p>
       ),
