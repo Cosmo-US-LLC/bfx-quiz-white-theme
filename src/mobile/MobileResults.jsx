@@ -173,7 +173,7 @@ const MobileResults = () => {
 
                     {showPopup && (
                       <div className="fixed bottom-[8%] z-[99] shadow left-1/2 transform -translate-x-1/2 animate-in   zoom-in-95 duration-200">
-                        <div className="bg-[#bfbfbfbf] text-black px-4 py-4 rounded-lg shadow-lg flex items-center gap-2 whitespace-nowrap">
+                        <div className="bg-[#353535] text-white px-4 py-4 rounded-lg shadow-lg flex items-center gap-2 whitespace-nowrap">
                           <div className="relative w-[20px]">
                             <FaCheckCircle className="absolute right-0 top-1/2 h-5 w-5 -translate-y-1/2 text-[#2189FF] text-lg" />
                           </div>
