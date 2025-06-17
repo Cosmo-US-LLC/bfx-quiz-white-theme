@@ -8,9 +8,9 @@ export default function MultiAward() {
     <div className="pt-[60px] px-[80px] pb-[60px] bg-[#fff]">
       <div className="max-w-[1280px] w-full mx-auto">
         <div className="space-y-2 mx-auto text-center pb-[40px]">
-          <h3 className="text-[48px] text-[#000] font-[600] leading-[120%] tracking-[-3.36px]">
+          <h2 className="text-[48px] text-[#000] font-[600] leading-[120%] tracking-[-3.36px]">
           Multi-Awarded Trading Platform
-          </h3>
+          </h2>
         </div>
         <div className="px-[240px] space-x-[18px] flex items-center justify-center">
           <img className="object-cover" src={multi1} alt="Award 1" />

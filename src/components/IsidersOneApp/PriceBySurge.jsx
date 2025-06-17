@@ -24,9 +24,9 @@ const PriceBySurge = () => {
   return (
     <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[6rem] mb-6 w-[100%]">
       <div className="max-w-[600px] space-y-[15px] w-[50%]">
-        <h1 className="text-[30px] max-w-[350px] w-full text-[#000] font-bold mb-4 ">
+        <h2 className="text-[48px] max-w-[350px] w-full text-[#000] font-[600] mb-4 ">
           The BFX Price is about to Surge by 300%
-        </h1>
+        </h2>
         <p className="text-[16px] w-full max-w-[420px]  font-[700] text-[#000] mb-6 ">
           <span className="font-[400]">
             BlockchainFX’s $BFX token is still available in its presale phase
