@@ -44,9 +44,9 @@ function KYCVerified() {
   return (
     <div className="bg-[#fff]">
       <div className="max-w-[1200px] pt-[35px] w-[100%] mx-auto relative">
-        <h3 className="text-[40px] text-[#000] font-[600] leading-[155.556%] text-center">
+        <h2 className="text-[48px] text-[#000] font-[600] leading-[155.556%] text-center">
           Security Verified by Industry Experts
-        </h3>
+        </h2>
         <div className="pt-[25px] w-[100%] mx-auto">
           <div className="grid grid-cols-3 gap-x-[12px] gap-y-[19px]">
             {cardItems.map((item, index) => (

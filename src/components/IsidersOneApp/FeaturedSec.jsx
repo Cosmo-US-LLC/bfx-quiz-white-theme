@@ -9,9 +9,9 @@ function FeaturedSec() {
     <div className="pt-[25px] ">
       <div className="w-[100%] mx-auto ">
         <div className="bg-[#fff] flex relative justify-center items-center h-[73.47] space-x-[20px] border border-[#00000020] rounded-[6.357px] py-[25px] max-w-[1200px] w-[100%] mx-auto">
-          <h3 className="text-[16.697px] font-[600] pr-3 text-[#000] tracking-[-0.267px]">
+          <h2 className="text-[16.697px] font-[700] pr-3 text-[#000] tracking-[-0.267px]">
             Featured In:
-          </h3>
+          </h2>
           <div className="flex flex-col items-center space-y-2 cursor-pointer">
             {/* <a href="https://coinmarketcap.com/community/articles/67d43c30c4a5810cf71d7406/" target="_blank" rel="noopener noreferrer"> */}
             <img
