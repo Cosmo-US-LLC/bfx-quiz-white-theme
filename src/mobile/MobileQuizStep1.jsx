@@ -36,7 +36,7 @@ const MobileQuizStep1 = () => {
               The 2025 crypto bull market has just started
               </h1>
               <p className="text-[16px] font-[400] text-center text-[#000] mb-6 ">
-               Bitcoin recently broke past its all time high of $112,000, marking the start of a new bull run. Crypto is once again leading the charge, outperforming stocks, gold, and real estate, and capturing the attention of millions. Now is your chance to position yourself early. Tap continue to see how much you could earn. <br /><br />
+               Bitcoin recently broke past its all time high of $112,000, marking the start of a new bull run. Crypto is once again leading the charge, outperforming stocks, gold, and real estate, and capturing the attention of millions. Now is your chance to position yourself early.  <br /><br />
                Tap continue to see how much you could earn.
               </p>
               <button
