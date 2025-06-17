@@ -8,9 +8,9 @@ export default function MobileMultiAward() {
     <div className="pt-[15px] pb-[20px] bg-[#fff]">
       <div className="w-full ">
         <div className="space-y-2 mx-auto text-center pb-[40px]">
-          <h3 className="text-[30px] text-[#000] font-[600] leading-[120%] tracking-[-2.1px]">
+          <h2 className="text-[30px] text-[#000] font-[700] leading-[120%] tracking-[-2.1px]">
           Multi-Awarded Trading Platform
-          </h3>
+          </h2>
         </div>
         <div className="flex flex-col gap-4">   
           <img className="object-cover w-full " src={multi1} alt="Award 1" />

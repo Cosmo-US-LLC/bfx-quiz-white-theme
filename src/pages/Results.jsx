@@ -72,7 +72,7 @@ const Results = () => {
           backgroundColor: "#fff",
         }}
       >
-        <QuizHeader currentStep={"Special Bonus"} totalSteps={28} />
+        <QuizHeader currentStep={"Bonus"} totalSteps={28} />
         <QuizSteps currentStep={28} totalSteps={28} />
         <div className="mb-4 !mt-[-22px] bg-[#037FF933] w-[100%] flex justify-center items-center">
           {/* <img
