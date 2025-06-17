@@ -80,7 +80,7 @@ const MobileFaqSec = () => {
     <div className="bg-[#fff]" id="faq">
       <div className="w-full max-w-[1200px] space-y-[35px] pt-[30px] pb-[60px] mx-auto">
         <div className="text-center space-y-[10px]">
-          <h2 className="text-[#000] leading-[120%] text-[48px] font-[600]">
+          <h2 className="text-[#000] leading-[120%] text-[30px] font-[700]">
             FAQs
           </h2>
           <p className="text-[18px] font-[400] text-[#000] text-center">

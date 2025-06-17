@@ -38,9 +38,9 @@ const MobileQuizStep24 = () => {
           <p className="text-[20px] w-full text-center font-[600] leading-[36px] tracking-[-1px] text-[#000]">
             Learn more about BlockchainFX
           </p>
-          <h1 className="text-[30px] w-full leading-[130%] text-center font-[700]   text-[#000]">
+          <h2 className="text-[30px] w-full leading-[130%] text-center font-[700]   text-[#000]">
             Binance + Robinhood <br /> in One App?
-          </h1>
+          </h2>
           <p className="text-[16px] w-full text-center font-[400] leading-[28px] text-[#000]">
             Discover how BlockchainFX is transforming crypto by connecting it to
             global finance and unlocking access to over 500+ assets.

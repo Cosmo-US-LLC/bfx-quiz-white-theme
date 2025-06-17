@@ -8,9 +8,9 @@ function MobileFeatureSec() {
     <div className="pt-[10px] ">
       <div className="w-[100%]   ">
         <div className="bg-[#fff] py-4 gap-1 flex flex-col relative justify-center items-center border border-[#00000020] rounded-[6.357px] w-[100%]">
-          <h3 className="text-[16.697px] font-[600] text-[#000] tracking-[-0.267px]">
+          <h2 className="text-[16.697px] font-[700] text-[#000] tracking-[-0.267px]">
             Featured In:
-          </h3>
+          </h2>
           <div className="flex items-center justify-center gap-2 px-2">
           <div className="flex flex-col items-center space-y-2 cursor-pointer">
             {/* <a href="https://coinmarketcap.com/community/articles/67d43c30c4a5810cf71d7406/" target="_blank" rel="noopener noreferrer"> */}

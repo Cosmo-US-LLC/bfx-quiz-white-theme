@@ -44,9 +44,9 @@ function MobileKYCVerified() {
   return (
     <div className="bg-[#fff]">
       <div className=" pt-[15px] w-[100%] mx-auto relative">
-        <h3 className="text-[30px] text-[#000] font-[600] leading-[155.556%] text-center">
+        <h2 className="text-[30px] text-[#000] font-[700] leading-[155.556%] text-center">
           Security Verified by Industry Experts
-        </h3>
+        </h2>
         <div className="pt-[25px] w-[100%] mx-auto">
           <div className="flex flex-col gap-y-[19px]">
             {cardItems.map((item, index) => (

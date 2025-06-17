@@ -24,9 +24,9 @@ const MobilePriceBySurge = () => {
   return (
     <div className="flex flex-col items-center justify-between mt-[15px] mb-6 w-[100%]">
       <div className="space-y-[15px] text-center w-[100%]">
-        <h1 className="text-[30px] max-w-[350px] w-full text-[#000] font-bold mb-4 ">
+        <h2 className="text-[30px] max-w-[350px] w-full text-[#000] font-[700] mb-4 ">
           The BFX Price is about to Surge by 300%
-        </h1>
+        </h2>
         <p className="text-[16px] w-full max-w-[420px]  font-[700] text-[#000] mb-6 ">
           <span className="font-[400]">
             BlockchainFX’s $BFX token is still available in its presale phase
