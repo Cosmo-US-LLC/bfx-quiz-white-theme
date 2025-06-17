@@ -47,7 +47,7 @@ const QuizStep7 = () => {
             className="flex items-center justify-center gap-2 py-[13px] w-full max-w-[307px] bg-[#2189FF] text-white text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase rounded-[10px] transition transform active:scale-95 hover:bg-[#1f76db]"
           >
             Continue
-            <BiRightArrowAlt size={22} />
+            {/* <BiRightArrowAlt size={22} /> */}
           </button>
         </div>
         <div className="bg-[#D9D9D980] max-w-[520px] h-[400px] w-[100%] flex justify-center items-center rounded-[8px] animate-fade-in-up">

@@ -153,7 +153,7 @@ const QuizStep20 = () => {
             }`}
           >
             Continue
-            <BiRightArrowAlt size={22} />
+            {/* <BiRightArrowAlt size={22} /> */}
           </button>
         </div>
       </div>
