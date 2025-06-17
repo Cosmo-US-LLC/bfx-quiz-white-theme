@@ -28,7 +28,7 @@ const MobileQuizStep16 = () => {
       <QuizHeader currentStep={"Facts"} totalSteps={28} />
       <QuizSteps currentStep={16} totalSteps={28} />
 
-      <div className=" w-[100%]">
+      <div className=" w-[100%] animate-fade-in-up">
         <div className=" space-y-[15px] text-center mx-auto w-full mb-[2rem]">
           <h1 className="text-[28px] font-[800] leading-[140%] text-[#000] mb-4 ">
             It has never been easier to earn real passive income with crypto

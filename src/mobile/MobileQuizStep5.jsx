@@ -35,7 +35,7 @@ const MobileQuizStep5 = () => {
     localStorage.setItem("cryptoMissedOpportunity", option.title);
     setTimeout(() => {
       navigate("/quiz/step=6");
-    }, 600);
+    }, 200);
   };
 
   return (

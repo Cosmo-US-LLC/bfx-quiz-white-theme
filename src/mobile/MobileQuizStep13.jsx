@@ -31,7 +31,7 @@ const MobileQuizStep13 = () => {
     localStorage.setItem("goalIncome", option.title);
     setTimeout(() => {
       navigate("/quiz/step=11");
-    }, 600);
+    }, 200);
   };
 
   return (

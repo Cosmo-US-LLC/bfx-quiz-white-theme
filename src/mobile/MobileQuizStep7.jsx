@@ -29,7 +29,7 @@ const MobileQuizStep7 = () => {
       <QuizSteps currentStep={7} totalSteps={28} />
 
       <div className=" w-[100%]">
-        <div className="w-full text-center ">
+        <div className="w-full text-center animate-fade-in-up">
           <h1 className="text-[28px] text-[#000] font-bold mb-4  leading-[130%]">
             We’ve all missed some major opportunities in crypto
           </h1>
@@ -42,7 +42,7 @@ const MobileQuizStep7 = () => {
             supporters saw the biggest gains.
           </p>
         </div>
-        <div className="mb-[4rem]">
+        <div className="mb-[4rem] animate-fade-in-up">
           <button
             onClick={handleNext}
             style={{

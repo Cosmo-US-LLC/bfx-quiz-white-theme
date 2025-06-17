@@ -46,7 +46,7 @@ const MobileQuizStep21 = () => {
     localStorage.setItem("cryptoBuyReaction", option.title);
     setTimeout(() => {
       navigate("/quiz/step=18_28");
-    }, 600);
+    }, 200);
   };
 
   return (

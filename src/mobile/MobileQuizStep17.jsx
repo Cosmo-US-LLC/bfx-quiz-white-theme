@@ -40,7 +40,7 @@ const MobileQuizStep17 = () => {
     localStorage.setItem("financialConfidence", option.title);
     setTimeout(() => {
       navigate("/quiz/step=14");
-    }, 600);
+    }, 200);
   };
 
   return (
