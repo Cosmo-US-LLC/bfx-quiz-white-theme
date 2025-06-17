@@ -80,7 +80,7 @@ const MobileResults = () => {
         //   backgroundColor: "#000000",
         // }}
       >
-        <QuizHeader currentStep={"Special Bonus"} totalSteps={28} />
+        <QuizHeader currentStep={"Bonus"} totalSteps={28} />
         <QuizSteps currentStep={28} totalSteps={28} />
         <div className=" !mt-[-22px] bg-[#037FF933] w-[100%] flex justify-center items-center rounded-[8px]">
           <div className="pr-1">
@@ -110,12 +110,11 @@ const MobileResults = () => {
             <h1 className="text-[28px] text-center text-[#000] font-bold mb-4 ">
               Congratulations! You’ve successfully passed <br /> the Quiz 🎉
             </h1>
-            <p className="text-[16px] px-2  text-center font-[700] text-[#000] mb-[53px] ">
+            <p className="text-[16px] px-2  text-center font-[700] text-[#000] ">
               You’ve completed the challenge and unlocked this special offer.
-              <br /> <br />
-              Here’s your limited one-time bonus code <br /> to buy $BFX
+              Here’s your limited one-time bonus code to buy $BFX
             </p>
-            <div className="max-w-[618px] pt-5 px-4 pb-[1px] mx-auto bg-[#D9D9D980]">
+            <div className="max-w-[618px] mt-[25px] pt-5 px-4 pb-[1px] mx-auto bg-[#D9D9D980]">
               {/* <div className="flex items-center max-w-[506px] mx-auto mb-[25px]">
                 <p className="w-[50%] text-[16px] flex justify-start  font-[400] text-[#fff] ">
                   Your readiness:{" "}

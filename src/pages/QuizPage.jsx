@@ -42,7 +42,7 @@ const QuizPage = () => {
  
       <div className="flex flex-col items-center justify-center w-full px-4 pt-6 text-center">
         <div className="space-y-[10px]">
-          <h1 className="text-[40px] uppercase font-[700] leading-[120%] text-[#000] tracking-[-2px]">
+          <h1 className="text-[40px] uppercase font-[700] leading-[120%] text-[#000] tracking-normal">
             What’s Your Crypto <br /> Potential in 2025?
           </h1>
           <p className="text-[14px] font-[400] leading-[16px] uppercase text-[#000]">

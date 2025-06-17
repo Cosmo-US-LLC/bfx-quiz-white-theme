@@ -38,7 +38,7 @@ const MobileQuizStep24 = () => {
           <p className="text-[20px] w-full text-center font-[600] leading-[36px] tracking-[-1px] text-[#000]">
             Learn more about BlockchainFX
           </p>
-          <h1 className="text-[30px] w-full text-center font-[600]   text-[#000]">
+          <h1 className="text-[30px] w-full leading-[130%] text-center font-[700]   text-[#000]">
             Binance + Robinhood <br /> in One App?
           </h1>
           <p className="text-[16px] w-full text-center font-[400] leading-[28px] text-[#000]">
@@ -78,9 +78,6 @@ const MobileQuizStep24 = () => {
         </div>
         <div className="w-[100%]">
           <MobileFeatureSec/>
-        </div>
-        <div className="w-[100%] mt-4">
-         
         </div>
         <div>
           <MobileKYCVerified/>

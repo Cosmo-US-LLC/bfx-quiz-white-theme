@@ -22,7 +22,7 @@ const MobilePriceBySurge = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between mt-[3rem] mb-6 w-[100%]">
+    <div className="flex flex-col items-center justify-between mt-[15px] mb-6 w-[100%]">
       <div className="space-y-[15px] text-center w-[100%]">
         <h1 className="text-[30px] max-w-[350px] w-full text-[#000] font-bold mb-4 ">
           The BFX Price is about to Surge by 300%
