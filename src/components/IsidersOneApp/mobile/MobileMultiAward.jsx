@@ -5,7 +5,7 @@ import multi2 from "../../../assets/oneApp/Multi/mobile-multi-2.svg";
 export default function MobileMultiAward() {
 
   return (
-    <div className="pt-[40px] pb-[20px] bg-[#fff]">
+    <div className="pt-[15px] pb-[20px] bg-[#fff]">
       <div className="w-full ">
         <div className="space-y-2 mx-auto text-center pb-[40px]">
           <h3 className="text-[30px] text-[#000] font-[600] leading-[120%] tracking-[-2.1px]">

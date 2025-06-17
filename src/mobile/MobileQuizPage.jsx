@@ -43,7 +43,7 @@ const MobileQuizPage = () => {
       <QuizSteps currentStep={1} totalSteps={28} />
       <div className="w-full max-w-2xl mb-4 text-center">
         <div className="space-y-[15px]">
-          <h1 className="text-[30px] uppercase font-[700] leading-[116%] text-[#000] tracking-[-2px] ">
+          <h1 className="text-[30px] uppercase font-[700] leading-[116%] text-[#000] tracking-normal ">
             What’s Your Crypto <br /> Potential in 2025?
           </h1>
 

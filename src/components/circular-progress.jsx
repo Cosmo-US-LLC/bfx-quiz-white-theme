@@ -9,7 +9,6 @@ export default function CircularProgress({
   progressColor = "#D99A26",
   textColor = "#FFFFFF",
   showPercentage = true,
-  label = "Your results are loading",
 }) {
   const [progress, setProgress] = useState(0); 
 const [displayProgress, setDisplayProgress] = useState(0); 
@@ -134,11 +133,11 @@ useEffect(() => {
         )}
       </div>
 
-      {label && (
+      {/* {label && (
         <div className="mt-4 text-[16px] font-[700]" style={{ color: textColor }}>
           {label}
         </div>
-      )}
+      )} */}
     </div>
   )
 }

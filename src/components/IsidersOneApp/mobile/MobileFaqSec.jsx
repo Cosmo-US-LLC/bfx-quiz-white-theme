@@ -84,7 +84,7 @@ const MobileFaqSec = () => {
             FAQs
           </h2>
           <p className="text-[18px] font-[400] text-[#000] text-center">
-            Find answers to some of the most common questions
+            Find answers to some <br /> of the most common questions
           </p>
         </div>
         <div className="w-full mx-auto">

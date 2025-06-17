@@ -48,7 +48,6 @@ const MobileQuizStep27 = () => {
             backgroundColor="#353535"
             progressColor="#037FF9"
             textColor="#FFFFFF"
-            label="Your results are loading"
           />
         </div>
         <div className="max-w-[1020px] mx-auto  w-full ">

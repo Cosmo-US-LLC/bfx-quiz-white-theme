@@ -248,6 +248,15 @@ const MobileBestCrypto = () => {
           className="overflow-hidden py-6 mt-6 w-[100%] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
           style={{}}
         >
+           <div className="flex items-center w-[100%]  justify-center mb-6">
+            {image && (
+              <img
+                src={image}
+                alt="Selected"
+                className="flex w-[220px] h-auto "
+              />
+            )}
+          </div>
        
           <div className="grid grid-cols-2 gap-x-[2rem] gap-y-[2rem] px-2 mx-auto">
             {progressData.map((item, index) => (
@@ -262,15 +271,7 @@ const MobileBestCrypto = () => {
             ))}
           </div>
         </div>
-           <div className="flex items-center w-[100%] mt-6 bg-[#F1F1F1] justify-center mb-8 border border-[#C9C9C9] rounded-[6px]">
-            {image && (
-              <img
-                src={image}
-                alt="Selected"
-                className="flex w-[220px] h-auto "
-              />
-            )}
-          </div>
+          
 
         <button
           onClick={handleNext}

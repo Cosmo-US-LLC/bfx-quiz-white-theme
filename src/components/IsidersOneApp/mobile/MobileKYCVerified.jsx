@@ -43,7 +43,7 @@ function MobileKYCVerified() {
 
   return (
     <div className="bg-[#fff]">
-      <div className=" pt-[35px] w-[100%] mx-auto relative">
+      <div className=" pt-[15px] w-[100%] mx-auto relative">
         <h3 className="text-[30px] text-[#000] font-[600] leading-[155.556%] text-center">
           Security Verified by Industry Experts
         </h3>

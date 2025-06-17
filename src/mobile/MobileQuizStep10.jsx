@@ -21,7 +21,7 @@ const MobileQuizStep10 = () => {
     { title: "Not enough income", img: Step_10_1 },
     { title: "Lack of time", img: Step_10_2 },
     { title: "No access to the right opportunities", img: Step_10_3 },
-    { title: "I just need something that actually works", img: Step_10_4 },
+    { title: "I just need something that works", img: Step_10_4 },
     { title: "Fear of losing money", img: Step_10_5 },
   ];
 
