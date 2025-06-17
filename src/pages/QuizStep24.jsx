@@ -35,7 +35,7 @@ const QuizStep24 = () => {
 
       <div className="flex flex-col gap-6 items-center max-w-[1240px] mx-auto justify-between mt-6 w-[100%]">
         <div className="flex flex-col w-full gap-2 ">
-          <p className="text-[48px] w-full text-center font-[600] leading-[36px] tracking-[-1px] text-[#000]">
+          <p className="text-[30px] w-full text-center font-[600] leading-[36px] tracking-[-1px] text-[#000]">
             Learn more about BlockchainFX
           </p>
           <h2 className="text-[48px] w-full text-center font-[700] leading-[57px] tracking-[-3.36px] text-[#000]">
