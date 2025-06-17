@@ -50,7 +50,7 @@ const MobileQuizStep10 = () => {
           What’s holding you back <br /> from living the life you want?
         </h1>
         <div className="grid grid-cols-1 max-w-[560px] mx-auto gap-4 mt-8">
-          {options.map((option) => (
+          {options.map((option, index) => (
             <div
               key={option.title}
               onClick={() => handleOptionClick(option)}
@@ -63,7 +63,13 @@ const MobileQuizStep10 = () => {
               {selectedOption === option.title && (
                 <FaCheckCircle className="absolute top-1/2 right-4 -translate-y-1/2 text-[#2189FF] text-lg size-6" />
               )}
-              <img src={option.img} className="h-[36px] object-cover" alt={option.title} />
+              <img
+                src={option.img}
+                className={`${
+                  index === 3 ? "h-[32px]" : "h-[36px]"
+                } object-cover`}
+                alt={option.title}
+              />
               <p className="w-[88%] text-[16px] text-[#000] text-start font-[700]">
                 {option.title}
               </p>

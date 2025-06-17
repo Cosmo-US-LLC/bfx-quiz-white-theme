@@ -54,7 +54,7 @@ const QuizPage = () => {
             SELECT YOUR <span className="font-[700]">AGE</span>
           </h2>
         </div>
-        <div className="grid grid-cols-2 gap-4 mt-8 mb-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 mt-10 mb-8 md:grid-cols-4">
           {ageOptions.map((option) => (
             <AgeOption
               key={option.range}
