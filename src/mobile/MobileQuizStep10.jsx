@@ -37,7 +37,7 @@ const MobileQuizStep10 = () => {
     localStorage.setItem("lifeBarrier", option.title);
     setTimeout(() => {
       navigate("/quiz/step=9");
-    }, 600);
+    }, 200);
   };
 
   return (

@@ -41,7 +41,7 @@ const MobileQuizStep19 = () => {
     localStorage.setItem("growthTiming", option.title);
     setTimeout(() => {
       navigate("/quiz/step=16");
-    }, 600);
+    }, 200);
   };
 
   return (

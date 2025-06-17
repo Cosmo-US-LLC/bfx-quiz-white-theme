@@ -33,7 +33,7 @@ const MobileQuizStep14 = () => {
     localStorage.setItem("firstIncomeAction", option.title);
     setTimeout(() => {
       navigate("/quiz/step=12");
-    }, 600);
+    }, 200);
   };
 
   return (

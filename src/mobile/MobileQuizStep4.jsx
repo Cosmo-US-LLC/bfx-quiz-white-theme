@@ -37,7 +37,7 @@ const MobileQuizStep4 = () => {
     localStorage.setItem("checkFrequency", option.title);
     setTimeout(() => {
       navigate("/quiz/step=5");
-    }, 600);
+    }, 200);
   };
 
   return (

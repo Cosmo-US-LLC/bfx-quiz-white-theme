@@ -35,7 +35,7 @@ const MobileQuizStep11 = () => {
     localStorage.setItem("incomeSources", option.title);
     setTimeout(() => {
       navigate("/quiz/fact-check-no=3");
-    }, 600);
+    }, 200);
   };
 
   return (
