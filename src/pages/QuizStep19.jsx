@@ -14,15 +14,15 @@ const QuizStep19 = () => {
 
   const options = [
     {
-      title: "I always aim to get in early and catch the biggest upside",
+      title: "I always aim to get in early",
       img: Step_19_1,
     },
     {
-      title: "Sometimes I’m a bit late, still trying to improve",
+      title: "Sometimes I’m a bit late",
       img: Step_19_3,
     },
     {
-      title: "Too late, I’ve already missed a lot of big opportunities",
+      title: "Too late, I’ve already missed a lot",
       img: Step_19_2,
     },
   ]

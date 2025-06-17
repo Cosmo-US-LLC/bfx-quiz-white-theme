@@ -33,14 +33,11 @@ const MobileQuizStep1 = () => {
           <div className="w-[100%]">
             <div className="w-full ">
               <h1 className="text-[28px] text-[#000] text-center  font-[700] leading-[120%] mb-3">
-                The 2025 Crypto Bull Market Has Just Started{" "}
+              The 2025 crypto bull market has just started
               </h1>
               <p className="text-[16px] font-[400] text-center text-[#000] mb-6 ">
-                In May 2025, Bitcoin reached a new all-time high of $112,000,
-                marking the start of a new bull market cycle. With global
-                financial markets stabilizing, crypto is once again leading the
-                way, outpacing traditional assets and capturing the attention of
-                millions.
+               Bitcoin recently broke past its all time high of $112,000, marking the start of a new bull run. Crypto is once again leading the charge, outperforming stocks, gold, and real estate, and capturing the attention of millions. Now is your chance to position yourself early. Tap continue to see how much you could earn. <br /><br />
+               Tap continue to see how much you could earn.
               </p>
               <button
                 onClick={handleNext}

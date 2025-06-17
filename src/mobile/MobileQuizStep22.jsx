@@ -81,12 +81,11 @@ const MobileQuizStep22 = () => {
       <div className="w-[100%] mx-auto space-y-[40px] ">
         <div className=" space-y-[15px] w-full ">
           <h1 className="text-[28px] text-center font-[700] leading-[120%] mb-1 ">
-            Ready to see how much <br />
-            you could earn with BFX
+           Estimate Your Potential <br /> Earnings with BFX
           </h1>
           <div className="py-[6px] italic">
             <p className="text-[18px] text-center font-[700] leading-[150%] text-[#000]">
-              Based on your Goal income: <br /> {goalIncome}
+              Target Monthly Income: <br /> {goalIncome}
             </p>
           </div>
           <div className="space-y-[15px]">
@@ -95,7 +94,7 @@ const MobileQuizStep22 = () => {
                 htmlFor=""
                 className=" text-[18px] block font-[700] leading-[222%] text-[#000]"
               >
-                How much do you want to invest in BFX
+                BFX Purchase Amount
               </label>
               <input
                 value={`${input1}`}
@@ -117,7 +116,7 @@ const MobileQuizStep22 = () => {
                 htmlFor=""
                 className=" text-[18px] block font-[700] leading-[222%] text-[#000]"
               >
-                How much will BFX be worth at launch?
+              Projected Value at Launch:
               </label>
 
               <p
@@ -143,7 +142,7 @@ const MobileQuizStep22 = () => {
           </div>
           <div>
             <p className="text-[18px] font-[700] leading-[222%] text-[#000]">
-              Expected Monthly Revenue
+             Estimated Monthly Returns:
             </p>
             <div
               style={{
