@@ -32,14 +32,12 @@ const QuizStep1 = () => {
       <div className="max-w-[1240px] mx-auto flex flex-col items-center">
         <div className="h-[76vh] w-full flex flex-col items-start justify-center text-center  pl-16">
           <h1 className="text-[30px] text-[#000] text-center font-[800] leading-[42px] mb-5 capitalize">
-            The 2025 Crypto Bull <br /> Market Has Just Started{" "}
+            
+            The 2025 crypto bull <br />  market has just started
           </h1>
           <p className="text-[16px] max-w-[350px] font-[400] text-center text-[#000] mb-6 ">
-            In May 2025, Bitcoin reached a new all-time high of $112,000,
-            marking the start of a new bull market cycle. <br /> <br /> With
-            global financial markets stabilizing, crypto is once again leading
-            the way, outpacing traditional assets and capturing the attention of
-            millions.
+          Bitcoin recently broke past its all time high of $112,000, marking the start of a new bull run. Crypto is once again leading the charge, outperforming stocks, gold, and real estate, and capturing the attention of millions. Now is your chance to position yourself early. Tap continue to see how much you could earn. <br /> <br /> 
+          Tap continue to see how much you could earn.
           </p>
           <button
             onClick={handleNext}

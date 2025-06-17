@@ -24,7 +24,7 @@ const MobilePriceBySurge = () => {
   return (
     <div className="flex flex-col items-center justify-between mt-[15px] mb-6 w-[100%]">
       <div className="space-y-[15px] text-center w-[100%]">
-        <h2 className="text-[30px] max-w-[350px] w-full text-[#000] font-[700] mb-4 ">
+        <h2 className="text-[30px] max-w-[350px] mx-auto w-full text-[#000] font-[700] mb-4 ">
           The BFX Price is about to Surge by 300%
         </h2>
         <p className="text-[16px] w-full max-w-[420px]  font-[700] text-[#000] mb-6 ">
@@ -35,7 +35,7 @@ const MobilePriceBySurge = () => {
             opportunity for upside potential.
           </span>
         </p>
-        <div className="flex justify-center pt-[20px]">
+        {/* <div className="flex justify-center pt-[20px]">
           <button
             onClick={handleNext}
             style={{
@@ -46,7 +46,7 @@ const MobilePriceBySurge = () => {
           >
             Claim Exclusive PERSONAL Bonus Code
           </button>
-        </div>
+        </div> */}
       </div>
       <div className="mt-6 max-w-[550px] w-[100%] flex justify-center items-center rounded-[8px] animate-fade-in-up">
         <img

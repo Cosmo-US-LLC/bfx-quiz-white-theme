@@ -39,7 +39,7 @@ const MobileQuizStep20 = () => {
     { title: "Daily passive income potential", img: Step_20_2 },
     { title: "Audited and secure", img: Step_20_3 },
     { title: "Early access before major growth", img: Step_20_4 },
-    { title: "Huge upside potential", img: Step_20_5 },
+    // { title: "Huge upside potential", img: Step_20_5 },
   ];
 
   const toggleOption = (index) => {
