@@ -83,9 +83,9 @@ const QuizStep22 = () => {
           <h1 className="text-[30px] font-[700] leading-[116%] mb-1 ">
             Estimate Your Potential <br /> Earnings with BFX
           </h1>
-          <div className="mt-2 italic">
+          <div className="mt-2">
             <p className="text-[16px] font-[700] leading-[150%] text-[#000]">
-              Target Monthly Income: {goalIncome}
+              Target Monthly Income: <span className="italic">{goalIncome}</span>
             </p>
           </div>
           <div className="space-y-[18px]">
@@ -169,7 +169,7 @@ const QuizStep22 = () => {
               }}
               className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
             >
-              CLAIM YOUR PERSONAL BONUS CODE
+              Claim your PERSONAL Bonus
             </button>
           </div>
         </div>

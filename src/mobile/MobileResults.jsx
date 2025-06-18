@@ -192,17 +192,17 @@ const MobileResults = () => {
                   />
                 </div>
               </div>
-              <div className="max-w-[506px] mx-auto">
-                {/* <p className="text-[16px] text-[#fff] font-[400] leading-[250%] text-center mb-4">
+              {/* <div className="max-w-[506px] mx-auto">
+                <p className="text-[16px] text-[#fff] font-[400] leading-[250%] text-center mb-4">
                   *At 3insiders, our goal is to match you with the right project
                   for your goals and secure exclusive deals you won’t find
                   anywhere else through our industry connections. A win for
                   everyone.{" "}
-                </p> */}
-              </div>
-              <div className="flex items-center justify-center mt-6 mb-6">
+                </p>
+              </div> */}
+              {/* <div className="flex items-center justify-center mt-6 mb-6">
                 <img src={result_icon_3} className="h-[132px]" alt="" />
-              </div>
+              </div> */}
             </div>
           </div>
 

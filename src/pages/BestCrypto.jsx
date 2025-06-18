@@ -299,7 +299,7 @@ const BestCrypto = () => {
                     }}
                     className="text-[16px] text-[rgba(36, 35, 76, 0.50)] font-[700]"
                   >
-                    Meta
+                    Payment Method
                   </p>
                   <div className="grid grid-cols-4 gap-[15px] pt-[10px]">
                     {iconData.map((item) => (
@@ -347,7 +347,7 @@ const BestCrypto = () => {
             onClick={handleNext}
             className="text-[18px] text-[#fff] font-[700] leading-[24px] uppercase bg-[#2189FF] rounded-[10px] py-[13px] w-[100%] "
           >
-            Calculate How Much You Could Earn With $BFX
+            Calculate your earning potential with $bfx
           </button>
         </div>
       </div>

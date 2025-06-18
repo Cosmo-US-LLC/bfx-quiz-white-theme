@@ -313,7 +313,7 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                 }}
                 className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
               >
-                Discover your Top Crypto Pick in 2025 
+                 YOUR TOP CRYPTO MATCH IN 2025
               </button>
             </div>
           </div>

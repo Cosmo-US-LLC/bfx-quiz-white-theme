@@ -100,7 +100,7 @@ const QuizStep24 = () => {
             }}
             className={`py-[13px] w-[100%] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
           >
-            Claim Exclusive PERSONAL Bonus Code
+            Claim your PERSONAL Bonus
           </button>
         </div>
         <div>

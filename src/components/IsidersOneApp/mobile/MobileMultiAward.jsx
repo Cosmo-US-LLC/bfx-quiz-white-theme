@@ -1,5 +1,5 @@
 import React from "react";
-import multi1 from "../../../assets/oneApp/Multi/mobile-multi-1.svg";
+import multi1 from "../../../assets/oneApp/Multi/multi_1.svg";
 import multi2 from "../../../assets/oneApp/Multi/mobile-multi-2.svg";
 
 export default function MobileMultiAward() {

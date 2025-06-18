@@ -317,7 +317,7 @@ const MobileQuizStep19_28 = ({ targetPercentage = 80 }) => {
                 }}
                 className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
               >
-                Discover How Much <br /> you Could Earn with BFX
+                YOUR TOP CRYPTO <br /> MATCH IN 2025
               </button>
             </div>
           </div>

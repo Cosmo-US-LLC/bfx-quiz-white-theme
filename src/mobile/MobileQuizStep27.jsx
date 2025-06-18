@@ -51,7 +51,7 @@ const MobileQuizStep27 = () => {
           />
         </div>
         <div className="max-w-[1020px] mx-auto  w-full ">
-          <p className="text-[16px] text-center font-[400] text-[#000]">
+          <p className="text-[16px] text-center font-[400] mb-4 text-[#000]">
             Your crypto profile is loading
           </p>
           <h1 className="text-[28px] text-center text-[#000] font-bold mb-4 ">
@@ -62,7 +62,7 @@ const MobileQuizStep27 = () => {
             insider access, early entry into private communities, and insights
             from a full-time expert research team.
           </p>
-          <p className="text-[16px]  text-center font-[400] text-[#000] mb-6 ">
+          <p className="text-[16px]  text-center font-[400] text-[#000] mb-4 ">
             Some of our past results
           </p>
           {/* <div>
