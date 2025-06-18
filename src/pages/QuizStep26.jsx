@@ -46,10 +46,12 @@ const QuizStep26 = () => {
             backgroundColor="#D9D9D980"
             progressColor="#2189FF"
             textColor="#000"
-            label="Your crypto profile is loading "
           />
         </div>
         <div className="max-w-[1240px] mx-auto  w-full ">
+          <p className="text-[16px] text-center font-[400] mb-4 text-[#000]">
+            Your crypto profile is loading
+          </p>
           <h1 className="text-[40px] font-[700] leading-[26px] text-center text-[#000] mb-4 ">
             Analysing your results
           </h1>

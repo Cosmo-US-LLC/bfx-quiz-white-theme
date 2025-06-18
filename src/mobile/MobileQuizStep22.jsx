@@ -83,9 +83,9 @@ const MobileQuizStep22 = () => {
           <h1 className="text-[28px] text-center font-[700] leading-[120%] mb-1 ">
            Estimate Your Potential <br /> Earnings with BFX
           </h1>
-          <div className="py-[6px] italic">
+          <div className="py-[6px] ">
             <p className="text-[18px] text-center font-[700] leading-[150%] text-[#000]">
-              Target Monthly Income: <br /> {goalIncome}
+              Target Monthly Income: <br /> <span className="italic">{goalIncome}</span>
             </p>
           </div>
           <div className="space-y-[15px]">
@@ -111,6 +111,7 @@ const MobileQuizStep22 = () => {
                 placeholder="$10,000"
               />
             </div>
+             <div className="h-[1px] w-[100%] bg-[#737373]"></div>
             <div>
               <label
                 htmlFor=""
@@ -158,13 +159,7 @@ const MobileQuizStep22 = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[650.434px] w-[100%] animate-fade-in-up relative">
-           <div className="px-2 py-1 absolute top-[10%] left-[1%] bg-[#00000010] rounded-[4px] z-10 text-[13px] font-[600] leading-[24px] tracking-[-0.32px]">
-            Income & Profit Calculator
-          </div>
-          <img src={Step_22} alt="" className="relative z-20"/>
-        </div>
-        <div className="!mt-6 w-[100%] flex justify-center">
+         <div className="!mt-6 w-[100%] flex justify-center">
           <button
             onClick={handleNext}
             style={{
@@ -173,9 +168,16 @@ const MobileQuizStep22 = () => {
             }}
             className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
           >
-            CLAIM YOUR PERSONAL BONUS CODE
+             Claim your PERSONAL Bonus
           </button>
         </div>
+        <div className="max-w-[350.434px] mx-auto w-[100%] animate-fade-in-up relative">
+           <div className="px-2 py-1 absolute top-[10%] left-[2%] bg-[#00000010] rounded-[4px] z-10 text-[13px] font-[600] leading-[24px] tracking-[-0.32px]">
+            Income & Profit Calculator
+          </div>
+          <img src={Step_22} alt="" className="relative z-20"/>
+        </div>
+       
       </div>
     </div>
   );

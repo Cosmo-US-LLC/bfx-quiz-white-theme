@@ -100,7 +100,7 @@ const MobileQuizStep24 = () => {
             }}
             className={`py-[13px] w-[94%] mx-auto fixed bottom-[18px] z-[99] text-[16px] font-[700] leading-[24px] tracking-[-0.01px] text-[#fff] uppercase`}
           >
-            Claim Exclusive PERSONAL Bonus Code
+            Claim your PERSONAL Bonus
           </button>
 
       {/* <div className=" max-w-[1240px] w-[100%]">

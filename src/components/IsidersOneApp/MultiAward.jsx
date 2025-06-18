@@ -1,5 +1,5 @@
 import React from "react";
-import multi1 from "../../assets/oneApp/Multi/multi-1.svg";
+import multi1 from "../../assets/oneApp/Multi/multi_1_desk.svg";
 import multi2 from "../../assets/oneApp/Multi/multi-2.svg";
 
 export default function MultiAward() {

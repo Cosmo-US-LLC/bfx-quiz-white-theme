@@ -12,7 +12,7 @@ const AgeOption = ({ ageRange, imageUrl, isSelected, onClick }) => {
         <img
           src={imageUrl || "/placeholder.svg"}
           alt={`Person age ${ageRange}`}
-          className="w-full object-cover 2xl:max-w-[150px] xl:max-w-[150px] lg:max-w-[150px] md:max-w-[150px] sm:max-w-[128px] max-w-[128px] mx-auto absolute 2xl:h-[150px]  xl:h-[150px]  lg:h-[150px] md:h-[150px]  sm:h-[175px]  h-[136px]  2xl:top-[-17.5%] xl:top-[-17.5%] lg:top-[-17.5%] md:top-[-17.5%] sm:top-[-32.5%] top-[-21.5%] z-[99]"
+          className="w-full object-cover 2xl:max-w-[150px] xl:max-w-[150px] lg:max-w-[150px] md:max-w-[150px] sm:max-w-[140px] max-w-[140px] mx-auto absolute 2xl:h-[150px]  xl:h-[150px]  lg:h-[150px] md:h-[150px]  sm:h-[175px]  h-[136px]  2xl:top-[-17.5%] xl:top-[-17.5%] lg:top-[-17.5%] md:top-[-17.5%] sm:top-[-32.5%] top-[-21.5%] z-[99]"
         />
       </div>
       <div className="p-3 text-center bg-[#2189FF] rounded-b-[5px]">

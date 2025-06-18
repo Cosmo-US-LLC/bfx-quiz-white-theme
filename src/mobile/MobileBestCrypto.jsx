@@ -181,7 +181,7 @@ const MobileBestCrypto = () => {
       <QuizSteps currentStep={28} totalSteps={28} />
 
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-[26px] text-center text-[#000] font-bold mt-6">
+        <h1 className="text-[26px] text-center text-[#000] font-bold ">
           Your Top Crypto Match is Here!
         </h1>
         <p className="text-[16px] text-center font-[600] text-[#000] mt-2">
@@ -195,9 +195,8 @@ const MobileBestCrypto = () => {
               <img src={madle} alt="badge" className="w-[60px]" />
             </div>
             <div className="flex flex-col items-center justify-center pl-8">
-              <div className="flex items-start justify-start gap-2">
-                <img src={bfx} alt="$BFX" className="w-[150px]" />
-                <span className="font-semibold text-[#24234C]">($BFX)</span>
+              <div className="flex items-start justify-start gap-[1px]">
+                <img src={bfx} alt="$BFX" className="w-[150px]" /><span className="font-semibold text-[#24234C]">($BFX)</span>
               </div>
               <button
                 onClick={handleNext}
@@ -232,7 +231,9 @@ const MobileBestCrypto = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-3 mt-4  p-2 w-full mx-auto max-w-[300px]">
+          <div className=" mt-4 ">
+             <div className="text-sm text-center mb-2 text-[#24234C]/60 font-bold">Payment Method</div>
+            <div className="flex flex-wrap p-2  justify-center gap-3 w-full mx-auto max-w-[300px]">
             {iconData.map((icon, i) => (
               <img
                 key={i}
@@ -241,6 +242,8 @@ const MobileBestCrypto = () => {
                 className="w-[40px] h-[40px] object-contain"
               />
             ))}
+            </div>
+            
           </div>
         </div>
 
@@ -277,7 +280,7 @@ const MobileBestCrypto = () => {
           onClick={handleNext}
           className="mt-6 text-[16px] text-white font-bold bg-[#2189FF] uppercase rounded-[8px] py-3 px-6 w-full max-w-[480px]"
         >
-          Calculate How Much <br /> You Could Earn With $BFX
+          Calculate your earning <br /> potential with $bfx
         </button>
       </div>
     </div>

@@ -47,11 +47,11 @@ const QuizPage = () => {
           </h1>
           <p className="text-[14px] font-[400] leading-[16px] uppercase text-[#000]">
             TAKE <span className="font-[700]">THE 1-MINUTE QUIZ</span> AND FIND
-            OUT NOW
+            OUT
           </p>
 
           <h2 className="text-[16px] font-[400] leading-[24px] text-[#000]">
-            SELECT YOUR <span className="font-[700]">AGE</span>
+            SELECT YOUR <span className="font-[700]">AGE :</span>
           </h2>
         </div>
         <div className="grid grid-cols-2 gap-4 w-[630px] mx-auto mt-10 mb-8 md:grid-cols-4">
