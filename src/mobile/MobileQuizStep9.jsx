@@ -29,7 +29,7 @@ const MobileQuizStep9 = () => {
         <QuizHeader currentStep={"Facts"} totalSteps={28} />
         <QuizSteps currentStep={9} totalSteps={28} />
 
-        <div className="max-w-[1240px] w-[100%]">
+        <div className="max-w-[1240px] w-[100%] animate-fade-in-up">
           <div className="w-full text-center ">
             <h1 className="text-[28px] text-[#000] font-bold !mb-4 ">
               Inflation Reduces <br /> Your Real Wealth

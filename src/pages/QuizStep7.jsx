@@ -30,7 +30,7 @@ const QuizStep7 = () => {
       <QuizSteps currentStep={7} totalSteps={28} />
 
       <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[4rem] w-[100%]">
-        <div className="max-w-[500px] w-full flex flex-col justify-center items-center text-center ">
+        <div className="max-w-[500px] w-full flex flex-col justify-center items-center text-center animate-fade-in-up">
           <h1 className="text-[30px] text-[#000] font-[800] mb-4  leading-[140%]">
             We’ve all missed some major <br /> opportunities in crypto
           </h1>

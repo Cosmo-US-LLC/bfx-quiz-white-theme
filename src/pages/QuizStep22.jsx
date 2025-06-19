@@ -79,7 +79,7 @@ const QuizStep22 = () => {
       <QuizSteps currentStep={24} totalSteps={28} />
 
       <div className="flex justify-between max-w-[1160px] w-[100%] mx-auto items-center mt-6 mb-6">
-        <div className="max-w-[475px] space-y-[18px] w-full ">
+        <div className="max-w-[475px] space-y-[18px] w-full">
           <h1 className="text-[30px] font-[700] leading-[116%] mb-1 ">
             Estimate Your Potential <br /> Earnings with BFX
           </h1>

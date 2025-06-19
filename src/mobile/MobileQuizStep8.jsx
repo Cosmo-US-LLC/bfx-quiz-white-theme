@@ -33,7 +33,7 @@ const MobileQuizStep8 = () => {
     localStorage.setItem("inflationConcern", option.title);
     setTimeout(() => {
       navigate("/quiz/fact-check-3");
-    }, 600);
+    }, 200);
   };
 
   return (

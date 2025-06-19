@@ -41,7 +41,7 @@ const MobileQuizStep15 = () => {
     localStorage.setItem("passiveIncome", option.title);
     setTimeout(() => {
       navigate("/quiz/fact-check-no=4");
-    }, 600);
+    }, 200);
   };
 
   return (

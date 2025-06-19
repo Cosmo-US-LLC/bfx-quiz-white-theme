@@ -35,7 +35,7 @@ const MobileQuizStep18_28 = () => {
     localStorage.setItem("specialWish", option.title);
     setTimeout(() => {
       navigate("/quiz/fact-check-no=7_1");
-    }, 600);
+    }, 200);
   };
 
   return (
