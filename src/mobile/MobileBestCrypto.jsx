@@ -14,6 +14,7 @@ import bfx_sv_6 from "../assets/BestCrypto/bfx_q (6).svg";
 import bfx_sv_7 from "../assets/BestCrypto/bfx_q (7).svg";
 import bfx_sv_8 from "../assets/BestCrypto/bfx_q (8).svg";
 import bfx_sv_9 from "../assets/BestCrypto/bfx_q (9).svg";
+import bfx_sv_10 from "../assets/BestCrypto/Visa.svg";
 
 export const ProgressBar = ({
   title,
@@ -134,6 +135,8 @@ const MobileBestCrypto = () => {
     bfx_sv_7,
     bfx_sv_8,
     bfx_sv_9,
+    bfx_sv_10,
+    
   ];
 
   const progressData = [
@@ -176,12 +179,12 @@ const MobileBestCrypto = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen px-4 pt-4 pb-10 bg-white">
+    <div className="flex relative flex-col items-center min-h-screen px-4 pt-4 pb-10 bg-white">
       <QuizHeader currentStep={"Top Pick"} totalSteps={28} />
       <QuizSteps currentStep={28} totalSteps={28} />
 
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-[26px] text-center text-[#000] font-bold ">
+        <h1 className="text-[28px] text-center text-[#000] font-bold ">
           Your Top Crypto Match is Here!
         </h1>
         <p className="text-[16px] text-center font-[600] text-[#000] mt-2">
@@ -248,7 +251,7 @@ const MobileBestCrypto = () => {
         </div>
 
         <div
-          className="overflow-hidden py-6 mt-6 w-[100%] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
+          className="overflow-hidden py-6 mb-[6rem] mt-6 w-[100%] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
           style={{}}
         >
            <div className="flex items-center w-[100%]  justify-center mb-6">
@@ -278,7 +281,7 @@ const MobileBestCrypto = () => {
 
         <button
           onClick={handleNext}
-          className="mt-6 text-[16px] text-white font-bold bg-[#2189FF] uppercase rounded-[8px] py-3 px-6 w-full max-w-[480px]"
+          className="mt-6 text-[18px] text-white font-bold bg-[#2189FF] uppercase rounded-[8px] py-3 px-6 w-full max-w-[480px] fixed bottom-[20px]"
         >
           Calculate your earning <br /> potential with $bfx
         </button>

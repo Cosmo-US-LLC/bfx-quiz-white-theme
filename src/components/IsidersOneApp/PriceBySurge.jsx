@@ -44,7 +44,7 @@ const PriceBySurge = () => {
             }}
             className={`py-[13px] max-w-[350px] w-[100%] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
           >
-            Claim Exclusive PERSONAL Bonus Code
+            CLAIM YOUR PERSONAL BONUS
           </button>
         </div>
       </div>

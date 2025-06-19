@@ -51,7 +51,7 @@ const QuizPage = () => {
           </p>
 
           <h2 className="text-[16px] font-[400] leading-[24px] text-[#000]">
-            SELECT YOUR <span className="font-[700]">AGE :</span>
+            SELECT YOUR <span className="font-[700]">AGE:</span>
           </h2>
         </div>
         <div className="grid grid-cols-2 gap-4 w-[630px] mx-auto mt-10 mb-8 md:grid-cols-4">

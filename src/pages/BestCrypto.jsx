@@ -15,6 +15,7 @@ import bfx_sv_6 from "../assets/BestCrypto/bfx_q (6).svg";
 import bfx_sv_7 from "../assets/BestCrypto/bfx_q (7).svg";
 import bfx_sv_8 from "../assets/BestCrypto/bfx_q (8).svg";
 import bfx_sv_9 from "../assets/BestCrypto/bfx_q (9).svg";
+import bfx_sv_10 from "../assets/BestCrypto/Visa.svg";
 
 export const ProgressBar = ({
   title,
@@ -154,6 +155,9 @@ const BestCrypto = () => {
     {
       img: bfx_sv_9,
     },
+    {
+      img: bfx_sv_10,
+    }
   ];
   const progressData = [
     {
