@@ -117,7 +117,7 @@ const Results = () => {
               <div className="flex items-center max-w-[506px] mx-auto mb-[25px]">
                 <p className="w-[50%] text-[16px] flex justify-start  font-[400] text-[black] ">
                   Your readiness:{" "}
-                  <span className="font-[700] text-[#037FF9] "> 84%</span>
+                  <span className="font-[700] text-[#037FF9] "> 87%</span>
                 </p>
               </div>
               <div className="flex justify-evenly pl-2 pt-3 items-center max-w-[506px] mx-auto w-[100%] bg-[#fff] mb-4">
