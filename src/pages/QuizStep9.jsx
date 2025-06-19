@@ -30,7 +30,7 @@ const QuizStep9 = () => {
         <QuizHeader currentStep={"Facts"} totalSteps={28} />
         <QuizSteps currentStep={9} totalSteps={28} />
 
-        <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[4rem] w-[100%]">
+        <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[4rem] w-[100%] animate-fade-in-up">
           <div className="max-w-[500px] w-full flex flex-col justify-center items-center text-center ">
             <h1 className="text-[30px] leading-[42px] text-[#000] font-[800] !mb-4 ">
               Inflation reduces your real wealth

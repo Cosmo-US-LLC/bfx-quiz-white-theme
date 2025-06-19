@@ -28,7 +28,7 @@ const MobileQuizStep12 = () => {
       <QuizHeader currentStep={"Facts"} totalSteps={18} />
       <QuizSteps currentStep={12} totalSteps={28} />
 
-      <div className="w-[100%]">
+      <div className="w-[100%] animate-fade-in-up">
         <div className="w-full text-center ">
           <h1 className="text-[28px] text-[#000] font-bold mb-4 ">
             How millionaires build <br /> generational wealth

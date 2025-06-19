@@ -30,7 +30,7 @@ const QuizStep16 = () => {
       <QuizSteps currentStep={16} totalSteps={28} />
 
       <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[2rem] w-[100%]">
-        <div className="max-w-[500px] space-y-[15px] text-center mx-auto w-full ">
+        <div className="max-w-[500px] space-y-[15px] text-center mx-auto w-full animate-fade-in-up">
           <h1 className="text-[30px] font-[800] leading-[140%] text-[#000] mb-4 ">
             It has never been easier to earn <br /> real passive income with
             crypto

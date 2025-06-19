@@ -31,7 +31,7 @@ const MobileQuizStep18 = () => {
     localStorage.setItem("retirementPlan", option.title);
     setTimeout(() => {
       navigate("/quiz/step=15");
-    }, 600);
+    }, 200);
   };
 
   return (

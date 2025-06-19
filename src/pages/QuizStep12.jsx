@@ -30,7 +30,7 @@ const QuizStep9 = () => {
       <QuizSteps currentStep={12} totalSteps={28} />
 
       <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[4rem] w-[100%]">
-        <div className="max-w-[500px] w-full text-center flex flex-col justify-center items-center ">
+        <div className="max-w-[500px] w-full text-center flex flex-col justify-center items-center animate-fade-in-up">
           <h1 className="text-[30px] text-[#000] font-[700] leading-[116%] mb-4 ">
             How millionaires build <br /> generational wealth
           </h1>

@@ -35,7 +35,7 @@ const MobileQuizStep3 = () => {
     localStorage.setItem("cryptoExperience", option.title);
     setTimeout(() => {
       navigate("/quiz/step=4");
-    }, 600);
+    }, 200);
   };
 
   return (

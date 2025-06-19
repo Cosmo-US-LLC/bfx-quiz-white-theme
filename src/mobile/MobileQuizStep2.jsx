@@ -32,7 +32,7 @@ const MobileQuizStep2 = () => {
     localStorage.setItem("mainGoal", option.title);
     setTimeout(() => {
       navigate("/quiz/step=3");
-    }, 600);
+    }, 200);
   };
 
   useEffect(() => {
