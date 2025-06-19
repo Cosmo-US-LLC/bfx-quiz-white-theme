@@ -16,6 +16,7 @@ import bfx_sv_7 from "../assets/BestCrypto/bfx_q (7).svg";
 import bfx_sv_8 from "../assets/BestCrypto/bfx_q (8).svg";
 import bfx_sv_9 from "../assets/BestCrypto/bfx_q (9).svg";
 import bfx_sv_10 from "../assets/BestCrypto/Visa.svg";
+import bfx_sv_11 from "../assets/BestCrypto/VisaCard.svg";
 
 export const ProgressBar = ({
   title,
@@ -154,6 +155,9 @@ const BestCrypto = () => {
     },
     {
       img: bfx_sv_9,
+    },
+    {
+      img: bfx_sv_11,
     },
     {
       img: bfx_sv_10,
@@ -305,7 +309,7 @@ const BestCrypto = () => {
                   >
                     Payment Method
                   </p>
-                  <div className="grid grid-cols-4 gap-[15px] pt-[10px]">
+                  <div className="grid grid-cols-6 gap-[15px] pt-[10px]">
                     {iconData.map((item) => (
                       <div>
                         <img src={item.img} alt="" />

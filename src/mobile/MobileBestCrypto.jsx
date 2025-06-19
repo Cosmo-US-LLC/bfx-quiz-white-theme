@@ -15,6 +15,7 @@ import bfx_sv_7 from "../assets/BestCrypto/bfx_q (7).svg";
 import bfx_sv_8 from "../assets/BestCrypto/bfx_q (8).svg";
 import bfx_sv_9 from "../assets/BestCrypto/bfx_q (9).svg";
 import bfx_sv_10 from "../assets/BestCrypto/Visa.svg";
+import bfx_sv_11 from "../assets/BestCrypto/VisaCard.svg";
 
 export const ProgressBar = ({
   title,
@@ -135,6 +136,7 @@ const MobileBestCrypto = () => {
     bfx_sv_7,
     bfx_sv_8,
     bfx_sv_9,
+    bfx_sv_11,
     bfx_sv_10,
     
   ];
@@ -236,7 +238,7 @@ const MobileBestCrypto = () => {
 
           <div className=" mt-4 ">
              <div className="text-sm text-center mb-2 text-[#24234C]/60 font-bold">Payment Method</div>
-            <div className="flex flex-wrap p-2  justify-center gap-3 w-full mx-auto max-w-[300px]">
+            <div className="flex flex-wrap py-2 justify-center gap-3 w-full mx-auto max-w-[350px]">
             {iconData.map((icon, i) => (
               <img
                 key={i}
