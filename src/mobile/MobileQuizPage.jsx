@@ -55,7 +55,8 @@ const MobileQuizPage = () => {
           <h2 className="text-[16px] font-[400] leading-[150%] text-[#000]">
             SELECT YOUR <span className="font-[700]">AGE:</span>
           </h2>
-        </div>
+        </div>   
+        
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-[3rem] max-w-[300px] mx-auto gap-x-4 mb-8 mt-[4rem]">
           {ageOptions.map((option) => (
             <AgeOption
