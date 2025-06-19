@@ -39,12 +39,7 @@ const QuizStep16 = () => {
             A notable example is BlockchainFX. People who buy the new $BFX token
             during the presale earn rewards every time someone trades on the
             platform. As $BFX holders, they receive a share of all trading fees
-            in USDT without having to trade themselves. <br />
-            <br />
-            BlockchainFX is a fast-growing crypto exchange and the first to
-            bridge digital assets like Bitcoin and Ethereum with traditional
-            financial markets such as stocks, forex, ETFs, and more, offering
-            access to over 500 different assets.
+            in USDT without having to trade themselves.
           </p>
           <div className="flex justify-center pt-4">
             <button
