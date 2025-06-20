@@ -122,7 +122,7 @@ const MobileResults = () => {
                 </p>
               </div> */}
               <div className="flex justify-between pl-3 items-center max-w-[506px] mx-auto w-[100%] bg-[#fff] mb-4">
-                <div className="relative z-[9]">
+                <div className="relative z-[99]">
                   <h2 className="text-black font-[500] text-[20px] mb-4">
                     Claim your personal <br />
                     <span className="font-[700] text-[#037FF9] ">35%</span> BFX
@@ -215,9 +215,10 @@ const MobileResults = () => {
               }}
               className={`py-[13px] w-[100%] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
             >
-              CLAIM YOUR BONUS HERE: <br /> BlockchainFX.com
+            CLAIM YOUR BONUS HERE
             </button>
           </div>
+          <p className="text-[16px] text-[black] leading-[100%] pb-4 font-[400] text-center ">The button will redirect you to BlockchainFX.com</p>
         </div>
       </div>
     </div>

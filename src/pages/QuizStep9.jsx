@@ -31,14 +31,12 @@ const QuizStep9 = () => {
         <QuizSteps currentStep={9} totalSteps={28} />
 
         <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[4rem] w-[100%] animate-fade-in-up">
-          <div className="max-w-[500px] w-full flex flex-col justify-center items-center text-center ">
+          <div className="max-w-[550px] w-full flex flex-col justify-center items-center text-center ">
             <h1 className="text-[30px] leading-[42px] text-[#000] font-[800] !mb-4 ">
-              Inflation reduces your real wealth
+              Your cash is losing value every year
             </h1>
-            <p className="text-[16px] font-[400] text-[#000] mb-6 ">
-              The average global inflation rate ranges between 6–8% per year.{" "}
-              <br />
-              <br /> That means if you keep $1,000 in cash, it could lose up to
+            <p className="text-[16px] px-6 font-[400] text-[#000] mb-6 ">
+              The average global inflation rate ranges between 6–8% per year. That means if you keep $1,000 in cash, it could lose up to
               50% its value in just 9–10 years. In the U.S. alone, $100 in 2013
               now has the same buying power as about $65 in 2025.
             </p>

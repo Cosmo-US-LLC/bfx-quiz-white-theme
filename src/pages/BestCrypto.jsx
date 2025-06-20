@@ -279,7 +279,7 @@ const BestCrypto = () => {
                     Project Launched
                   </p>
                   <h3 className="text-[#444366] text-[29.2px] font-[600]">
-                    April 2025
+                    May 2025
                   </h3>
                 </div>
                 <div
@@ -336,7 +336,7 @@ const BestCrypto = () => {
                 />
               )}
             </div>
-            <div className="grid grid-cols-1 pl-[7rem] md:grid-cols-2 gap-x-[5rem] gap-y-[2rem] max-w-[700px] mx-auto">
+            <div className="grid grid-cols-1 pr-[7rem] pl-[2px] mr-0 md:grid-cols-2 gap-x-[5rem] gap-y-[2rem] max-w-[700px] ml-auto">
               {progressData.map((item, index) => (
                 <ProgressBar
                   key={index}
@@ -353,7 +353,7 @@ const BestCrypto = () => {
         <div className="mb-6 w-[100%] max-w-[1076px] mx-auto mt-2">
           <button
             onClick={handleNext}
-            className="text-[18px] text-[#fff] font-[700] leading-[24px] uppercase bg-[#2189FF] rounded-[10px] py-[13px] w-[100%] "
+            className="text-[25px] text-[#fff] font-[700] leading-[24px] uppercase bg-[#2189FF] rounded-[10px] py-[13px] w-[100%] "
           >
             Calculate your earning potential with $bfx
           </button>
