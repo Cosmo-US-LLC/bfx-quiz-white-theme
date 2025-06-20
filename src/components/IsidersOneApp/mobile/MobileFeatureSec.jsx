@@ -5,7 +5,7 @@ import herobnr4 from "../../../assets/oneApp/featured/link3.svg";
 
 function MobileFeatureSec() {
   return (
-    <div className="pt-[10px] ">
+    <div className="">
       <div className="w-[100%]   ">
         <div className="bg-[#fff] py-4 gap-1 flex flex-col relative justify-center items-center border border-[#00000020] rounded-[6.357px] w-[100%]">
           <h2 className="text-[16.697px] font-[700] text-[#000] tracking-[-0.267px]">

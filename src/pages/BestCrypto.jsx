@@ -326,7 +326,7 @@ const BestCrypto = () => {
           style={{}}
         >
           <div className="">
-            <div className="absolute -bottom-[1%] -left-4  ">
+            <div className="absolute -bottom-[1%] left-4  ">
               {/* <img src={imgby} className="h-[319px]" alt="" /> */}
               {image && (
                 <img

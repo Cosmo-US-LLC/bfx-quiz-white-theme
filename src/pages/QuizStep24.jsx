@@ -33,7 +33,7 @@ const QuizStep24 = () => {
       <QuizHeader currentStep={"About BFX"} totalSteps={28} />
       <QuizSteps currentStep={25} totalSteps={28} />
 
-      <div className="flex flex-col gap-6 items-center max-w-[1240px] mx-auto justify-between mt-6 pb-3 w-[100%]">
+      <div className="flex flex-col gap-6 items-center max-w-[1240px] mx-auto justify-between mt-4 pb-3 w-[100%]">
         <div className="flex flex-col w-full gap-2 ">
           <p className="text-[30px] w-full text-center font-[600] leading-[36px] tracking-[-1px] text-[#000]">
             Learn more about BlockchainFX
