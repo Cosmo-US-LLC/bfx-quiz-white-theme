@@ -99,19 +99,19 @@ const MobileQuizStep19_28 = ({ targetPercentage = 80 }) => {
             >
               {/* Header */}
               <div className="relative px-4 mb-6">
-                <div className="">
-                  <span
+                <div className="flex items-center justify-between">
+                  <h2 className="text-black font-[500] text-[18px] ">
+                    Readiness Score
+                  </h2>
+                   <span
                     style={{
                       background: "#fff",
                       border: "1px solid rgba(230, 232, 236, 0.31)",
                     }}
-                    className="text-[14.1px] text-[#000] w-[100px] flex justify-center ml-auto mr-0 px-2 py-1 rounded  "
+                    className="text-[14.1px] text-[#000]  px-2 py-1 rounded  "
                   >
                     Your Results
                   </span>
-                  <h2 className="text-black mt-4 font-[500] text-[18px] ">
-                    Readiness Score
-                  </h2>
                 </div>
               </div>
 
@@ -345,7 +345,7 @@ const MobileQuizStep19_28 = ({ targetPercentage = 80 }) => {
                 }}
                 className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
               >
-                YOUR TOP CRYPTO <br /> MATCH IN 2025
+                YOUR TOP CRYPTO MATCH IN 2025
               </button>
             </div>
           </div>

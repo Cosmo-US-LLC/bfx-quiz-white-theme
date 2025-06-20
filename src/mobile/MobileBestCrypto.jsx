@@ -187,7 +187,7 @@ const MobileBestCrypto = () => {
 
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-[28px] text-center text-[#000] font-bold ">
-          Your Top Crypto Match is Here!
+          Your Top Crypto Match <br /> is Here!
         </h1>
         <p className="text-[16px] text-center font-[600] text-[#000] mt-2">
           This project aligns the most with your investment profile and goals.
@@ -225,7 +225,7 @@ const MobileBestCrypto = () => {
           <div className="mt-4 text-center border-b border-t border-[#D9D9D9] py-4">
             <div className="text-sm text-[#24234C]/60 font-bold">Launched</div>
             <div className="text-lg font-semibold text-[#444366]">
-              April 2025
+              May 2025
             </div>
           </div>
 
@@ -253,10 +253,10 @@ const MobileBestCrypto = () => {
         </div>
 
         <div
-          className="overflow-hidden py-6 mb-[6rem] mt-6 w-[100%] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
+          className="overflow-hidden pb-6 mb-[4rem] mt-6 w-[100%] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
           style={{}}
         >
-           <div className="flex items-center w-[100%]  justify-center mb-6">
+           <div className="flex items-center bg-[#f1f1f1] w-[100%]  justify-center mb-6">
             {image && (
               <img
                 src={image}
@@ -283,7 +283,7 @@ const MobileBestCrypto = () => {
 
         <button
           onClick={handleNext}
-          className="mt-6 text-[18px] text-white font-bold bg-[#2189FF] uppercase rounded-[8px] py-3 px-6 w-[94%] mx-auto fixed bottom-[20px]"
+          className="mt-6 text-[18px] text-white font-bold bg-[#2189FF] uppercase rounded-[8px] py-3 px-6 w-[94%] mx-auto fixed bottom-[0px]"
         >
           Calculate your earning <br /> potential with $bfx
         </button>

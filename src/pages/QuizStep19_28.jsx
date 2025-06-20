@@ -339,7 +339,7 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                   borderRadius: "10px",
                   background: "#2189FF",
                 }}
-                className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
+                className={`py-[15px] w-[100%] text-[#fff] text-[19px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
               >
                  YOUR TOP CRYPTO MATCH IN 2025
               </button>

@@ -25,7 +25,7 @@ const MobileQuizStep24 = () => {
   }, []);
 
   const handleNext = () => {
-    navigate("/quiz/results");
+    navigate("/quiz/fact-check-no=6");
   };
 
   return (
@@ -33,7 +33,7 @@ const MobileQuizStep24 = () => {
       <QuizHeader currentStep={"About BFX"} totalSteps={28} />
       <QuizSteps currentStep={25} totalSteps={28} />
 
-      <div className="flex flex-col gap-6 items-center   mx-auto justify-between w-[100%]">
+      <div className="flex flex-col gap-4 items-center   mx-auto justify-between w-[100%]">
         <div className="flex flex-col w-full gap-2 ">
           <p className="text-[20px] w-full text-center font-[600] leading-[36px] tracking-[-1px] text-[#000]">
             Learn more about BlockchainFX
@@ -46,7 +46,7 @@ const MobileQuizStep24 = () => {
             global finance and unlocking access to over 500+ assets.
           </p>
         </div>
-        <div className="flex justify-center w-[100%] p-5 border border-[#d9d9d9] rounded-[12px]">
+        <div className="flex justify-center w-[100%] ">
           <script src="https://fast.wistia.com/player.js" async></script>
           <script
             src="https://fast.wistia.com/embed/w8ynmofaw4.js"
@@ -76,7 +76,7 @@ const MobileQuizStep24 = () => {
             ></wistia-player>
           </div>
         </div>
-        <div className="w-[100%]">
+        {/* <div className="w-[100%]">
           <MobileFeatureSec/>
         </div>
         <div>
@@ -90,7 +90,7 @@ const MobileQuizStep24 = () => {
         </div>
         <div className="w-[100%]">
           <MobileFaqSec />
-        </div>
+        </div> */}
       </div>
        <button
             onClick={handleNext}

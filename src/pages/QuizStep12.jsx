@@ -32,13 +32,10 @@ const QuizStep9 = () => {
       <div className="flex items-center max-w-[1240px] mx-auto justify-between mt-[4rem] w-[100%]">
         <div className="max-w-[500px] w-full text-center flex flex-col justify-center items-center animate-fade-in-up">
           <h1 className="text-[30px] text-[#000] font-[700] leading-[116%] mb-4 ">
-            How millionaires build <br /> generational wealth
+            How millionaires<br /> build generational wealth
           </h1>
-          <p className="text-[16px] max-w-[380px] mx-auto font-[400] text-[#000] mb-6 ">
-            Most millionaires and billionaires don’t rely on just one source of
-            income. On average, they have 7 different income streams, including
-            business earnings, investments, crypto, real estate, dividends, and
-            more.
+          <p className="text-[16px] max-w-[390px] mx-auto font-[400] text-[#000] mb-6 ">
+           Most millionaires don’t rely on just one income stream. According to CNBC, 65% have at least three different sources of income, while nearly a third have five or more. These can include business earnings, real estate, dividends, crypto, stocks, and other passive income sources.
           </p>
           <button
             onClick={handleNext}

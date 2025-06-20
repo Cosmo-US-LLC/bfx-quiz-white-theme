@@ -25,7 +25,7 @@ const QuizStep24 = () => {
   }, []);
 
   const handleNext = () => {
-    navigate("/quiz/results");
+    navigate("/quiz/fact-check-no=6");
   };
 
   return (
@@ -33,7 +33,7 @@ const QuizStep24 = () => {
       <QuizHeader currentStep={"About BFX"} totalSteps={28} />
       <QuizSteps currentStep={25} totalSteps={28} />
 
-      <div className="flex flex-col gap-6 items-center max-w-[1240px] mx-auto justify-between mt-6 w-[100%]">
+      <div className="flex flex-col gap-6 items-center max-w-[1240px] mx-auto justify-between mt-6 pb-3 w-[100%]">
         <div className="flex flex-col w-full gap-2 ">
           <p className="text-[30px] w-full text-center font-[600] leading-[36px] tracking-[-1px] text-[#000]">
             Learn more about BlockchainFX
@@ -63,7 +63,7 @@ const QuizStep24 = () => {
               }
             `}
           </style>
-             <div className="flex justify-center mt-4 mb-4 w-full max-w-[730px] h-[410px] mx-auto">
+             <div className="flex justify-center w-full max-w-[730px] h-[251px] mx-auto">
             <wistia-player
               media-id="w8ynmofaw4"
               aspect="1.7777777777777777"
@@ -91,19 +91,19 @@ const QuizStep24 = () => {
         <div className="w-[80%]">
           <FeaturedSec />
         </div>
-        <div className="w-[80%] mt-4">
+        <div className="w-[80%]">
           <button
             onClick={handleNext}
             style={{
               borderRadius: "10px",
               background: "#2189FF",
             }}
-            className={`py-[13px] w-[100%] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
+            className={`py-[13px] w-[100%] text-[25px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
           >
-            Claim your PERSONAL Bonus
+           Unlock Special Bonus
           </button>
         </div>
-        <div>
+        {/* <div>
           <KYCVerified />
         </div>
         <div className="w-[96%]">
@@ -114,7 +114,7 @@ const QuizStep24 = () => {
         </div>
         <div className="w-[100%]">
           <FaqSec/>
-        </div>
+        </div> */}
       </div>
     </div>
   );
