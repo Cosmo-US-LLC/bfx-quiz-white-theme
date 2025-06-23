@@ -41,7 +41,7 @@ const MobileQuizStep18 = () => {
 
       <div className="max-w-[750px] w-full text-center">
         <h1 className="text-[28px] font-[700] leading-[120%] mb-1 text-center">
-          Do you want to retire wealthy?
+          Do you want to <br /> retire wealthy?
         </h1>
         <div className="grid grid-cols-1 max-w-[560px] mx-auto gap-4 mt-8">
           {options.map((option) => (

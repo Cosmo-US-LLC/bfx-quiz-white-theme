@@ -27,17 +27,17 @@ const QuizStep26 = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/quiz/step=19_28");
-    }, 7000);
+    }, 700000);
 
     return () => clearTimeout(timer);
   }, [navigate]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen px-4 overflow-hidden quiz-container">
+    <div className="flex flex-col items-center min-h-screen  px-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={"Loading"} totalSteps={28} />
       <QuizSteps currentStep={26} totalSteps={28} />
 
-      <div className="mt-[1.5rem] pb-8 w-[100%] max-w-[1240px] mx-auto ">
+      <div className="mt-[0rem] pb-2 w-[100%] max-w-[1240px] mx-auto ">
         <div className="flex-col items-center justify-center bg-[#12121200] p-4">
           <CircularProgress
             percentage={100}
@@ -55,7 +55,7 @@ const QuizStep26 = () => {
           <h1 className="text-[40px] font-[700] leading-[26px] text-center text-[#000] mb-4 ">
             Analysing your results
           </h1>
-          <p className="text-[16px]  text-center font-[400] text-[#000] mb-6 ">
+          <p className="text-[16px]  text-center font-[400] text-[#000] mb-3 ">
             {" "}
             3insiders is your unfair advantage in crypto, giving you direct
             insider access, early entry <br /> into private communities, and

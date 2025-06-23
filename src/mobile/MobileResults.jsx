@@ -206,7 +206,7 @@ const MobileResults = () => {
             </div>
           </div>
 
-          <div className="max-w-[578.2px] mx-auto my-6">
+          <div className="max-w-[578.2px] mx-auto mt-6 mb-4">
             <button
               onClick={handleRoute}
               style={{
@@ -218,7 +218,7 @@ const MobileResults = () => {
             CLAIM YOUR BONUS HERE
             </button>
           </div>
-          <p className="text-[16px] text-[black] leading-[100%] pb-4 font-[400] text-center ">The button will redirect you to BlockchainFX.com</p>
+          <p className="text-[16px] text-[black] leading-[100%] pb-5 font-[400] text-center ">The button will redirect you to BlockchainFX.com</p>
         </div>
       </div>
     </div>
