@@ -187,7 +187,7 @@ const MobileBestCrypto = () => {
 
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-[28px] text-center text-[#000] font-bold ">
-          Your Top Crypto Match <br /> is Here!
+          Your Top Crypto <br /> Match is Here!
         </h1>
         <p className="text-[16px] text-center font-[600] text-[#000] mt-2">
           This project aligns the most with your investment profile and goals.

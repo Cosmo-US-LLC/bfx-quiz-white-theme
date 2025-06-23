@@ -6,10 +6,10 @@ import herobnr4 from "../../assets/oneApp/featured/link3.svg";
 
 function FeaturedSec() {
   return (
-    <div className="pt-[10px] ">
+    <div className="">
       <div className="w-[100%] mx-auto ">
-        <div className="bg-[#fff] flex relative justify-center items-center h-[73.47] space-x-[20px] border border-[#00000020] rounded-[6.357px] py-[25px] max-w-[1200px] w-[100%] mx-auto">
-          <h2 className="text-[16.697px] font-[700] pr-3 text-[#000] tracking-[-0.267px]">
+        <div className="bg-[#fff] flex px-2 relative min-w-[107px] justify-center items-center h-[73.47] space-x-[20px] border border-[#00000020] rounded-[6.357px] py-[10px] max-w-[1200px] w-[100%] mx-auto">
+          <h2 className="text-[16.697px] font-[700] text-[#000] tracking-[-0.267px]">
             Featured In:
           </h2>
           <div className="flex flex-col items-center space-y-2 cursor-pointer">

@@ -323,7 +323,7 @@ const MobileQuizStep19_28 = ({ targetPercentage = 80 }) => {
                 </div>
               </div>
               <div
-                className="mb-6 flex justify-between rounded-[6px] py-[10px] px-[8px]"
+                className="mb-12 flex justify-between rounded-[6px] py-[10px] px-[8px]"
                 style={{
                   border: "1px solid #C9C9C9",
                 }}
@@ -343,7 +343,7 @@ const MobileQuizStep19_28 = ({ targetPercentage = 80 }) => {
                   // background: "linear-gradient(90deg, #E5AE00 0%, #FFD551 100%)",
                   backgroundColor: "#037FF9",
                 }}
-                className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
+                className={`py-[13px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase w-[94%] mx-auto fixed bottom-[0px]`}
               >
                 YOUR TOP CRYPTO MATCH IN 2025
               </button>

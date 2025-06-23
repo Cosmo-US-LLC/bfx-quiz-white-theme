@@ -24,7 +24,7 @@ const MobileAboutStep = () => {
   };
 
   return (
-    <div className="flex flex-col relative items-center min-h-screen p-4 overflow-hidden quiz-container">
+    <div className="flex flex-col relative items-center p-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={"About BFX"} totalSteps={28} />
       <QuizSteps currentStep={25} totalSteps={28} />
           <div className="flex flex-col items-center justify-between mt-[15px] mb-6 w-[100%]">
@@ -57,7 +57,7 @@ const MobileAboutStep = () => {
             }}
             className={`py-[13px] w-[100%] text-[15px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
           >
-           unlock your special bonus
+            Unlock your Special Bonus (3/3)
           </button>
         </div>
     </div>

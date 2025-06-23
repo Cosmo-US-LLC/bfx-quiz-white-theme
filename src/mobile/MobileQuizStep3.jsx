@@ -45,7 +45,7 @@ const MobileQuizStep3 = () => {
 
       <div className="w-full text-center">
         <h1 className="text-[28px] font-[700] leading-[120%] mb-1 text-center">
-          How would you describe your crypto experience?
+          How would you describe <br /> your crypto experience?
         </h1>
         <div className="grid grid-cols-1 max-w-[560px] mx-auto gap-4 mt-8">
           {options.map((option) => (

@@ -33,7 +33,7 @@ const QuizStep24 = () => {
       <QuizHeader currentStep={"About BFX"} totalSteps={28} />
       <QuizSteps currentStep={25} totalSteps={28} />
 
-      <div className="flex flex-col gap-6 items-center max-w-[1240px] mx-auto justify-between mt-4 pb-3 w-[100%]">
+      <div className="flex flex-col gap-4 items-center max-w-[1240px] mx-auto  mt-2 pb-3 w-[100%]">
         <div className="flex flex-col w-full gap-2 ">
           <p className="text-[30px] w-full text-center font-[600] leading-[36px] tracking-[-1px] text-[#000]">
             Learn more about BlockchainFX
@@ -63,7 +63,7 @@ const QuizStep24 = () => {
               }
             `}
           </style>
-             <div className="flex justify-center w-full max-w-[730px] h-[251px] mx-auto">
+             <div className="flex justify-center w-full max-w-[730px] h-[315px] mx-auto">
             <wistia-player
               media-id="w8ynmofaw4"
               aspect="1.7777777777777777"
@@ -88,10 +88,10 @@ const QuizStep24 = () => {
             ></wistia-player>
           </div> */}
         </div>
-        <div className="w-[80%]">
+        <div className="w-[100%] max-w-[560px]">
           <FeaturedSec />
         </div>
-        <div className="w-[80%]">
+        <div className="w-[100%] max-w-[560px]">
           <button
             onClick={handleNext}
             style={{
@@ -100,7 +100,7 @@ const QuizStep24 = () => {
             }}
             className={`py-[13px] w-[100%] text-[25px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
           >
-           Unlock Special Bonus
+          Unlock your Special Bonus (1/3)
           </button>
         </div>
         {/* <div>
