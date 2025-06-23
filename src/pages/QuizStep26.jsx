@@ -27,13 +27,13 @@ const QuizStep26 = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/quiz/step=19_28");
-    }, 700000);
+    }, 7000);
 
     return () => clearTimeout(timer);
   }, [navigate]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen  px-4 overflow-hidden quiz-container">
+    <div className="flex flex-col items-center min-h-screen max-h-screen  px-4 overflow-hidden quiz-container">
       <QuizHeader currentStep={"Loading"} totalSteps={28} />
       <QuizSteps currentStep={26} totalSteps={28} />
 
@@ -41,7 +41,7 @@ const QuizStep26 = () => {
         <div className="flex-col items-center justify-center bg-[#12121200] p-4">
           <CircularProgress
             percentage={100}
-            size={162}
+            size={152}
             strokeWidth={16}
             backgroundColor="#D9D9D980"
             progressColor="#2189FF"

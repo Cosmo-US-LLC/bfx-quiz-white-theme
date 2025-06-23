@@ -100,7 +100,7 @@ const MobileQuizStep24 = () => {
             }}
             className={`py-[13px] w-[100%] mt-[20px] mx-auto  text-[16px] font-[700] leading-[24px] tracking-[-0.01px] text-[#fff] uppercase`}
           >
-            Unlock your Special Bonus (1/3)
+            Unlock your Special Bonus (2/3)
           </button>
 
       {/* <div className=" max-w-[1240px] w-[100%]">
