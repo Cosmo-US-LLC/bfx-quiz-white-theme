@@ -169,7 +169,7 @@ const QuizStep22 = () => {
               }}
               className={`py-[13px] w-[100%] text-[#fff] text-[19px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
             >
-              Unlock your Special Bonus (2/3)
+              Unlock your Special Bonus (1/3)
             </button>
           </div>
         </div>
