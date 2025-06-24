@@ -81,7 +81,7 @@ const MobileQuizStep22 = () => {
       <div className="w-[100%] mx-auto space-y-[40px] ">
         <div className=" space-y-[15px] w-full ">
           <h1 className="text-[28px] text-center font-[700] leading-[120%] mb-1 ">
-           Estimate Your Potential <br /> Earnings with BFX
+           Estimate Your Earning <br /> Potential With $BFX
           </h1>
           <div className="py-[6px] ">
             <p className="text-[18px] text-center font-[700] leading-[150%] text-[#000]">

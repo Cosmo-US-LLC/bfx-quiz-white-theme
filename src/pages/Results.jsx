@@ -124,7 +124,7 @@ const Results = () => {
                     <span className="font-[700] text-[#037FF9] ">35%</span> BFX
                     Bonus Code
                   </h2>
-                  <div className="flex relative justify-around items-center border border-[#000] rounded-[8px] px-2">
+                  <div className="flex relative justify-start items-center border border-[#000] rounded-[8px] px-2">
                     <button
                       ref={textRef}
                       className="h-[40px] px-2 text-black"
@@ -212,7 +212,7 @@ const Results = () => {
                 borderRadius: "10px",
                 background: "#037FF9",
               }}
-              className={`py-[13px] w-[100%] text-[25px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
+              className={`py-[13px] w-[100%] text-[20px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
             >
               CLAIM YOUR BONUS HERE
             </button>

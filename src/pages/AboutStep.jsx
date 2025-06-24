@@ -29,7 +29,7 @@ const AboutStep = () => {
       <QuizSteps currentStep={26} totalSteps={28} />
       <div className="flex justify-between mt-[4rem] max-w-[1240px] mx-auto">
         <div className="max-w-[600px] space-y-[15px] w-[50%]">
-          <h2 className="text-[48px] max-w-[490px] tracking-[-3.36px] w-full text-[#000] font-[600] mb-4 ">
+          <h2 className="text-[48px] max-w-[490px] tracking-[-2.36px] w-full text-[#000] font-[700] mb-4 ">
             The BFX Price is about <br /> to Surge by 300%
           </h2>
           <p className="text-[16px] w-full max-w-[490px]  font-[700] text-[#000] mb-6 ">
