@@ -30,7 +30,7 @@ const MobileQuizStep12 = () => {
 
       <div className="w-[100%] animate-fade-in-up">
         <div className="w-full text-center ">
-          <h1 className="text-[28px] text-[#000] font-bold mb-4 ">
+          <h1 className="text-[28px] text-[#000] font-[700] leading-[120%] mb-4 ">
            How millionaires<br /> build generational wealth
           </h1>
           <p className="text-[16px] max-w-[380px] mx-auto font-[400] text-[#000] mb-[2rem] ">
