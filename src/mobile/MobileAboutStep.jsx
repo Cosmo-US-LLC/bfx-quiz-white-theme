@@ -29,7 +29,7 @@ const MobileAboutStep = () => {
       <QuizSteps currentStep={25} totalSteps={28} />
           <div className="flex flex-col items-center justify-between mt-[15px] mb-6 w-[100%]">
       <div className="space-y-[15px] text-center w-[100%]">
-        <h2 className="text-[30px] max-w-[350px] mx-auto w-full text-[#000] font-[700] mb-4 ">
+        <h2 className="text-[28px] max-w-[350px]  leading-[120%] mx-auto w-full text-[#000] font-[700] mb-4 ">
           The BFX Price is about to Surge by 300%
         </h2>
         <p className="text-[16px] w-full max-w-[420px]  font-[700] text-[#000] mb-6 ">
