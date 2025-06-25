@@ -124,15 +124,8 @@ const Results = () => {
                     <span className="font-[700] text-[#037FF9] ">35%</span> BFX
                     Bonus Code
                   </h2>
-                  <div className="flex relative justify-start items-center border border-[#000] rounded-[8px] px-2">
-                    <button
-                      ref={textRef}
-                      className="h-[40px] px-2 text-black"
-                      type="button"
-                    >
-                      upw8U2kbKCKzSZi
-                    </button>
-                    <button onClick={handleCopy}>
+                  <div className="flex relative justify-start items-center border border-[#000] rounded-[8px] px-4">
+                      <button onClick={handleCopy}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="14"
@@ -157,6 +150,14 @@ const Results = () => {
                         </defs>
                       </svg>
                     </button>
+                    <button
+                      ref={textRef}
+                      className="h-[40px] pl-2 text-black text-[18px] font-[700]"
+                      type="button"
+                    >
+                      upw8U2kbKCKzSZi
+                    </button>
+                
                     {showPopup && (
                       <div className="fixed bottom-[8%] z-[99] shadow left-1/2 transform -translate-x-1/2 animate-in fade-in-0 zoom-in-95 duration-200">
                         <div className="bg-[#353535] text-white px-4 py-4 rounded-lg shadow-lg flex items-center gap-2 whitespace-nowrap">

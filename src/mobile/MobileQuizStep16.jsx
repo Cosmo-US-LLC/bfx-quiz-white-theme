@@ -30,7 +30,7 @@ const MobileQuizStep16 = () => {
 
       <div className=" w-[100%] animate-fade-in-up">
         <div className=" space-y-[15px] text-center mx-auto w-full mb-[2rem]">
-          <h1 className="text-[28px] font-[800] leading-[140%] text-[#000] mb-4 ">
+          <h1 className="text-[28px] font-[700] leading-[120%] text-[#000] mb-4 ">
             It has never been easier to earn real passive income with crypto
           </h1>
           <p className="text-[16px] font-[400] leading-[170%] text-[black]  ">

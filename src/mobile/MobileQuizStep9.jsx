@@ -31,7 +31,7 @@ const MobileQuizStep9 = () => {
 
         <div className="max-w-[1240px] w-[100%] animate-fade-in-up">
           <div className="w-full text-center ">
-            <h1 className="text-[28px] text-[#000] font-bold !mb-4 ">
+            <h1 className="text-[28px] leading-[120%] text-[#000] font-[700] !mb-4 ">
               Your cash is losing <br /> value every year
             </h1>
             <p className="text-[16px] font-[400] text-[#000] mb-[2rem] ">
