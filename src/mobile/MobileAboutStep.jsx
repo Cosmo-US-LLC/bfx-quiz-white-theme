@@ -55,7 +55,7 @@ const MobileAboutStep = () => {
               borderRadius: "10px",
               background: "#2189FF",
             }}
-            className={`py-[13px] w-[100%] text-[15px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
+            className={`py-[13px] w-[100%] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
           >
             Unlock your Special Bonus (3/3)
           </button>

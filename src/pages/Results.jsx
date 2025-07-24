@@ -38,7 +38,8 @@ const Results = () => {
 
   const handleRoute = () => {
     window.location.href =
-      "https://presale.blockchainfx.com/?utm_source=quiz+page&utm_medium=landing&utm_campaign=Blockchain+FX+marketing";
+      // "https://presale.blockchainfx.com/?utm_source=quiz+page&utm_medium=landing&utm_campaign=Blockchain+FX+marketing";
+      "http://www.blockchainfx.com/?utm_source=3insiders&utm_medium=3+insiders&utm_campaign=Blockchain+FX+marketing";
   };
 
   useEffect(() => {
@@ -215,7 +216,7 @@ const Results = () => {
               }}
               className={`py-[13px] w-[100%] text-[20px] font-[700] leading-[24px] tracking-[-0.32px] text-[#fff] uppercase`}
             >
-              CLAIM YOUR BONUS HERE
+              CLAIM YOUR BONUS NOW
             </button>
           </div>
           <p className="text-[16px] text-[black] leading-[100%] pb-8 font-[400] text-center ">The button will redirect you to BlockchainFX.com</p>
