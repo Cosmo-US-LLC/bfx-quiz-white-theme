@@ -83,21 +83,21 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
       <div className="flex flex-col items-center min-h-screen px-4 overflow-hidden quiz-container">
         <QuizHeader currentStep={"Results"} totalSteps={28} />
         <QuizSteps currentStep={23} totalSteps={28} />
-        <div className="mt-6 w-[100%] max-w-[1240px] mb-6 mx-auto">
+        <div className="mt-6 w-[100%] max-w-[1340px] mb-6 mx-auto">
           <h1 className="text-[40px] leading-[116%] text-center text-[#000] font-bold mb-8 ">
             Here's your crypto profile
           </h1>
-          <div>
+          <div className="flex items-center">
             <div
               style={{
                 background: "rgba(255, 255, 255, 0.10)",
               }}
-              className=" max-w-[548px]  pt-8 mx-auto text-white border border-[#9FA4AD] rounded-lg overflow-hidden"
+              className=" max-w-[639px]  pt-8 mx-auto text-white border border-[#9FA4AD] rounded-lg overflow-hidden"
             >
               {/* Header */}
               <div className="relative px-12 py-4">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-[#000] font-[500] text-[19.6px] ">
+                  <h2 className="text-[#000] font-[500] text-[24px] ">
                     Readiness Score
                   </h2>
                   <span
@@ -179,8 +179,8 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
-                  <div className="space-y-[15px] pb-4">
-                    <div className="flex items-center space-x-2">
+                  <div className=" pb-4 grid grid-cols-2 gap-4 w-[100%]">
+                    <div className="flex items-center space-x-2 max-w-[300px] w-[100%]">
                       <img src={icons6} alt="" />
                       <div>
                         <p className="text-[#8C8CA1] text-[11px] font-[400]">
@@ -191,7 +191,18 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                         </h4>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-2">
+                     <div className="flex items-center space-x-2 max-w-[300px] w-[100%]">
+                      <img src={icons8} alt="" />
+                      <div className="w-[100%] min-w-[200px]">
+                        <p className="text-[#8C8CA1] text-[11px] font-[400]">
+                          Income
+                        </p>
+                        <h4 className="text-[14.5px] text-[#9190A3] font-[500]">
+                          Fit for investing
+                        </h4>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-2 max-w-[300px] w-[100%]">
                       <img src={icons7} alt="" />
                       <div>
                         <p className="text-[#8C8CA1] text-[11px] font-[400]">
@@ -202,18 +213,7 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                         </h4>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <img src={icons8} alt="" />
-                      <div>
-                        <p className="text-[#8C8CA1] text-[11px] font-[400]">
-                          Income
-                        </p>
-                        <h4 className="text-[14.5px] text-[#9190A3] font-[500]">
-                          Fit for investing
-                        </h4>
-                      </div>
-                    </div>
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-2 max-w-[300px] w-[100%]">
                       <img src={icons6} alt="" />
                       <div>
                         <p className="text-[#8C8CA1] text-[11px] font-[400]">
@@ -225,27 +225,27 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                       </div>
                     </div>
                   </div>
-                  <div className="relative">
+                  <div className="relative min-h-[200px] max-w-[250px] w-[100%] ">
                     {image && (
                       <img
                         src={image}
                         alt="Selected"
-                        className="flex mb-[-10px] max-w-[300px] justify-center items-center"
+                        className="flex mb-[-10px] -top-5 -right-5 absolute  justify-center items-center"
                       />
                     )}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="max-w-[548px]  pt-8 mx-auto text-white rounded-lg overflow-hidden">
-              <h3 className="text-[16px] font-[700] text-black mb-3">
-                Your readiness:{" "}
+            <div className="max-w-[639px] border border-[#F1F1F1] py-[28px] px-[46px] mx-auto text-white rounded-lg overflow-hidden">
+              <h3 className="text-[24px] font-[700] text-black mb-3">
+               Your readiness{" "}
                 <span className="text-[#037ff9]">
                   {Math.round(readinessScore)}%
                 </span>
               </h3>
               <div
-                className="py-[20px] rounded-[8px] mb-5 pl-[20px] pr-[2rem] flex justify-between items-center"
+                className="py-[21px] rounded-[8px] space-x-2 mb-4 pl-[20px] pr-[1rem] flex justify-between items-center"
                 style={{
                   border: "1px solid #C4C7CC",
                   background: "#353535",
@@ -257,9 +257,9 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                 </p>
                 <img src={icons4} alt="" />
               </div>
-              <div className="flex items-center justify-between mb-6 space-x-2">
+              <div className="space-y-4 mb-8">
                 <div
-                  className="space-y-[8px] py-[15px] flex flex-col items-center max-w-[273.94px] w-[100%] rounded-[4px]"
+                  className="space-y-[4px] py-[15px] flex flex-col items-center w-[100%] rounded-[4px]"
                   style={{
                     background: "#F1F1F1",
                   }}
@@ -292,7 +292,7 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                   </span>
                 </div>
                 <div
-                  className="space-y-[8px] py-[15px] flex flex-col items-center max-w-[273.94px] w-[100%] rounded-[4px]"
+                  className="space-y-[4px] py-[15px] flex flex-col items-center  w-[100%] rounded-[4px]"
                   style={{
                     background: "#F1F1F1",
                   }}
@@ -320,7 +320,7 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                 </div>
               </div>
               <div
-                className="mb-6 flex justify-between rounded-[6px] py-[10px] px-[10px]"
+                className="mb-4 flex justify-between rounded-[6px] py-[10px] px-[10px]"
                 style={{
                   border: "1px solid #C9C9C9",
                 }}
@@ -339,9 +339,9 @@ const QuizStep19_28 = ({ targetPercentage = 80 }) => {
                   borderRadius: "10px",
                   background: "#2189FF",
                 }}
-                className={`py-[15px] w-[100%] text-[#fff] text-[19px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
+                className={`py-[16px] w-[100%] text-[#fff] text-[16px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
               >
-                 YOUR TOP CRYPTO MATCH IN 2025
+                 Discover your Top Crypto Pick in 2025 
               </button>
             </div>
           </div>

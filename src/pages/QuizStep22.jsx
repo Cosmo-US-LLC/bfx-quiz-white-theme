@@ -80,7 +80,7 @@ const QuizStep22 = () => {
 
       <div className="flex justify-between max-w-[1160px] w-[100%] mx-auto items-center mt-6 mb-6">
         <div className="max-w-[475px] space-y-[18px] w-full">
-          <h1 className="text-[30px] font-[700] leading-[116%] mb-1 ">
+          <h1 className="text-[40px] font-[800] leading-[116%] mb-1 ">
            Estimate Your Earning <br /> Potential With $BFX
           </h1>
           <div className="mt-2">
@@ -169,7 +169,7 @@ const QuizStep22 = () => {
               }}
               className={`py-[13px] w-[100%] text-[#fff] text-[19px] font-[700] leading-[24px] tracking-[-0.32px] uppercase`}
             >
-              Unlock your Special Bonus (1/3)
+              Continue
             </button>
           </div>
         </div>

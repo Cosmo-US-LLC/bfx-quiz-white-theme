@@ -5,7 +5,7 @@ import QuizSteps from "../components/QuizSteps";
 import imgby from "../assets/quiz/card_quiz.png";
 import madle from "../assets/BestCrypto/madle.svg";
 import bfx from "../assets/BestCrypto/bfx.svg";
-import bfx_img from "../assets/BestCrypto/bfx_img.webp";
+import bfx_img from "../assets/BestCrypto/bfx_img_des.webp";
 import bfx_sv_1 from "../assets/BestCrypto/bfx_q (1).svg";
 import bfx_sv_2 from "../assets/BestCrypto/bfx_q (2).svg";
 import bfx_sv_3 from "../assets/BestCrypto/bfx_q (3).svg";
@@ -67,7 +67,7 @@ export const ProgressBar = ({
   return (
     <div
       ref={progressRef}
-      className="transition-all duration-1000 rounded-lg"
+      className="transition-all duration-1000  border-b border-[#D6D6D]"
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? "translateY(0)" : "translateY(30px)",
@@ -76,7 +76,7 @@ export const ProgressBar = ({
     >
       <h3 className="text-[16px] font-[700] text-[#000] mb-4">{title}</h3>
 
-      <div className="relative mb-8">
+      <div className="relative mb-10">
         <div className="relative w-full h-4 overflow-hidden bg-gray-200 rounded-full">
           <div
             className={`h-4 rounded-full ${color} relative`}
@@ -106,7 +106,7 @@ export const ProgressBar = ({
       </div>
 
       <p
-        className="text-[#9190A3] text-[12px] font-[400] mt-2 leading-relaxed"
+        className="text-[#9190A3] text-[12px] font-[400] pb-5 leading-relaxed"
         style={{
           opacity: isVisible ? 1 : 0,
           transition: "opacity 1.5s ease-out",
@@ -156,12 +156,6 @@ const BestCrypto = () => {
     {
       img: bfx_sv_9,
     },
-    {
-      img: bfx_sv_11,
-    },
-    {
-      img: bfx_sv_10,
-    }
   ];
   const progressData = [
     {
@@ -228,11 +222,12 @@ const BestCrypto = () => {
           </p>
         </div>
 
-        <div className="max-w-[1076px] relative bg-[#F1F1F1] rounded-[10px] mt-4 px-[32px] pt-[61px] pb-[40px] mb-4 mx-auto  w-full">
-          <div className="flex items-center justify-between">
+      <div className="flex items-center gap-x-[30px] max-w-[1076px] ">
+          <div className=" relative overflow-hidden border border-[#C9C9C9] min-h-[750px] rounded-[6px] px-[47px] pb-[20px] pt-[32px] mx-auto  w-[50%] max-w-[523px]">
+          <div className="">
             <div className="flex items-center">
               <div className="w-[90px]">
-                <img src={madle} className="absolute top-[-1%]" alt="" />
+                <img src={madle} className="absolute top-[-5%]" alt="" />
               </div>
               <div className="flex items-center">
                 <img src={bfx} alt="" />
@@ -241,34 +236,41 @@ const BestCrypto = () => {
                 </p>
               </div>
             </div>
-            <div className="flex justify-between space-x-4">
-              <button className="text-[#24234C] text-[18px] font-[700] bg-[#E6AF03] rounded-[6px] px-[23px] py-[13px]">
+            <div className="flex justify-between mt-6">
+              <button className="text-[#24234C] text-[18px] font-[700] w-[100%] bg-[#E6AF03] rounded-[6px] px-[23px] py-[13px]">
                 Amount Raised: $2.5 M
               </button>
-              {/* <button className="text-[#ffff] text-[18px] font-[700] bg-[#2189FF] rounded-[10px] px-[23px] py-[13px]">
-                Visit Site
-              </button> */}
             </div>
           </div>
-          <div className="flex justify-between pt-[30px] space-x-[4rem]">
-            <div className="max-w-[278.474px]">
+          <div className="pt-[20px]">
+            <div className="">
               <img src={bfx_img} alt="" />
             </div>
-            <div className="">
-              <p className="text-[16px] text-[#000]">
-                BlockchainFX is the first crypto exchange to connect blockchain
-                with global finance. Imagine Binance but with over 500 assets
-                including crypo, stocks, forex, and ETFs. Earn daily USDT
-                rewards with $BFX, even during the presale. Fully audited by
-                Certik and recently awarded the title of fastest growing trading
-                app of 2025.
+            <div className="pt-[16px]">
+              <p className="text-[16px] text-[#000] p-2 border border-[#F1F1F1] rounded-[12px] text-center">
+              BlockchainFX is the  first crypto exchange to connect blockchain with global finance. Imagine Binance but with over 500 assets including crypo, stocks, forex, and ETFs. Earn daily USDT rewards with $BFX, even during the presale. Fully audited by Certik and recently awarded the title of fastest growing trading app of 2025.
               </p>
-              <div className="flex justify-between pt-[20px]">
-                <div
-                  className="pr-[48px] "
-                  style={{
-                    borderRight: "1px solid rgba(0, 0, 0, 0.20)",
-                  }}
+              <div className=" pt-[20px]">
+                 <div className="">
+                  <p
+                    style={{
+                      color: "rgba(36, 35, 76, 0.50)",
+                    }}
+                    className="text-[16px] text-[rgba(36, 35, 76, 0.50)] font-[700]"
+                  >
+                    Payment Method
+                  </p>
+                  <div className="grid grid-cols-9  gap-[15px] pt-[10px]">
+                    {iconData.map((item) => (
+                      <div>
+                        <img src={item.img} alt="" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+               <div className="flex justify-between mt-6">
+                 <div
+                  className=""
                 >
                   <p
                     style={{
@@ -283,10 +285,7 @@ const BestCrypto = () => {
                   </h3>
                 </div>
                 <div
-                  className="pr-[48px] pl-[15px] "
-                  style={{
-                    borderRight: "1px solid rgba(0, 0, 0, 0.20)",
-                  }}
+                  className=""
                 >
                   <p
                     style={{
@@ -297,46 +296,20 @@ const BestCrypto = () => {
                     Meta
                   </p>
                   <h3 className="text-[#444366] text-[29.2px] font-[600]">
-                    Exchange/ <br /> Staking
+                    Exchange/Staking
                   </h3>
                 </div>
-                <div className="pl-[15px]">
-                  <p
-                    style={{
-                      color: "rgba(36, 35, 76, 0.50)",
-                    }}
-                    className="text-[16px] text-[rgba(36, 35, 76, 0.50)] font-[700]"
-                  >
-                    Payment Method
-                  </p>
-                  <div className="grid grid-cols-6 gap-[15px] pt-[10px]">
-                    {iconData.map((item) => (
-                      <div>
-                        <img src={item.img} alt="" />
-                      </div>
-                    ))}
-                  </div>
-                </div>
+               </div>
               </div>
             </div>
           </div>
         </div>
         <div
-          className="max-w-[1076px] overflow-hidden mb-[2rem] mt-6 pb-[3rem] pt-[1rem] w-[100%] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
+          className="overflow-hidden py-[35px] min-h-[750px] w-[50%] max-w-[523px] relative mx-auto border border-[#C9C9C9] rounded-[6px]"
           style={{}}
         >
           <div className="">
-            <div className="absolute -bottom-[1%] left-4  ">
-              {/* <img src={imgby} className="h-[319px]" alt="" /> */}
-              {image && (
-                <img
-                  src={image}
-                  alt="Selected"
-                  className="flex w-[320px] h-auto "
-                />
-              )}
-            </div>
-            <div className="grid grid-cols-1 pr-[7rem] pl-[2px] mr-0 md:grid-cols-2 gap-x-[5rem] gap-y-[2rem] max-w-[700px] ml-auto">
+            <div className="grid grid-cols-1 px-[35px]  mr-0 md:grid-cols-1 gap-y-[1rem] max-w-[700px] ml-auto">
               {progressData.map((item, index) => (
                 <ProgressBar
                   key={index}
@@ -350,12 +323,13 @@ const BestCrypto = () => {
             </div>
           </div>
         </div>
-        <div className="mb-6 w-[100%] max-w-[1076px] mx-auto mt-2">
+      </div>
+        <div className="mb-6 w-[100%] max-w-[1076px] mx-auto mt-4">
           <button
             onClick={handleNext}
-            className="text-[25px] text-[#fff] font-[700] leading-[24px] uppercase bg-[#2189FF] rounded-[10px] py-[13px] w-[100%] "
+            className="text-[25px] text-[#fff] font-[700] leading-[24px] uppercase bg-[#2189FF] rounded-[10px] py-[16px] w-[100%] "
           >
-            Calculate your earning potential with $bfx
+            Calculate How Much You Could Earn With $BFX
           </button>
         </div>
       </div>
