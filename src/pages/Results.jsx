@@ -75,7 +75,7 @@ const Results = () => {
       >
         <QuizHeader currentStep={"Bonus"} totalSteps={28} />
         <QuizSteps currentStep={28} totalSteps={28} />
-        <div className="mb-4 !mt-[-22px] bg-[#037FF933] py-[12px] w-[100%] flex justify-center items-center">
+        <div className="mb-2 !mt-[-22px] bg-[#037FF933] py-[5px] w-[100%] flex justify-center items-center">
           {/* <img
             src={result_icon_4}
             alt="results"
@@ -95,23 +95,23 @@ const Results = () => {
               />
             </svg>
           </div>
-          <h3 className="font-[700] text-[#000] text-[22px] py-[5px] ml-2 flex">
+          <h3 className="font-[700] text-[#000] text-[18px] py-[5px] ml-2 flex">
             35% Special Bonus expires in<p className="font-[700] w-[110px] text-[#037FF9] text-Manrope flex justify-center ">{formatTime(timeLeft)} min
             </p>
           </h3>
         </div>
-        <div className="mt-[2rem] w-[100%] max-w-[1240px] mx-auto">
+        <div className=" w-[100%] max-w-[1240px] mx-auto">
           <div className="max-w-[1020px] mx-auto  w-full ">
-            <h1 className="text-[40px] text-center text-[black] font-bold mb-4 ">
+            <h1 className="text-[32px] text-center text-[black] font-bold mb-1 leading-[120%] ">
               Congratulations! 🎉 <br />
               You’ve sucessfully passed the Quiz
             </h1>
-            <p className="text-[20px]  text-center font-[700] text-[black] mb-[53px] ">
+            <p className="text-[18px]  text-center font-[700] text-[black] mb-[15px] ">
               You’ve completed the challenge and unlocked this special offer.
               <br />
               Here’s your limited one-time bonus code to buy $BFX*
             </p>
-            <div className="max-w-[618px] py-[36px] mx-auto bg-[#F0F0F0]">
+            <div className="max-w-[618px] py-[28px] mx-auto bg-[#F0F0F0]">
               {/* <div className="flex items-center max-w-[506px] mx-auto mb-[25px]">
                 <p className="w-[50%] text-[16px] flex justify-start  font-[400] text-[black] ">
                   Your readiness:{" "}
@@ -207,7 +207,7 @@ const Results = () => {
               </div> */}
             </div>
           </div>
-          <div className="max-w-[600.2px] mx-auto my-6">
+          <div className="max-w-[600.2px] mx-auto my-4">
             <button
               onClick={handleRoute}
               style={{
@@ -220,7 +220,7 @@ const Results = () => {
               <span className="text-[16px] font-[500]">This button will redirect you to BlockchainFX.com</span>
             </button>
           </div>
-          <p className="text-[14px] text-[black] leading-[171.429%] font-manrope max-w-[506px] mx-auto pb-8 font-[700] text-center ">*At 3insiders, our goal is to match you with the right project for your goals and secure exclusive deals you won’t find anywhere else through our industry connections. A win for everyone.</p>
+          <p className="text-[14px] text-[black] leading-[131.429%] font-manrope max-w-[506px] mx-auto pb-1 font-[700] text-center ">*At 3insiders, our goal is to match you with the right project for your goals and secure exclusive deals you won’t find anywhere else through our industry connections. A win for everyone.</p>
         </div>
       </div>
     </div>
