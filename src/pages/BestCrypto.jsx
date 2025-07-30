@@ -222,7 +222,8 @@ const BestCrypto = () => {
           </p>
         </div>
 
-      <div className="flex items-center gap-x-[30px] max-w-[1076px] ">
+     <div className="relative max-w-[1076px] mx-auto ">
+         <div className="flex items-center gap-x-[30px] pb-[4rem] max-w-[1076px] ">
           <div className=" relative overflow-hidden border border-[#C9C9C9] min-h-[750px] rounded-[6px] px-[47px] pb-[20px] pt-[32px] mx-auto  w-[50%] max-w-[523px]">
           <div className="">
             <div className="flex items-center">
@@ -327,11 +328,12 @@ const BestCrypto = () => {
         <div className="mb-6 w-[100%] max-w-[1076px] mx-auto mt-4">
           <button
             onClick={handleNext}
-            className="text-[25px] text-[#fff] font-[700] leading-[24px] uppercase bg-[#2189FF] rounded-[10px] py-[16px] w-[100%] "
+            className="text-[25px] text-[#fff] fixed bottom-5 font-[700] leading-[24px] uppercase bg-[#2189FF] rounded-[10px] py-[16px] w-[100%] max-w-[1076px]"
           >
             Calculate How Much You Could Earn With $BFX
           </button>
         </div>
+     </div>
       </div>
     </div>
   );
